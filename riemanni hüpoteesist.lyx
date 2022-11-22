@@ -1,0 +1,10510 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{fullpage}
+\usepackage{mathptmx} % rm & math
+\usepackage[scaled=0.1]{helvet} % ss
+\flushbottom
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0cm
+\topmargin 0cm
+\rightmargin 0cm
+\bottommargin 0cm
+\headheight 0cm
+\headsep 0cm
+\footskip 0cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle empty
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Riemanni hüpoteesist
+\end_layout
+
+\begin_layout Part
+hüpotees
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+exists_{x_1}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+zeta(x_1)=0 
+\backslash
+land 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+x_1 
+\backslash
+in C 
+\backslash
+land 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+neg (Re(x_1)=1/2) 
+\backslash
+land 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+neg (
+\backslash
+exists_{x_2}(x_2 
+\backslash
+in N 
+\backslash
+land Re(x_1)=-x_2*2 
+\backslash
+land Im(x_1)=0) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+muud seoud väited
+\end_layout
+
+\begin_layout Section
+zetafunktsioonist
+\end_layout
+
+\begin_layout Subsection
+kui reaalosa suurem kui 1
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{x_1}(x_1 
+\backslash
+in C 
+\backslash
+land Re(x_1)<1 
+\backslash
+to 
+\backslash
+zeta(-x_1)=
+\backslash
+sum_{n=1}^{
+\backslash
+infty}(n^{x_1})=
+\backslash
+sum_{n=1}^{
+\backslash
+infty}(n^{x_1})= 
+\backslash
+sum_{n=1}^{
+\backslash
+infty}(n^{Re(x_1)+i*Im(x_1)}) = 
+\backslash
+sum_{n=1}^{
+\backslash
+infty}(n^{Re(x_1)}*n^{i*Im(x_1)}) =
+\backslash
+
+\backslash
+ 
+\backslash
+sum_{n=1}^{
+\backslash
+infty}(n^{Re(x_1)}*(cos(Im(x_1)*ln(n))+i*sin(Im(x_1)*ln(n)))))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Dirichlet series
+\end_layout
+
+\begin_layout Standard
+avaldis1: Dirichlet_series_Wikipediast
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{x_1}(x_1 
+\backslash
+in C 
+\backslash
+land Re(x_1)>0 
+\backslash
+to 
+\backslash
+zeta(x_1)=(x_1-1)^{-1}*
+\backslash
+sum_{n=1}^{
+\backslash
+infty}(
+\backslash
+frac{n}{(n+1)^{x_1}}-
+\backslash
+frac{n-x_1}{n^{x_1}})$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+lihtsustan seda avaldist:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+to 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+zeta(x_1+i*x_2)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(x_1-1+i*x_2)^{-1}*
+\backslash
+sum_{n=1}^{
+\backslash
+infty}(
+\backslash
+frac{n}{(n+1)^{x_1+i*x_2}}-
+\backslash
+frac{n-x_1-i*x_2}{n^{x_1+i*x_2}})= 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(x_1-1+i*x_2)^{-1}*
+\backslash
+sum_{n=1}^{
+\backslash
+infty}(
+\backslash
+frac{n}{(n+1)^{x_1}*(cos(x_2*ln(n+1))+i*sin(x_2*ln(n+1)))}-
+\backslash
+frac{n-x_1-i*x_2}{n^{x_1}*(cos(x_2*ln(n))+i*sin(x_2*ln(n)))})=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frac{x_1-1-i*x_2}{(x_1-1)^2+x_2^2}*
+\backslash
+sum_{n=1}^{
+\backslash
+infty}(n*(n+1)^{-x_1}*(cos(x_2*ln(n+1))-i*sin(x_2*ln(n+1)))-(n-x_1-i*x_2)*n^{-x_
+1}*(cos(x_2*ln(n))-i*sin(x_2*ln(n))))=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{
+\backslash
+infty}(((x_1-1)-i*x_2)*(cos(x_2*ln(n+1))-i*sin(x_2*ln(n+1)))*((x_1-1)^2+x_2^2)^{
+-1}*n*(n+1)^{-x_1}-
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+((x_1-1)-i*x_2)*(cos(x_2*ln(n))-i*sin(x_2*ln(n)))*((x_1-1)^2+x_2^2)^{-1}*(n-x_1-
+i*x_2)*n^{-x_1})=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{
+\backslash
+infty}( (((x_1-1)*cos(x_2*ln(n+1))-x_2*sin(x_2*ln(n+1)))- i*((x_1-1)*sin(x_2*ln(
+n+1))+x_2*cos(x_2*ln(n+1))) )*
+\end_layout
+
+\begin_layout Plain Layout
+
+((x_1-1)^2+x_2^2)^{-1}*n*(n+1)^{-x_1}-
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+((n-x_1)*((x_1-1)*cos(x_2*ln(n))-x_2*sin(x_2*ln(n)))-x_2*((x_1-1)*sin(x_2*ln(n))
++x_2*cos(x_2*ln(n))) - i*((n-x_1)*((x_1-1)*sin(x_2*ln(n))+x_2*cos(x_2*ln(n)))
+  +  x_2*(((x_1-1)*cos(x_2*ln(n))-x_2*sin(x_2*ln(n)))))   )*
+\end_layout
+
+\begin_layout Plain Layout
+
+((x_1-1)^2+x_2^2)^{-1}*n^{-x_1})=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{
+\backslash
+infty}(
+\end_layout
+
+\begin_layout Plain Layout
+
+((x_1-1)*cos(x_2*ln(n+1))-x_2*sin(x_2*ln(n+1)))*((x_1-1)^2+x_2^2)^{-1}*n*(n+1)^{
+-x_1}-((n-x_1)*((x_1-1)*cos(x_2*ln(n))-x_2*sin(x_2*ln(n)))-x_2*((x_1-1)*sin(x_2*
+ln(n))+x_2*cos(x_2*ln(n))))*((x_1-1)^2+x_2^2)^{-1}*n^{-x_1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-i*(((x_1-1)*sin(x_2*ln(n+1))+x_2*cos(x_2*ln(n+1)))*((x_1-1)^2+x_2^2)^{-1}*n*(n+
+1)^{-x_1}+((n-x_1)*((x_1-1)*sin(x_2*ln(n))+x_2*cos(x_2*ln(n)))  +  x_2*(((x_1-1)
+*cos(x_2*ln(n))-x_2*sin(x_2*ln(n)))))*((x_1-1)^2+x_2^2)^{-1}*n^{-x_1}))
+\end_layout
+
+\begin_layout Plain Layout
+
+=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+((x_1-1)^2+x_2^2)^{-1}*
+\backslash
+sum_{n=1}^{
+\backslash
+infty}(
+\end_layout
+
+\begin_layout Plain Layout
+
+((x_1-1)*cos(x_2*ln(n+1))-x_2*sin(x_2*ln(n+1)))*n*(n+1)^{-x_1}-((n-x_1)*((x_1-1)
+*cos(x_2*ln(n))-x_2*sin(x_2*ln(n)))-x_2*((x_1-1)*sin(x_2*ln(n))+x_2*cos(x_2*ln(n
+))))*n^{-x_1})
+\end_layout
+
+\begin_layout Plain Layout
+
+-i*
+\end_layout
+
+\begin_layout Plain Layout
+
+((x_1-1)^2+x_2^2)^{-1}*
+\backslash
+sum_{n=1}^{
+\backslash
+infty}(
+\end_layout
+
+\begin_layout Plain Layout
+
+(((x_1-1)*sin(x_2*ln(n+1))+x_2*cos(x_2*ln(n+1)))*n*(n+1)^{-x_1}-((n-x_1)*((x_1-1
+)*sin(x_2*ln(n))+x_2*cos(x_2*ln(n)))+  x_2*((x_1-1)*cos(x_2*ln(n))-x_2*sin(x_2*l
+n(n))))*n^{-x_1}))=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+järgneva väite nimi on zeta2_reaalosa_ja_imaginaarosa_eraldatud:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+to 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+zeta(x_1+i*x_2)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+   ((x_1-1)^2+x_2^2)^{-1}*
+\backslash
+sum_{n=1}^{
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+((x_1-1)*cos(x_2*ln(n+1))-x_2*sin(x_2*ln(n+1)))*n*(n+1)^{-x_1}-
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+((n-x_1)*((x_1-1)*cos(x_2*ln(n))-x_2*sin(x_2*ln(n)))-x_2*((x_1-1)*sin(x_2*ln(n))
++x_2*cos(x_2*ln(n))))*n^{-x_1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-i*((x_1-1)^2+x_2^2)^{-1}*
+\backslash
+sum_{n=1}^{
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+((x_1-1)*sin(x_2*ln(n+1))+x_2*cos(x_2*ln(n+1)))*n*(n+1)^{-x_1}-
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+((n-x_1)*((x_1-1)*sin(x_2*ln(n))+x_2*cos(x_2*ln(n)))+x_2*((x_1-1)*cos(x_2*ln(n))
+-x_2*sin(x_2*ln(n))))*n^{-x_1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+lihtsustan seda väidet edasi
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+to 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+zeta(x_1+i*x_2)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+   (x_1^2-2*x_1+1+x_2^2)^{-1}*
+\backslash
+sum_{n=1}^{
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+sin(x_2*ln(n)+0*(2
+\backslash
+pi)/4)*x_2*(n-1)*n^{-x_1}-sin(x_2*ln(n+1)+0*(2
+\backslash
+pi)/4)*x_2*n*(n+1)^{-x_1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++sin(x_2*ln(n)+1*(2
+\backslash
+pi)/4)*(x_1^2-x_1-n*x_1+n+x_2^2)*n^{-x_1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-sin(x_2*ln(n+1)+1*(2
+\backslash
+pi)/4)*(1-x_1)*n*(n+1)^{-x_1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*(x_1^2-2*x_1+1+x_2^2)^{-1}*
+\backslash
+sum_{n=1}^{
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ sin(x_2*ln(n)+1*(2
+\backslash
+pi)/4)*x_2*(n-1)*n^{-x_1}-sin(x_2*ln(n+1)+1*(2
+\backslash
+pi)/4)*x_2*n*(n+1)^{-x_1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++sin(x_2*ln(n)+2*(2
+\backslash
+pi)/4)*(x_1^2-x_1-n*x_1+n+x_2^2)*n^{-x_1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-sin(x_2*ln(n+1)+2*(2
+\backslash
+pi)/4)*(1-x_1)*n*(n+1)^{-x_1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+=
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+sum_{n=1}^{M}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++sin(x_2*ln(n)+1*(2
+\backslash
+pi)/4)*(x_1^2-x_1-n*x_1+n+x_2^2)*n^{-x_1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-sin(x_2*ln(n+1)+1*(2
+\backslash
+pi)/4)*(1-x_1)*n*(n+1)^{-x_1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)-sin(x_2*ln(M+1)+0*(2
+\backslash
+pi)/4)*x_2*M*(M+1)^{-x_1})*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(x_1^2-2*x_1+1+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+sum_{n=1}^{M}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+sin(x_2*ln(n)+2*(2
+\backslash
+pi)/4)*(x_1^2-x_1-n*x_1+n+x_2^2)*n^{-x_1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-sin(x_2*ln(n+1)+2*(2
+\backslash
+pi)/4)*(1-x_1)*n*(n+1)^{-x_1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)-sin(x_2*ln(M+1)+1*(2
+\backslash
+pi)/4)*x_2*M*(M+1)^{-x_1})*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(x_1^2-2*x_1+1+x_2^2)^{-1}=
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+sum_{n=1}^{M}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++sin(x_2*ln(n)+1*(2
+\backslash
+pi)/4)*(x_1^2-2*x_1+x_2^2+1)*n^{-x_1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++sin(x_2*ln(n)+1*(2
+\backslash
+pi)/4)*(1-x_1)*(n-1)*n^{-x_1}-sin(x_2*ln(n+1)+1*(2
+\backslash
+pi)/4)*(1-x_1)*n*(n+1)^{-x_1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)-sin(x_2*ln(M+1)+0*(2
+\backslash
+pi)/4)*x_2*M*(M+1)^{-x_1})*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(x_1^2-2*x_1+1+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+sum_{n=1}^{M}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++sin(x_2*ln(n)+2*(2
+\backslash
+pi)/4)*(x_1^2-2*x_1+x_2^2+1)*n^{-x_1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++sin(x_2*ln(n)+2*(2
+\backslash
+pi)/4)*(1-x_1)*(n-1)*n^{-x_1}-sin(x_2*ln(n+1)+2*(2
+\backslash
+pi)/4)*(1-x_1)*n*(n+1)^{-x_1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)-sin(x_2*ln(M+1)+1*(2
+\backslash
+pi)/4)*x_2*M*(M+1)^{-x_1})*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(x_1^2-2*x_1+1+x_2^2)^{-1}=
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{M}(sin(x_2*ln(n)+1*(2
+\backslash
+pi)/4)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin(x_2*ln(M+1)+1*(2
+\backslash
+pi)/4)*(1-x_1)+sin(x_2*ln(M+1)+0*(2
+\backslash
+pi)/4)*x_2)*M*(M+1)^{-x_1}*((1-x_1)^2+x_2^2)^{-1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{M}(sin(x_2*ln(n)+2*(2
+\backslash
+pi)/4)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin(x_2*ln(M+1)+2*(2
+\backslash
+pi)/4)*(1-x_1)+sin(x_2*ln(M+1)+1*(2
+\backslash
+pi)/4)*x_2)*M*(M+1)^{-x_1}*((1-x_1)^2+x_2^2)^{-1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{M}(sin(x_2*ln(n)+1*(2
+\backslash
+pi)/4)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin(x_2*ln(M+1)+1*(2
+\backslash
+pi)/4)*(1-x_1)+sin(x_2*ln(M+1)+0*(2
+\backslash
+pi)/4)*x_2)*M*(M+1)^{-x_1}*(1+1/M)*((1-x_1)^2+x_2^2)^{-1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{M}(sin(x_2*ln(n)+2*(2
+\backslash
+pi)/4)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin(x_2*ln(M+1)+2*(2
+\backslash
+pi)/4)*(1-x_1)+sin(x_2*ln(M+1)+1*(2
+\backslash
+pi)/4)*x_2)*M*(M+1)^{-x_1}*(1+1/M)*((1-x_1)^2+x_2^2)^{-1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{M}(sin(x_2*ln(n)+1*(2
+\backslash
+pi)/4)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin(x_2*ln(M+1)+1*(2
+\backslash
+pi)/4)*(1-x_1)+sin(x_2*ln(M+1)+0*(2
+\backslash
+pi)/4)*x_2)*M^{1-x_1}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{M}(sin(x_2*ln(n)+2*(2
+\backslash
+pi)/4)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin(x_2*ln(M+1)+2*(2
+\backslash
+pi)/4)*(1-x_1)+sin(x_2*ln(M+1)+1*(2
+\backslash
+pi)/4)*x_2)*M^{1-x_1}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Valem zeta9_M_plus_1e_ei_ole:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+to 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+zeta(x_1+i*x_2)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{M}(sin(x_2*ln(n)+1*(2
+\backslash
+pi)/4)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin(x_2*ln(M)+1*(2
+\backslash
+pi)/4)*(1-x_1)+sin(x_2*ln(M)+0*(2
+\backslash
+pi)/4)*x_2)*M^{1-x_1}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{M}(sin(x_2*ln(n)+2*(2
+\backslash
+pi)/4)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin(x_2*ln(M)+2*(2
+\backslash
+pi)/4)*(1-x_1)+sin(x_2*ln(M)+1*(2
+\backslash
+pi)/4)*x_2)*M^{1-x_1}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+kuivõrd M läheneb lõpmatusele võin igal pool avaldises i asemele panna 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$floor(e^{(floor(M)/abs(x_2)+q_1/x_2)*2
+\backslash
+pi})$
+\end_layout
+
+\end_inset
+
+ või 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+floor(e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi/x_2})$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{q_1}(
+\backslash
+forall_{q_2}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+to 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+zeta(x_1+i*x_2)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)/abs(x_2)+q_1/x_2)*2
+\backslash
+pi})}(sin(x_2*ln(n)+1*(2
+\backslash
+pi)/4)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin(x_2*ln(floor(e^{(floor(M)/abs(x_2)+q_1/x_2)*2
+\backslash
+pi}))+1*(2
+\backslash
+pi)/4)*(1-x_1)+sin(x_2*ln(floor(e^{(floor(M)/abs(x_2)+q_1/x_2)*2
+\backslash
+pi}))+0*(2
+\backslash
+pi)/4)*x_2)*floor(e^{(floor(M)/abs(x_2)+q_1/x_2)*2
+\backslash
+pi})^{1-x_1}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi})}(sin(x_2*ln(n)+2*(2
+\backslash
+pi)/4)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin(x_2*ln(floor(e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi}))+2*(2
+\backslash
+pi)/4)*(1-x_1)+sin(x_2*ln(floor(e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi}))+1*(2
+\backslash
+pi)/4)*x_2)*floor(e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi})^{1-x_1}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)/abs(x_2)+q_1/x_2)*2
+\backslash
+pi})}(sin(x_2*ln(n)+1*(2
+\backslash
+pi)/4)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin(x_2*ln((e^{(floor(M)/abs(x_2)+q_1/x_2)*2
+\backslash
+pi}))+1*(2
+\backslash
+pi)/4)*(1-x_1)+sin(x_2*ln((e^{(floor(M)/abs(x_2)+q_1/x_2)*2
+\backslash
+pi}))+0*(2
+\backslash
+pi)/4)*x_2)*(e^{(floor(M)/abs(x_2)+q_1/x_2)*2
+\backslash
+pi})^{1-x_1}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi})}(sin(x_2*ln(n)+2*(2
+\backslash
+pi)/4)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin(x_2*ln((e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi}))+2*(2
+\backslash
+pi)/4)*(1-x_1)+sin(x_2*ln((e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi}))+1*(2
+\backslash
+pi)/4)*x_2)*(e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi})^{1-x_1}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)/abs(x_2)+q_1/x_2)*2
+\backslash
+pi})}(sin(x_2*ln(n)+1*(2
+\backslash
+pi)/4)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin((floor(M)*(x_2/abs(x_2))+q_1)*2
+\backslash
+pi+1*(2
+\backslash
+pi)/4)*(1-x_1)+sin((floor(M)(x_2/abs(x_2))+q_1)*2
+\backslash
+pi+0*(2
+\backslash
+pi)/4)*x_2)*(e^{(floor(M)/abs(x_2)+q_1/x_2)*2
+\backslash
+pi*(1-x_1)})*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi})}(sin(x_2*ln(n)+2*(2
+\backslash
+pi)/4)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin((floor(M)*(x_2/abs(x_2))+q_2)*2
+\backslash
+pi+2*(2
+\backslash
+pi)/4)*(1-x_1)+sin((floor(M)*(x_2/abs(x_2))+q_2)*2
+\backslash
+pi+1*(2
+\backslash
+pi)/4)*x_2)*(e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi*(1-x_1)})*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)/abs(x_2)+q_1/x_2)*2
+\backslash
+pi})}(sin(x_2*ln(n)+(2
+\backslash
+pi)*1/4)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin((q_1+1/4)*2
+\backslash
+pi)*(1-x_1)+sin((q_1+0/4)*2
+\backslash
+pi)*x_2)*e^{(floor(M)/abs(x_2)+q_1/x_2)*2
+\backslash
+pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi})}(sin(x_2*ln(n)+(2
+\backslash
+pi)*2/4)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin((q_2+2/4)*2
+\backslash
+pi)*(1-x_1)+sin((q_2+1/4)*2
+\backslash
+pi)*x_2)*e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))))
+\end_layout
+
+\begin_layout Plain Layout
+
+$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nagu kvantrite abilgi öeldud on kehtib võrrand mistahes q_1 ja q_2 väärtuste
+ puhul, aga kuna pole kindel, et millised väärtused q_1 ja q_2 asemele pannes
+ saab kõige paremal kujul avaldise, siis loon su subsectionites võrrandist
+ erinevaid variante, kus q_1 ja q_2'el on erinevad väärtused.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+asendan siinuse selle Taylori reaga:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{{n_0}=1}^{floor(e^{(floor(M)/abs(x_2)+q_1/x_2)*2
+\backslash
+pi})}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{n_0}^{-x_1}*
+\backslash
+sum_{{n_1}=0}^
+\backslash
+infty((-1)^{n_1}*(x_2*ln(n_0))^{2*{n_1}}*factorial(2*{n_1})^{-1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin((q_1+1/4)*2
+\backslash
+pi)*(1-x_1)+sin((q_1+0/4)*2
+\backslash
+pi)*x_2)*e^{(floor(M)/abs(x_2)+q_1/x_2)*2
+\backslash
+pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{{n_0}=1}^{floor(e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi})}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{n_0}^{-x_1}*
+\backslash
+sum_{{n_1}=0}^
+\backslash
+infty((-1)^{n_1}*(x_2*ln(n_0))^{2*{n_1}+1}*factorial(2*{n_1}+1)^{-1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin((q_2+2/4)*2
+\backslash
+pi)*(1-x_1)+sin((q_2+1/4)*2
+\backslash
+pi)*x_2)*e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=
+\backslash
+
+\backslash
+$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+asendal naturalllogaritmi selle maclaurini reaga:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{{n_0}=1}^{floor(e^{(floor(M)/abs(x_2)+q_1/x_2)*2
+\backslash
+pi})}({n_0}^{-x_1}*
+\backslash
+sum_{n_1=0}^
+\backslash
+infty(( 
+\backslash
+sum_{{n_2}=0}^
+\backslash
+infty((2*n_2+1)^{-1}*(n_0-1)^{2*n_2+1}*(n_0+1)^{-2*n_2-1}) )^{2*n_1}*x_2^{2*n_1}
+*factorial(2*n_1)^{-1}*2^{2*n_1}*(-1)^{n_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin((q_1+1/4)*2
+\backslash
+pi)*(1-x_1)+sin((q_1+0/4)*2
+\backslash
+pi)*x_2)*e^{(floor(M)/abs(x_2)+q_1/x_2)*2
+\backslash
+pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{{n_0}=1}^{floor(e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi})}({n_0}^{-x_1}*
+\backslash
+sum_{n_1=0}^
+\backslash
+infty(( 
+\backslash
+sum_{{n_2}=0}^
+\backslash
+infty((2*n_2+1)^{-1}*(n_0-1)^{2*n_2+1}*(n_0+1)^{-2*n_2-1}) )^{2*n_1+1}*x_2^{2*n_
+1+1}*factorial(2*n_1+1)^{-1}*2^{2*n_1+1}*(-1)^{n_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin((q_2+2/4)*2
+\backslash
+pi)*(1-x_1)+sin((q_2+1/4)*2
+\backslash
+pi)*x_2)*e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=
+\backslash
+
+\backslash
+$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+kasutan multinomial valemit:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{{n_0}=1}^{floor(e^{(floor(M)/abs(x_2)+q_1/x_2)*2
+\backslash
+pi})}({n_0}^{-x_1}*
+\backslash
+sum_{n_1=0}^{M-1}(x_2^{2*n_1}*2^{2*n_1}*(-1)^{n_1}*
+\backslash
+sum_{n_2=0}^{(2*n_1+1)^M-1}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+sum_{n_3=0}^{M-1}(
+\backslash
+ floor(n_2/(2*n_1+1)^{n_3})
+\backslash
+%(2*n_1+1)
+\backslash
+ )=2*n_1)*
+\backslash
+
+\backslash
+%sulgudega 0
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Pi_{n_3=0}^{M-1}(factorial(
+\backslash
+ floor(n_2/(2*n_1+1)^{n_3})
+\backslash
+%(2*n_1+1)
+\backslash
+ )^{-1}*((2*n_3+1)^{-1}*(n_0-1)^{2*n_3+1}*(n_0+1)^{-2*n_3-1})^{floor(n_2/(2*n_1+
+1)^{n_3})
+\backslash
+%(2*n_1+1)} )
+\backslash
+
+\backslash
+%sulgudega 0
+\end_layout
+
+\begin_layout Plain Layout
+
+)))
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin((q_1+1/4)*2
+\backslash
+pi)*(1-x_1)+sin((q_1+0/4)*2
+\backslash
+pi)*x_2)*e^{(floor(M)/abs(x_2)+q_1/x_2)*2
+\backslash
+pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{{n_0}=1}^{floor(e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi})}({n_0}^{-x_1}*
+\backslash
+sum_{n_1=0}^{M-1}(x_2^{2*n_1+1}*2^{2*n_1+1}*(-1)^{n_1}*
+\backslash
+sum_{n_2=0}^{(2*n_1+2)^M-1}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+sum_{n_3=0}^{M-1}(
+\backslash
+ floor(n_2/(2*n_1+2)^{n_3})
+\backslash
+%(2*n_1+2)
+\backslash
+ )=2*n_1+1)*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Pi_{n_3=0}^{M-1}(factorial(
+\backslash
+ floor(n_2/(2*n_1+2)^{n_3})
+\backslash
+%(2*n_1+2)
+\backslash
+ )^{-1}*((2*n_3+1)^{-1}*(n_0-1)^{2*n_3+1}*(n_0+1)^{-2*n_3-1})^{floor(n_2/(2*n_1+
+2)^{n_3})
+\backslash
+%(2*n_1+2)} )
+\backslash
+
+\backslash
+%sulgudega 0
+\end_layout
+
+\begin_layout Plain Layout
+
+)))
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin((q_2+2/4)*2
+\backslash
+pi)*(1-x_1)+sin((q_2+1/4)*2
+\backslash
+pi)*x_2)*e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+lihtsustan teades, et korutamise asemel võib astmd liita.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{{n_0}=1}^{floor(e^{(floor(M)/abs(x_2)+q_1/x_2)*2
+\backslash
+pi})}({n_0}^{-x_1}*
+\backslash
+sum_{n_1=0}^{M-1}(x_2^{2*n_1}*2^{2*n_1}*(-1)^{n_1}*
+\backslash
+sum_{n_2=0}^{(2*n_1+1)^M-1}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+sum_{n_3=0}^{M-1}(
+\backslash
+ floor(n_2/(2*n_1+1)^{n_3})
+\backslash
+%(2*n_1+1)
+\backslash
+ )=2*n_1)*
+\backslash
+
+\backslash
+%sulgudega 0
+\end_layout
+
+\begin_layout Plain Layout
+
+(n_0-1)^{ 
+\backslash
+sum_{n_3=0}^{M-1}((2*n_3+1)*(floor(n_2/(2*n_1+1)^{n_3})
+\backslash
+%(2*n_1+1)))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(n_0+1)^{-
+\backslash
+sum_{n_3=0}^{M-1}((2*n_3+1)*(floor(n_2/(2*n_1+1)^{n_3})
+\backslash
+%(2*n_1+1)))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Pi_{n_3=0}^{M-1}(factorial(
+\backslash
+ floor(n_2/(2*n_1+1)^{n_3})
+\backslash
+%(2*n_1+1)
+\backslash
+ )^{-1}*(2*n_3+1)^{-floor(n_2/(2*n_1+1)^{n_3})
+\backslash
+%(2*n_1+1)} )
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)))
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin((q_1+1/4)*2
+\backslash
+pi)*(1-x_1)+sin((q_1+0/4)*2
+\backslash
+pi)*x_2)*e^{(floor(M)/abs(x_2)+q_1/x_2)*2
+\backslash
+pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{{n_0}=1}^{floor(e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi})}({n_0}^{-x_1}*
+\backslash
+sum_{n_1=0}^{M-1}(x_2^{2*n_1+1}*2^{2*n_1+1}*(-1)^{n_1}*
+\backslash
+sum_{n_2=0}^{(2*n_1+2)^M-1}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+sum_{n_3=0}^{M-1}(
+\backslash
+ floor(n_2/(2*n_1+2)^{n_3})
+\backslash
+%(2*n_1+2)
+\backslash
+ )=2*n_1+1)*
+\backslash
+
+\backslash
+%sulgudega 0
+\end_layout
+
+\begin_layout Plain Layout
+
+(n_0-1)^{ 
+\backslash
+sum_{n_3=0}^{M-1}((2*n_3+1)*(floor(n_2/(2*n_1+2)^{n_3})
+\backslash
+%(2*n_1+2)))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(n_0+1)^{-
+\backslash
+sum_{n_3=0}^{M-1}((2*n_3+1)*(floor(n_2/(2*n_1+2)^{n_3})
+\backslash
+%(2*n_1+2)))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Pi_{n_3=0}^{M-1}(factorial(
+\backslash
+ floor(n_2/(2*n_1+2)^{n_3})
+\backslash
+%(2*n_1+2)
+\backslash
+ )^{-1}*(2*n_3+1)^{-floor(n_2/(2*n_1+2)^{n_3})
+\backslash
+%(2*n_1+2)} )
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)))
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin((q_2+2/4)*2
+\backslash
+pi)*(1-x_1)+sin((q_2+1/4)*2
+\backslash
+pi)*x_2)*e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+viin kõik ühe summa sisse:
+\end_layout
+
+\begin_layout Subsubsection
+tagumine pool nulliks
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$sin((q_1+1/4)*2
+\backslash
+pi)*(1-x_1)+sin((q_1+0/4)*2
+\backslash
+pi)*x_2=0
+\backslash
+land 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ sin((q_2+2/4)*2
+\backslash
+pi)*(1-x_1)+sin((q_2+1/4)*2
+\backslash
+pi)*x_2=0$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+sin((q_1+1/4)*2
+\backslash
+pi)*(1-x_1)+sin(q_1*2
+\backslash
+pi)*x_2=0
+\backslash
+land 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+sin((q_2+2/4)*2
+\backslash
+pi)*(1-x_1)+sin((q_2+1/4)*2
+\backslash
+pi)*x_2=0$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+exists_k(k 
+\backslash
+in N 
+\backslash
+land q_1=k/2-arctan((1-x_1)/x_2)/(2
+\backslash
+pi))
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+exists_k(k 
+\backslash
+in N 
+\backslash
+land q_2=k/2+arctan(x_2/(1-x_1))/(2
+\backslash
+pi))
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+exists_k(k 
+\backslash
+in N 
+\backslash
+land q_2=k/2-arctan((1-x_1)/x_2)/(2
+\backslash
+pi)+1/4)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+arctan(x_2/(1-x_1))+arctan((1-x_1)/x_2)=2
+\backslash
+pi/4*sgn((1-x_1)*x_2)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+arctan(x_2/(1-x_1))=-arctan((1-x_1)/x_2)+2
+\backslash
+pi/4*sgn((1-x_1)*x_2)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+exists_k(k 
+\backslash
+in N 
+\backslash
+land q_2=k/2-arctan((1-x_1)/x_2)/(2
+\backslash
+pi)+1/4*sgn((1-x_1)*x_2))
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+q_2=q_1+1/4*sgn((1-x_1)*x_2))+k/2
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+q_2=q_1+1/4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+to 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+zeta(x_1+i*x_2)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}( 
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)/abs(x_2)+(k/2-arctan((1-x_1)/x_2)/(2
+\backslash
+pi))/x_2)*2
+\backslash
+pi})}(sin((x_2*ln(n)/(2
+\backslash
+pi)+1/4)*2
+\backslash
+pi)*n^{-x_1}))
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(-
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)/abs(x_2)+(k/2+arctan(x_2/(1-x_1))/(2
+\backslash
+pi))/x_2)*2
+\backslash
+pi})}(sin((x_2*ln(n)/(2
+\backslash
+pi))*2
+\backslash
+pi)*n^{-x_1}))=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}( 
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)*2
+\backslash
+pi/abs(x_2)+k*2
+\backslash
+pi/2-arctan((1-x_1)/x_2)/x_2)})}(sin(x_2*ln(n)+2
+\backslash
+pi/4)*n^{-x_1}))
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(-
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)*2
+\backslash
+pi/abs(x_2)+k*2
+\backslash
+pi/2+arctan(x_2/(1-x_1))/x_2)})}(sin(x_2*ln(n))*n^{-x_1}))=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}( 
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)*2
+\backslash
+pi/2/abs(x_2)-arctan((1-x_1)/x_2)/x_2)})}(sin(x_2*ln(n)+2
+\backslash
+pi/4)*n^{-x_1}))
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(-
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)*2
+\backslash
+pi/2/abs(x_2)+arctan(x_2/(1-x_1))/x_2)})}(sin(x_2*ln(n))*n^{-x_1}))=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}( 
+\backslash
+sum_{n=1}^{floor(e^{ (floor(M)*2
+\backslash
+pi/2/abs(x_2)-arctan((1-x_1)/x_2)/x_2)})}(sin(x_2*ln(n)+2
+\backslash
+pi/4)*n^{-x_1}))
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(-
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)*2
+\backslash
+pi/2/abs(x_2)+ (-arctan((1-x_1)/x_2)/x_2+2
+\backslash
+pi/4*sgn((1-x_1)*x_2))/x_2 )})}(sin(x_2*ln(n))*n^{-x_1}))=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}( 
+\backslash
+sum_{n=1}^{floor(e^{floor(M)*2
+\backslash
+pi/2/abs(x_2)-arctan((1-x_1)/x_2)/x_2})}(sin(x_2*ln(n)+2
+\backslash
+pi/4)*n^{-x_1}))
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(-
+\backslash
+sum_{n=1}^{floor(e^{floor(M)*2
+\backslash
+pi/2/abs(x_2)-arctan((1-x_1)/x_2)/x_2+2
+\backslash
+pi/4*sgn((1-x_1)*x_2)/x_2})}(sin(x_2*ln(n))*n^{-x_1}))=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Valem zeta13_tagumine_pool_nulliks:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+to 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+zeta(x_1+i*x_2)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}( 
+\backslash
+sum_{n=1}^{floor(e^{      floor(M)/2*2
+\backslash
+pi/abs(x_2)-arctan((1-x_1)/x_2)/x_2})}(sin(x_2*ln(n)+2
+\backslash
+pi/4)*n^{-x_1}))
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(-
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)/2+1/4)*2
+\backslash
+pi/abs(x_2)-arctan((1-x_1)/x_2)/x_2})}(sin(x_2*ln(n))*n^{-x_1}))=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$q_1=q_2$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{q_1}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+to 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)/abs(x_2)+q/x_2)*2
+\backslash
+pi})}(sin(x_2*ln(n)+(2
+\backslash
+pi)*1/4)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin((q+1/4)*2
+\backslash
+pi)*(1-x_1)+sin((q+0/4)*2
+\backslash
+pi)*x_2)*e^{(floor(M)/abs(x_2)+q/x_2)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)/abs(x_2)+q/x_2)*2
+\backslash
+pi})}(sin(x_2*ln(n)+(2
+\backslash
+pi)*2/4)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin((q+2/4)*2
+\backslash
+pi)*(1-x_1)+sin((q+1/4)*2
+\backslash
+pi)*x_2)*e^{(floor(M)/abs(x_2)+q/x_2)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))))
+\end_layout
+
+\begin_layout Plain Layout
+
+$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$q_1=0 
+\backslash
+land q_2=0$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+kui valida, et 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$q_1=0$
+\end_layout
+
+\end_inset
+
+ ja 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$q_2=0$
+\end_layout
+
+\end_inset
+
+.
+ Valem zeta12:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+to 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+zeta(x_1+i*x_2)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{floor(M)*2
+\backslash
+pi/abs(x_2)})}(sin(x_2*ln(n)+1*(2
+\backslash
+pi)/4)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-e^{floor(M)*2
+\backslash
+pi*(1-x_1)/abs(x_2)}*((1-x_1)^2+x_2^2)^{-1}*(1-x_1)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{floor(M)*2
+\backslash
+pi/abs(x_2)})}(sin(x_2*ln(n)+2*(2
+\backslash
+pi)/4)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-e^{floor(M)*2
+\backslash
+pi*(1-x_1)/abs(x_2)}*((1-x_1)^2+x_2^2)^{-1}*x_2
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$q_1=1/8 
+\backslash
+land q_2=-1/8$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+to 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+zeta(x_1+i*x_2)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)/abs(x_2)+1/8/x_2)*2
+\backslash
+pi})}(sin((x_2*ln(n)/(2
+\backslash
+pi)+1/4)*2
+\backslash
+pi)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin((1/8+1/4)*2
+\backslash
+pi)*(1-x_1)+sin((1/8+0/4)*2
+\backslash
+pi)*x_2)*e^{(floor(M)/abs(x_2)+1/8/x_2)*2
+\backslash
+pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)/abs(x_2)-1/8/x_2)*2
+\backslash
+pi})}(sin((x_2*ln(n)/(2
+\backslash
+pi)+2/4)*2
+\backslash
+pi)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin((-1/8+2/4)*2
+\backslash
+pi)*(1-x_1)+sin((-1/8+1/4)*2
+\backslash
+pi)*x_2)*e^{(floor(M)/abs(x_2)-1/8/x_2)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)/abs(x_2)+1/8/x_2)*2
+\backslash
+pi})}(sin((x_2*ln(n)/(2
+\backslash
+pi)+1/4)*2
+\backslash
+pi)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-((1-x_1)+x_2)*e^{(floor(M)/abs(x_2)+1/8/x_2)*2
+\backslash
+pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}*2^{-1/2}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)/abs(x_2)-1/8/x_2)*2
+\backslash
+pi})}(sin((x_2*ln(n)/(2
+\backslash
+pi)+2/4)*2
+\backslash
+pi)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-((1-x_1)+x_2)*e^{(floor(M)/abs(x_2)-1/8/x_2)*2
+\backslash
+pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}*2^{-1/2}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+kirjutades siinuse ja koosiinuse summana
+\end_layout
+
+\begin_layout Paragraph
+kasutatud valem
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$sin(x)=
+\backslash
+sum_{m=0}^{
+\backslash
+infty}(x^{2*m+1}*((2*m+1)!)^{-1}*(-1)^m)$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$cos(x)=
+\backslash
+sum_{m=0}^{
+\backslash
+infty}(x^{2*m}*((2*m)!)^{-1}*(-1)^m)$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+zeta ise
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+to 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+zeta(x_1+i*x_2)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+   (x_1^2-2*x_1+1+x_2^2)^{-1}*
+\backslash
+sum_{n=1}^{
+\backslash
+infty}( 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{m=0}^{
+\backslash
+infty}(ln(n*(2*m+1))*x_2^{2*m+1}*((2*m+1)!)^{-1}*(-1)^m)*x_2*(n-1)*n^{-x_1}+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{m=0}^{
+\backslash
+infty}(ln(n*2*m)*x_2^{2*m}*((2*m)!)^{-1}*(-1)^m)*(x_1^2-x_1-n*x_1+n+x_2^2)*n^{-x
+_1}- 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{m=0}^{
+\backslash
+infty}(ln((n+1)*(2*m+1))*x_2^{2*m+1}*((2*m+1)!)^{-1}*(-1)^m)   *x_2*n*(n+1)^{-x_
+1}- 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{m=0}^{
+\backslash
+infty}(ln((n+1)*2*m)*x_2^{2*m}*((2*m)!)^{-1}*(-1)^m) *(1-x_1)*n*(n+1)^{-x_1}
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*(x_1^2-2*x_1+1+x_2^2)^{-1}*
+\backslash
+sum_{n=1}^{
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+( sin(x_2*ln(n)+1*(2
+\backslash
+pi)/4)*x_2*(n-1) + sin(x_2*ln(n)+2*(2
+\backslash
+pi)/4)*(x_1^2-x_1-n*x_1+n+x_2^2) )
+\backslash
+ *n^{-x_1}-
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+( sin(x_2*ln(n+1)+1*(2
+\backslash
+pi)/4)*x_2 + sin(x_2*ln(n+1)+2*(2
+\backslash
+pi)/4)*(1-x_1) )
+\backslash
+ *n*(n+1)^{-x_1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+=
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+   (x_1^2-2*x_1+1+x_2^2)^{-1}*
+\backslash
+sum_{n=1}^{
+\backslash
+infty}( 
+\backslash
+sum_{m=0}^{
+\backslash
+infty}(x_2^{2*m}*(-1)^m*((2*m)!)^{-1}*( 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ln(n*(2*m+1))*(2*m+1)^{-1}*x_2^2*(n-1)*n^{-x_1}+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ln(n*2*m)*(x_1^2-x_1-n*x_1+n+x_2^2)*n^{-x_1}- 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ln((n+1)*(2*m+1))*(2*m+1)^{-1}*x_2^2*n*(n+1)^{-x_1}- 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ln((n+1)*2*m)*(1-x_1)*n*(n+1)^{-x_1} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)))
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*(x_1^2-2*x_1+1+x_2^2)^{-1}*
+\backslash
+sum_{n=1}^{
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+( sin(x_2*ln(n)+1*(2
+\backslash
+pi)/4)*x_2*(n-1) + sin(x_2*ln(n)+2*(2
+\backslash
+pi)/4)*(x_1^2-x_1-n*x_1+n+x_2^2) )
+\backslash
+ *n^{-x_1}-
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+( sin(x_2*ln(n+1)+1*(2
+\backslash
+pi)/4)*x_2 + sin(x_2*ln(n+1)+2*(2
+\backslash
+pi)/4)*(1-x_1) )
+\backslash
+ *n*(n+1)^{-x_1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+=
+\end_layout
+
+\begin_layout Plain Layout
+
+))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+zetafunktsiooni nullkohad
+\end_layout
+
+\begin_layout Standard
+on võrdsustan zetafunktsiooni avaldisega, mille mujal tuletasin.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{q_1}(
+\backslash
+forall_{q_2}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+land 
+\backslash
+zeta(x_1+i*x_2)=0 
+\backslash
+to
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+\backslash
+pi/x_2})}(sin(x_2*ln(n)+(2
+\backslash
+pi)*1/4)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin((q_1+1/4)*2
+\backslash
+pi)*(1-x_1)+sin((q_1+0/4)*2
+\backslash
+pi)*x_2)*e^{(floor(M)+q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_2)*2
+\backslash
+pi/x_2})}(sin(x_2*ln(n)+(2
+\backslash
+pi)*2/4)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin((q_2+2/4)*2
+\backslash
+pi)*(1-x_1)+sin((q_2+1/4)*2
+\backslash
+pi)*x_2)*e^{(floor(M)+q_2)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+kuna nii reaalosa kui imaginaarosa peavad nullid olema, siis võin imaginnarosa
+ suvalise konstandiga läbi korrutada.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{q_1}(
+\backslash
+forall_{q_2}(
+\backslash
+forall_{Q_1}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+land 
+\backslash
+zeta(x_1+i*x_2)=0 
+\backslash
+to
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Q_1*
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+\backslash
+pi/x_2})}(sin(x_2*ln(n)+(2
+\backslash
+pi)*1/4)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin((q_1+1/4)*2
+\backslash
+pi)*(1-x_1)+sin((q_1+0/4)*2
+\backslash
+pi)*x_2)*e^{(floor(M)+q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_2)*2
+\backslash
+pi/x_2})}(sin(x_2*ln(n)+(2
+\backslash
+pi)*2/4)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin((q_2+2/4)*2
+\backslash
+pi)*(1-x_1)+sin((q_2+1/4)*2
+\backslash
+pi)*x_2)*e^{(floor(M)+q_2)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+viin konsatndi sulguse sisse.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{q_1}(
+\backslash
+forall_{q_2}(
+\backslash
+forall_{Q_1}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+land 
+\backslash
+zeta(x_1+i*x_2)=0 
+\backslash
+to
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Q_1*
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+\backslash
+pi/x_2})}(sin(x_2*ln(n)+(2
+\backslash
+pi)*1/4)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-Q_1*(sin((q_1+1/4)*2
+\backslash
+pi)*(1-x_1)+sin((q_1+0/4)*2
+\backslash
+pi)*x_2)*e^{(floor(M)+q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_2)*2
+\backslash
+pi/x_2})}(sin(x_2*ln(n)+(2
+\backslash
+pi)*2/4)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin((q_2+2/4)*2
+\backslash
+pi)*(1-x_1)+sin((q_2+1/4)*2
+\backslash
+pi)*x_2)*e^{(floor(M)+q_2)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+muudan kirjutan ümber viies ühiseid kordajaid sulguse ette.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{q_1}(
+\backslash
+forall_{q_2}(
+\backslash
+forall_{Q_1}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+land 
+\backslash
+zeta(x_1+i*x_2)=0 
+\backslash
+to
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+\backslash
+pi/x_2})}(Q_1*sin(x_2*ln(n)+(2
+\backslash
+pi)*1/4)*n^{-x_1}+sin(x_2*ln(n)+(2
+\backslash
+pi)*2/4)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-((Q_1*sin((q_1+1/4)*2
+\backslash
+pi)+sin((q_2+2/4)*2
+\backslash
+pi))*(1-x_1)+(Q_1*sin((q_1+0/4)*2
+\backslash
+pi)+sin((q_2+1/4)*2
+\backslash
+pi))*x_2)*e^{(floor(M)+q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+ )=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+siinuse ja koosinuse summa saab ühiseks siinuseks teha nii, et argumendile
+ on midagi liidetud.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{q_1}(
+\backslash
+forall_{Q_1}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+land 
+\backslash
+zeta(x_1+i*x_2)=0 
+\backslash
+to
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+\backslash
+pi/x_2})}(
+\backslash
+sqrt{Q_1^2+1}*-sin(x_2*ln(n)+arctan(-Q_1))*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-((-
+\backslash
+sqrt{Q_1^2+1}*sin(q_1*2
+\backslash
+pi+arctan(-Q_1)))*(1-x_1)+
+\backslash
+sqrt{Q_1^2+1}*sin(q_1*2
+\backslash
+pi+arctan(1/Q_1) )*x_2)
+\backslash
+
+\backslash
+*e^{(floor(M)+q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+ )=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+arctan(-x)=arctan(x)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{q_1}(
+\backslash
+forall_{Q_1}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+land 
+\backslash
+zeta(x_1+i*x_2)=0 
+\backslash
+to
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+\backslash
+pi/x_2})}(-sin(x_2*ln(n)-arctan(Q_1))*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(-sin(q_1*2
+\backslash
+pi-arctan(Q_1))*(1-x_1)+sin(q_1*2
+\backslash
+pi+arctan(1/Q_1))*x_2)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+*e^{(floor(M)+q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+arctan(1/x)=-arctan(x)+sgn(x)*2
+\backslash
+pi/4
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{q_1}(
+\backslash
+forall_{Q_1}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+land 
+\backslash
+zeta(x_1+i*x_2)=0 
+\backslash
+to
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+\backslash
+pi/x_2})}(-sin(x_2*ln(n)-arctan(Q_1))*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(-sin(q_1*2
+\backslash
+pi-arctan(Q_1))*(1-x_1)+sin(q_1*2
+\backslash
+pi-arctan(Q_1)+sgn(Q_1)*2
+\backslash
+pi/4)*x_2)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+*e^{(floor(M)+q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+korrutan -1ega läbi
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{q_1}(
+\backslash
+forall_{Q_1}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+land 
+\backslash
+zeta(x_1+i*x_2)=0 
+\backslash
+to
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+\backslash
+pi/x_2})}(sin(x_2*ln(n)-arctan(Q_1))*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin(q_1*2
+\backslash
+pi-arctan(Q_1))*(1-x_1)-sin(q_1*2
+\backslash
+pi-arctan(Q_1)+sgn(Q_1)*2
+\backslash
+pi/4)*x_2)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+*e^{(floor(M)+q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2pi/4 lahutamine on sama kui 2pi/4 lahutamine ja siis -1'ega läbi korrutamine
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{q_1}(
+\backslash
+forall_{Q_1}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+land 
+\backslash
+zeta(x_1+i*x_2)=0 
+\backslash
+to
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+\backslash
+pi/x_2})}(sin(x_2*ln(n)-arctan(Q_1))*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin(q_1*2
+\backslash
+pi-arctan(Q_1))*(1-x_1)-sin(q_1*2
+\backslash
+pi-arctan(Q_1)+2
+\backslash
+pi/4)*sgn(Q_1)*x_2)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+*e^{(floor(M)+q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+kui 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Q_1$
+\end_layout
+
+\end_inset
+
+ on positiivne, siis sgn(Q_1)=1, kui negatiivne, siis sgn(Q_1)=-1
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{q_1}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(
+\backslash
+forall_{Q_1}(q_1 
+\backslash
+in R 
+\backslash
+land Q_1 
+\backslash
+in R 
+\backslash
+land x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+land 
+\backslash
+zeta(x_1+i*x_2)=0 
+\backslash
+to(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Q_1>0 land(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+\backslash
+pi/x_2})}(sin(x_2*ln(n)-arctan(Q_1))*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin(q_1*2
+\backslash
+pi-arctan(Q_1))*(1-x_1)-sin(q_1*2
+\backslash
+pi-arctan(Q_1)+2
+\backslash
+pi/4)*x_2)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+*e^{(floor(M)+q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lor
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Q_1<0 
+\backslash
+land (
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+\backslash
+pi/x_2})}(sin(x_2*ln(n)-arctan(Q_1))*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin(q_1*2
+\backslash
+pi-arctan(Q_1))*(1-x_1)+sin(q_1*2
+\backslash
+pi-arctan(Q_1)+2
+\backslash
+pi/4)*x_2)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+*e^{(floor(M)+q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+arctan(Q_1) võtab väärtuseid -2pi/4 kuni 2pi/4
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{q_1}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(
+\backslash
+forall_{Q_1}(q_1 
+\backslash
+in R 
+\backslash
+land Q_1 
+\backslash
+in R 
+\backslash
+land x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+land 
+\backslash
+zeta(x_1+i*x_2)=0 
+\backslash
+to(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(Q_1>-2
+\backslash
+pi/4 
+\backslash
+land Q_1<0) 
+\backslash
+land(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+\backslash
+pi/x_2})}(sin(x_2*ln(n)-Q_1)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin(q_1*2
+\backslash
+pi-Q_1)*(1-x_1)-sin(q_1*2
+\backslash
+pi-Q_1+2
+\backslash
+pi/4)*x_2)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+*e^{(floor(M)+q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0 
+\backslash
+lor
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(Q_1>0 
+\backslash
+land Q_1<2
+\backslash
+pi/4) 
+\backslash
+land(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+\backslash
+pi/x_2})}(sin(x_2*ln(n)-Q_1)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin(q_1*2
+\backslash
+pi-Q_1)*(1-x_1)+sin(q_1*2
+\backslash
+pi-Q_1+2
+\backslash
+pi/4)*x_2)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+*e^{(floor(M)+q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ühes kohas Q_1 asemele samanimeline muutuja -Q_1.
+ Teises kohas Q_1 asemele samanimeline muutuja 2
+\backslash
+pi/2-Q_1.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{q_1}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(
+\backslash
+forall_{Q_1}(q_1 
+\backslash
+in R 
+\backslash
+land Q_1 
+\backslash
+in R 
+\backslash
+land x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+land 
+\backslash
+zeta(x_1+i*x_2)=0 
+\backslash
+to(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(Q_1>0 
+\backslash
+land Q_1<2
+\backslash
+pi/4) 
+\backslash
+land(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+\backslash
+pi/x_2})}(sin(x_2*ln(n)+Q_1)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin(q_1*2
+\backslash
+pi+Q_1)*(1-x_1)-sin(q_1*2
+\backslash
+pi+Q_1+2
+\backslash
+pi/4)*x_2)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+*e^{(floor(M)+q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0 
+\backslash
+lor
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(Q_1>2
+\backslash
+pi/4 
+\backslash
+land Q_1<2
+\backslash
+pi/2) 
+\backslash
+land(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+\backslash
+pi/x_2})}(sin(x_2*ln(n)-2
+\backslash
+pi/2+Q_1)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin(q_1*2
+\backslash
+pi-2
+\backslash
+pi/2+Q_1)*(1-x_1)+sin(q_1*2
+\backslash
+pi-2
+\backslash
+pi/2+Q_1+2
+\backslash
+pi/4)*x_2)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+*e^{(floor(M)+q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+arvestan, et sin(x-2pi/2)=-sin(x)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{q_1}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(
+\backslash
+forall_{Q_1}(q_1 
+\backslash
+in R 
+\backslash
+land Q_1 
+\backslash
+in R 
+\backslash
+land x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+land 
+\backslash
+zeta(x_1+i*x_2)=0 
+\backslash
+to(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(Q_1>0 
+\backslash
+land Q_1<2
+\backslash
+pi/4) 
+\backslash
+land(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+\backslash
+pi/x_2})}(sin(x_2*ln(n)+Q_1)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin(q_1*2
+\backslash
+pi+Q_1)*(1-x_1)-sin(q_1*2
+\backslash
+pi+Q_1+2
+\backslash
+pi/4)*x_2)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+*e^{(floor(M)+q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0 
+\backslash
+lor
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(Q_1>2
+\backslash
+pi/4 
+\backslash
+land Q_1<2
+\backslash
+pi/2) 
+\backslash
+land(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+\backslash
+pi/x_2})}(-sin(x_2*ln(n)+Q_1)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(-sin(q_1*2
+\backslash
+pi+Q_1)*(1-x_1)-sin(q_1*2
+\backslash
+pi+Q_1+2
+\backslash
+pi/4)*x_2)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+*e^{(floor(M)+q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Arvestan, et 0*(-1)=0 ja sin(x+2
+\backslash
+pi/2)=-sin(x).
+ Muutuja Q_1 asemele muuutuja Q_1-2
+\backslash
+pi/2.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{q_1}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(
+\backslash
+forall_{Q_1}(q_1 
+\backslash
+in R 
+\backslash
+land Q_1 
+\backslash
+in R 
+\backslash
+land x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+land 
+\backslash
+zeta(x_1+i*x_2)=0 
+\backslash
+to(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(Q_1>0 
+\backslash
+land Q_1<2
+\backslash
+pi/4) 
+\backslash
+land(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+\backslash
+pi/x_2})}(sin(x_2*ln(n)+Q_1)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin(q_1*2
+\backslash
+pi+Q_1)*(1-x_1)-sin(q_1*2
+\backslash
+pi+Q_1+2
+\backslash
+pi/4)*x_2)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+*e^{(floor(M)+q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lor
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(Q_1>2
+\backslash
+pi/4 
+\backslash
+land Q_1<2
+\backslash
+pi/2) 
+\backslash
+land(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+\backslash
+pi/x_2})}(-sin(x_2*ln(n)+Q_1)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(-sin(q_1*2
+\backslash
+pi+Q_1)*(1-x_1)-sin(q_1*2
+\backslash
+pi+Q_1+2
+\backslash
+pi/4)*x_2)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+*e^{(floor(M)+q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lor
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(Q_1>2
+\backslash
+pi/2 
+\backslash
+land Q_1<2
+\backslash
+pi*3/4) 
+\backslash
+land(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+\backslash
+pi/x_2})}(sin(x_2*ln(n)+Q_1)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin(q_1*2
+\backslash
+pi+Q_1)*(1-x_1)-sin(q_1*2
+\backslash
+pi+Q_1+2
+\backslash
+pi/4)*x_2)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+*e^{(floor(M)+q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lor
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(Q_1>2
+\backslash
+pi*3/4 
+\backslash
+land Q_1<2
+\backslash
+pi) 
+\backslash
+land(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+\backslash
+pi/x_2})}(-sin(x_2*ln(n)+Q_1)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(-sin(q_1*2
+\backslash
+pi+Q_1)*(1-x_1)-sin(q_1*2
+\backslash
+pi+Q_1+2
+\backslash
+pi/4)*x_2)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+*e^{(floor(M)+q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+korrutan osad osad -1ega läbi.
+ ja panaen osad kokku.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{q_1}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(
+\backslash
+forall_{Q_1}(q_1 
+\backslash
+in R 
+\backslash
+land Q_1 
+\backslash
+in R 
+\backslash
+land x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+land 
+\backslash
+zeta(x_1+i*x_2)=0 
+\backslash
+to(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(Q_1>0 
+\backslash
+land Q_1<2
+\backslash
+pi/4 
+\backslash
+lor Q_1>2
+\backslash
+pi/2 
+\backslash
+land Q_1<2
+\backslash
+pi*3/4) 
+\backslash
+land(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+\backslash
+pi/x_2})}(sin(x_2*ln(n)+Q_1)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin(q_1*2
+\backslash
+pi+Q_1)*(1-x_1)-sin(q_1*2
+\backslash
+pi+Q_1+2
+\backslash
+pi/4)*x_2)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+*e^{(floor(M)+q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lor
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(Q_1>2
+\backslash
+pi/4 
+\backslash
+land Q_1<2
+\backslash
+pi/2 
+\backslash
+lor Q_1>2
+\backslash
+pi*3/4 
+\backslash
+land Q_1<2
+\backslash
+pi) 
+\backslash
+land(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+\backslash
+pi/x_2})}(sin(x_2*ln(n)+Q_1)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin(q_1*2
+\backslash
+pi+Q_1)*(1-x_1)+sin(q_1*2
+\backslash
+pi+Q_1+2
+\backslash
+pi/4)*x_2)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+*e^{(floor(M)+q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+üheks oskas kokku.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{q_1}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(
+\backslash
+forall_{Q_1}(q_1 
+\backslash
+in R 
+\backslash
+land Q_1 
+\backslash
+in R 
+\backslash
+land x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+land 
+\backslash
+zeta(x_1+i*x_2)=0 
+\backslash
+to(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+\backslash
+pi/x_2})}(sin(x_2*ln(n)+Q_1)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin(q_1*2
+\backslash
+pi+Q_1)*(1-x_1)-sin(q_1*2
+\backslash
+pi+Q_1+2
+\backslash
+pi/4)*sgn(Q_1
+\backslash
+%(2
+\backslash
+pi/2)-2
+\backslash
+pi/4)*x_2)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+*e^{(floor(M)+q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+muutuja Q_1 asemele Q_1/(2
+\backslash
+pi)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{q_1}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(
+\backslash
+forall_{Q_1}(q_1 
+\backslash
+in R 
+\backslash
+land Q_1 
+\backslash
+in R 
+\backslash
+land x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+land 
+\backslash
+zeta(x_1+i*x_2)=0 
+\backslash
+to(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+\backslash
+pi/x_2})}(sin(x_2*ln(n)+Q_1*2
+\backslash
+pi)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin((q_1+Q_1)*2
+\backslash
+pi)*(1-x_1)-sin((q_1+Q_1+1/4)*2
+\backslash
+pi)*((floor(Q_1*4)
+\backslash
+%2)*2-1)*x_2)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+*e^{(floor(M)+q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+kuna Q_1'ele 2
+\backslash
+pi liites...
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{q_1}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(
+\backslash
+forall_{Q_1}(q_1 
+\backslash
+in R 
+\backslash
+land Q_1 
+\backslash
+in R 
+\backslash
+land x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+land 
+\backslash
+zeta(x_1+i*x_2)=0 
+\backslash
+to(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+\backslash
+pi/x_2})}(sin(x_2*ln(n)+Q_1*2
+\backslash
+pi)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin((q_1+Q_1)*2
+\backslash
+pi)*(1-x_1)-sin((q_1+Q_1+1/4)*2
+\backslash
+pi)*((floor(Q_1*4)
+\backslash
+%2)*2-1)*x_2)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+*e^{(floor(M)+q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+land
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+\backslash
+pi/x_2})}(sin(x_2*ln(n)+Q_1*2
+\backslash
+pi)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin((q_1+Q_1)*2
+\backslash
+pi)*(1-x_1)+sin((q_1+Q_1+1/4)*2
+\backslash
+pi)*((floor(Q_1*4)
+\backslash
+%2)*2-1)*x_2)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+*e^{(floor(M)+q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+et see mõlemal juhul 0 oleks sin((q_1+Q_1+1/4)*2
+\backslash
+pi)=0 seega q_1=-1/4-Q_1 või q_1=1/4-Q_1
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(
+\backslash
+forall_{Q_1}(Q_1 
+\backslash
+in R 
+\backslash
+land x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+land 
+\backslash
+zeta(x_1+i*x_2)=0 
+\backslash
+to(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)-1/4-Q_1)*2
+\backslash
+pi/x_2})}(sin(x_2*ln(n)+Q_1*2
+\backslash
+pi)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++(1-x_1)*e^{(floor(M)-1/4-Q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lor
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)+1/4-Q_1)*2
+\backslash
+pi/x_2})}(sin(x_2*ln(n)+Q_1*2
+\backslash
+pi)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(1-x_1)*e^{(floor(M)+1/4-Q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+samahästi võib m'i 2 korda aeglasemalt suurendada.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(
+\backslash
+forall_{Q_1}(Q_1 
+\backslash
+in R 
+\backslash
+land x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+land 
+\backslash
+zeta(x_1+i*x_2)=0 
+\backslash
+to(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)/2+1/4-Q_1)*2
+\backslash
+pi/x_2})}(sin(x_2*ln(n)+Q_1*2
+\backslash
+pi)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(1-x_1)*((floor(M)
+\backslash
+%2)*2-1)*e^{(floor(M)/2+1/4-Q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+muu
+\end_layout
+
+\begin_layout Subsubsection
+c
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\end_layout
+
+\begin_layout Plain Layout
+
+lim_{M
+\backslash
+to 
+\backslash
+infty}(  M*(M+1)^{-x_1} - M^{1-x_1}  )=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+lim_{M
+\backslash
+to 
+\backslash
+infty}(  M*(M+1)^{-x_1} - M*(M+1)^{-x_1}* (M+1)/M  )=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+lim_{M
+\backslash
+to 
+\backslash
+infty}(  M*(M+1)^{-x_1} - M*(M+1)^{-x_1}* (1+1/M)  )=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+lim_{M
+\backslash
+to 
+\backslash
+infty}(  M*(M+1)^{-x_1}*(1-(1+1/M))  )=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+lim_{M
+\backslash
+to 
+\backslash
+infty}(  M*(M+1)^{-x_1}*(-1/M)  )=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+lim_{M
+\backslash
+to 
+\backslash
+infty}(  -(M+1)^{-x_1}  )=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+lim_{M
+\backslash
+to 
+\backslash
+infty}(  
+\backslash
+frac{-1}{(M+1)^{x_1}}  )=
+\backslash
+
+\backslash
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+x_1>0 
+\backslash
+to return(0)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+x_1<=0 
+\backslash
+to return(
+\backslash
+infty)
+\end_layout
+
+\begin_layout Plain Layout
+
+$
+\end_layout
+
+\end_inset
+
+¨
+\end_layout
+
+\begin_layout Subsubsection
+b
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$lim_{M
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(sin(x_2*ln(M+1)+2*(2
+\backslash
+pi)/4)*(1-x_1)+sin(x_2*ln(M+1)+1*(2
+\backslash
+pi)/4)*x_2)*M*(M+1)^{-x_1}*(x_1^2-2*x_1+x_2^2+1)^{-1}-
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(sin(x_2*ln(M+1)+2*(2
+\backslash
+pi)/4)*(1-x_1)+sin(x_2*ln(M+1)+1*(2
+\backslash
+pi)/4)*x_2)*M^{1-x_1}*(x_1^2-2*x_1+x_2^2+1)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+lim_{M
+\backslash
+to 
+\backslash
+infty}((sin(x_2*ln(M+1)+2*(2
+\backslash
+pi)/4)*(1-x_1)+sin(x_2*ln(M+1)+1*(2
+\backslash
+pi)/4)*x_2)*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(M*(M+1)^{-x_1}-M^{1-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+x_1>0 
+\backslash
+to return(0)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+x_1<=0 
+\backslash
+to return(
+\backslash
+infty)
+\end_layout
+
+\begin_layout Plain Layout
+
+$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+a
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$lim_{M
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(sin(x_2*ln(M+1)+2*(2
+\backslash
+pi)/4)*(1-x_1)+sin(x_2*ln(M+1)+1*(2
+\backslash
+pi)/4)*x_2)*M*(M+1)^{-x_1}*(x_1^2-2*x_1+x_2^2+1)^{-1}-
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(sin(x_2*ln(M)+2*(2
+\backslash
+pi)/4)*(1-x_1)+sin(x_2*ln(M)+1*(2
+\backslash
+pi)/4)*x_2)*M^{1-x_1}*(x_1^2-2*x_1+x_2^2+1)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+lim_{M
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(sin(x_2*ln(M+1)+2*(2
+\backslash
+pi)/4)*(1-x_1)+sin(x_2*ln(M+1)+1*(2
+\backslash
+pi)/4)*x_2)*M*(M+1)^{-x_1}-
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(sin(x_2*ln(M)+2*(2
+\backslash
+pi)/4)*(1-x_1)+sin(x_2*ln(M)+1*(2
+\backslash
+pi)/4)*x_2)*M^{1-x_1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=
+\backslash
+
+\backslash
+$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+d
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\end_layout
+
+\begin_layout Plain Layout
+
+lim_{M
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(sin(x_2*ln(M+1)+2*(2
+\backslash
+pi)/4)*(1-x_1)+sin(x_2*ln(M+1)+1*(2
+\backslash
+pi)/4)*x_2)*M^{1-x_1}*(x_1^2-2*x_1+x_2^2+1)^{-1}-
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(sin(x_2*ln(M)+2*(2
+\backslash
+pi)/4)*(1-x_1)+sin(x_2*ln(M)+1*(2
+\backslash
+pi)/4)*x_2)*M^{1-x_1}*(x_1^2-2*x_1+x_2^2+1)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(x_1^2-2*x_1+x_2^2+1)^{-1}*lim_{M
+\backslash
+to 
+\backslash
+infty}(M^{1-x_1}*(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(1-x_1)*(sin(x_2*ln(M+1)+2*(2
+\backslash
+pi)/4)-sin(x_2*ln(M)+2*(2
+\backslash
+pi)/4))+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+x_2*(sin(x_2*ln(M+1)+1*(2
+\backslash
+pi)/4)-sin(x_2*ln(M)+1*(2
+\backslash
+pi)/4))
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(x_1^2-2*x_1+x_2^2+1)^{-1}*lim_{M
+\backslash
+to 
+\backslash
+infty}(M^{1-x_1}*(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(cos(x_2*ln(M+1))-cos(x_2*ln(M)))*x_2-
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(sin(x_2*ln(M+1))-sin(x_2*ln(M)))*(1-x_1)
+\end_layout
+
+\begin_layout Plain Layout
+
+))
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+lim_{M
+\backslash
+to 
+\backslash
+infty}(M^{1-x_1}*(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+abs((cos(x_2*ln(M+1))-cos(x_2*ln(M)))*x_2))+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+abs((sin(x_2*ln(M+1))-sin(x_2*ln(M)))*(1-x_1)))
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+lim_{M
+\backslash
+to 
+\backslash
+infty}(M^{1-x_1}*(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+abs((x_2*ln(M+1)-x_2*ln(M))*x_2)+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+abs((x_2*ln(M+1)-x_2*ln(M))*(1-x_1))
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+lim_{M
+\backslash
+to 
+\backslash
+infty}(M^{1-x_1}*(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+abs((ln(M+1)-ln(M))*x_2^2)+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+abs((ln(M+1)-ln(M))*(1-x_1)*x_2)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+lim_{M
+\backslash
+to 
+\backslash
+infty}(M^{1-x_1}*(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(ln(M+1)-ln(M))*x_2^2+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(ln(M+1)-ln(M))*abs((1-x_1)*x_2)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+lim_{M
+\backslash
+to 
+\backslash
+infty}(M^{1-x_1}*(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(ln(M+1)-ln(M))*(abs(x_2)*(abs(x_2)+abs(1-x_1)))
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+lim_{M
+\backslash
+to 
+\backslash
+infty}( M^{1-x_1}*(ln(M+1)-ln(M))*(abs(x_2)*(abs(x_2)+abs(1-x_1))) )
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+lim_{M
+\backslash
+to 
+\backslash
+infty}( M^{1-x_1}*(ln(M+1)-ln(M)) )
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+lim_{M
+\backslash
+to 
+\backslash
+infty}( M^{-x_1}*
+\backslash
+ (ln(M+1)-ln(M))*M )
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+lim_{M
+\backslash
+to 
+\backslash
+infty}( M^{-x_1} )
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+x_1>0 
+\backslash
+to return
+\backslash
+ 0
+\end_layout
+
+\begin_layout Plain Layout
+
+$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+f
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\end_layout
+
+\begin_layout Plain Layout
+
+ln(M)*x_2=(k*2
+\backslash
+pi)/2 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+M=e^{(k*2
+\backslash
+pi)/(2*x_2)}=e^{
+\backslash
+frac{k*2
+\backslash
+pi}{2*x_2}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+k=2*ln(M)*x_2/(2
+\backslash
+pi)=
+\backslash
+frac{2*ln(M)*x_2}{2
+\backslash
+pi}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+x_2=k*2
+\backslash
+pi/ln(M)/2=
+\backslash
+frac{k*2
+\backslash
+pi}{ln(M)*2}
+\end_layout
+
+\begin_layout Plain Layout
+
+$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+asendus
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$M_{uus}=e^{(floor(M)+q)*2
+\backslash
+pi/x_2}=e^{
+\backslash
+frac{floor(M)*2
+\backslash
+pi}{x_2}}=e^{(floor(M)*2
+\backslash
+pi+
+\backslash
+alpha)/x_2}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+asendus2
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\end_layout
+
+\begin_layout Plain Layout
+
+ln(M)*x_2=(k*2
+\backslash
+pi)+
+\backslash
+alpha 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+M=e^{(k*2
+\backslash
+pi+
+\backslash
+alpha)/(x_2)}=e^{
+\backslash
+frac{k*2
+\backslash
+pi+
+\backslash
+alpha}{x_2}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+k=(ln(M)*x_2-
+\backslash
+alpha)/(2
+\backslash
+pi)=
+\backslash
+frac{ln(M)*x_2-
+\backslash
+alpha}{2
+\backslash
+pi}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+x_2=((k*2
+\backslash
+pi)+
+\backslash
+alpha)/ln(M)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+q=
+\backslash
+alpha/2
+\backslash
+pi
+\end_layout
+
+\begin_layout Plain Layout
+
+$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+g
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$sin(ln(x))=$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_x(x>-1 
+\backslash
+land x<1 
+\backslash
+to
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ln(x+1)=
+\backslash
+sum_{n=1}^
+\backslash
+infty((-1)^{n+1}*n^{-1}*x^n)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+muutuja vahetus x-1
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_x(x>0 
+\backslash
+land x<2 
+\backslash
+to
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ln(x)=
+\backslash
+sum_{n=1}^
+\backslash
+infty((-1)^{n+1}*n^{-1}*(x-1)^n)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+mv 1/x
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_x(x>1/2 
+\backslash
+to
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ln(1/x)=
+\backslash
+sum_{n=1}^
+\backslash
+infty((-1)^{n+1}*n^{-1}*(1/x-1)^n)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+mv summas
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_x(x>1/2 
+\backslash
+to
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ln(1/x)=
+\backslash
+sum_{n=1}^
+\backslash
+infty((-1)^{n+1}*n^{-1}*(1/x-1)^n)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+..
+\end_layout
+
+\begin_layout Subsubsection
+ln maclaurin
+\end_layout
+
+\begin_layout Standard
+https://math.stackexchange.com/questions/585154/taylor-series-for-logx
+\end_layout
+
+\begin_layout Standard
+valem ln_maclaurin:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_x(x>0 
+\backslash
+to
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ln(x)=2*
+\backslash
+sum_{k=0}^
+\backslash
+infty((2*k+1)^{-1}*(x-1)^{2*k+1}*(x+1)^{-2*k-1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+sin(ln(x)) maclaurin
+\end_layout
+
+\begin_layout Standard
+sin:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_x(x 
+\backslash
+in R 
+\backslash
+to
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+sin(x)=
+\backslash
+sum_{k=0}^
+\backslash
+infty((-1)^k*x^{2*k+1}*
+\backslash
+Gamma(2*k+2)^{-1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+sin(y*ln(x)): Valem sin_y_ln_x_maclaurin_3:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_x(x>0 
+\backslash
+to
+\backslash
+
+\backslash
+     sin(y*ln(x))=
+\backslash
+sum_{k_1=0}^
+\backslash
+infty(( 
+\backslash
+sum_{{k_2}=0}^
+\backslash
+infty((2*k_2+1)^{-1}*(x-1)^{2*k_2+1}*(x+1)^{-2*k_2-1}) )^{2*k_1+1}*y^{2*k_1+1}*f
+actorial(2*k_1+1)^{-1}*2^{2*k_1+1}*(-1)^{k_1})
+\backslash
+
+\backslash
+     )$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+kasutan Multinomial theoreemi.
+ Siin on eeldatud, et True'ga korrutamine on nagu 1ega korrutamine ja Falsega
+ korrutamine on nagu 0'iga korrutamine.
+ Valem sin_y_ln_x_multinomial_1:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_x(x>0 
+\backslash
+to
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+sin(y*ln(x))=lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+sum_{k_1=0}^{M-1}(
+\backslash
+sum_{k_2=0}^{(2*k_1+2)^M-1}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+sum_{k_3=0}^{M-1}(
+\backslash
+ floor(k_2/(2*k_1+2)^{k_3})
+\backslash
+%(2*k_1+2)
+\backslash
+ )=2*k_1+1)*
+\backslash
+
+\backslash
+%sulgudega 0
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Pi_{k_3=0}^{M-1}(factorial(
+\backslash
+ floor(k_2/(2*k_1+2)^{k_3})
+\backslash
+%(2*k_1+2)
+\backslash
+ )^{-1}*((2*k_3+1)^{-1}*(x-1)^{2*k_3+1}*(x+1)^{-2*k_3-1})^{floor(k_2/(2*k_1+2)^{
+k_3})
+\backslash
+%(2*k_1+2)} )
+\backslash
+
+\backslash
+%sulgudega 0
+\end_layout
+
+\begin_layout Plain Layout
+
+)*y^{2*k_1+1}*2^{2*k_1+1}*(-1)^{k_1}))
+\backslash
+
+\backslash
+%k1-summa, k2-summa ja lim'i lopusulg sel real.
+\end_layout
+
+\begin_layout Plain Layout
+
+)%forall lopusulg$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+elementide korrutamise asemel võib nende astemed liita:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_x(x>0 
+\backslash
+to sin(y*ln(x))=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+sum_{k_1=0}^{M-1}(
+\backslash
+sum_{k_2=0}^{(2*k_1+2)^M-1}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+sum_{k_3=0}^{M-1}(
+\backslash
+ floor(k_2/(2*k_1+2)^{k_3})
+\backslash
+%(2*k_1+2)
+\backslash
+ )=2*k_1+1)*
+\backslash
+
+\backslash
+%sulgudega 0
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Pi_{k_3=0}^{M-1}(factorial(
+\backslash
+ floor(k_2/(2*k_1+2)^{k_3})
+\backslash
+%(2*k_1+2)
+\backslash
+ )^{-1}*(2*k_3+1)^{-floor(k_2/(2*k_1+2)^{k_3})
+\backslash
+%(2*k_1+2)} )*((x-1)/(x+1))^{
+\backslash
+sum_{k_3=0}^{M-1}((2*k_3+1)*(floor(k_2/(2*k_1+2)^{k_3})
+\backslash
+%(2*k_1+2)))}
+\end_layout
+
+\begin_layout Plain Layout
+
+)*y^{2*k_1+1}*2^{2*k_1+1}*(-1)^{k_1}))
+\backslash
+
+\backslash
+%k1-summa, k2-summa ja lim'i lopusulg sel real.
+\end_layout
+
+\begin_layout Plain Layout
+
+)%forall lopusulg$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+lihtsustan.
+ Valem sin_y_ln_x_multinomial:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_x(x>0 
+\backslash
+to sin(y*ln(x))=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+sum_{k_1=0}^{M-1}(y^{2*k_1+1}*2^{2*k_1+1}*(-1)^{k_1}*
+\backslash
+sum_{k_2=0}^{(2*k_1+2)^M-1}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+sum_{k_3=0}^{M-1}(
+\backslash
+ floor(k_2/(2*k_1+2)^{k_3})
+\backslash
+%(2*k_1+2)
+\backslash
+ )=2*k_1+1)*
+\backslash
+
+\backslash
+%sulgudega 0
+\end_layout
+
+\begin_layout Plain Layout
+
+(x-1)^{ 
+\backslash
+sum_{k_3=0}^{M-1}((2*k_3+1)*(floor(k_2/(2*k_1+2)^{k_3})
+\backslash
+%(2*k_1+2)))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(x+1)^{-
+\backslash
+sum_{k_3=0}^{M-1}((2*k_3+1)*(floor(k_2/(2*k_1+2)^{k_3})
+\backslash
+%(2*k_1+2)))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Pi_{k_3=0}^{M-1}(factorial(
+\backslash
+ floor(k_2/(2*k_1+2)^{k_3})
+\backslash
+%(2*k_1+2)
+\backslash
+ )^{-1}*(2*k_3+1)^{-floor(k_2/(2*k_1+2)^{k_3})
+\backslash
+%(2*k_1+2)} )
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)))
+\backslash
+
+\backslash
+%k1-summa, k2-summa ja lim'i lopusulg sel real.
+\end_layout
+
+\begin_layout Plain Layout
+
+)%forall lopusulg$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+viin teguri sulgude sisse::
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_x(x>0 
+\backslash
+to sin(y*ln(x))=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+sum_{k_1=0}^{M-1}(
+\backslash
+sum_{k_2=0}^{(2*k_1+2)^M-1}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+sum_{k_3=0}^{M-1}(
+\backslash
+ floor(k_2/(2*k_1+2)^{k_3})
+\backslash
+%(2*k_1+2)
+\backslash
+ )=2*k_1+1)*
+\backslash
+
+\backslash
+%sulgudega 0
+\end_layout
+
+\begin_layout Plain Layout
+
+y^{2*k_1+1}*2^{2*k_1+1}*(-1)^{k_1}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(x-1)^{ 
+\backslash
+sum_{k_3=0}^{M-1}((2*k_3+1)*(floor(k_2/(2*k_1+2)^{k_3})
+\backslash
+%(2*k_1+2)))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(x+1)^{-
+\backslash
+sum_{k_3=0}^{M-1}((2*k_3+1)*(floor(k_2/(2*k_1+2)^{k_3})
+\backslash
+%(2*k_1+2)))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Pi_{k_3=0}^{M-1}(factorial(
+\backslash
+ floor(k_2/(2*k_1+2)^{k_3})
+\backslash
+%(2*k_1+2)
+\backslash
+ )^{-1}*(2*k_3+1)^{-floor(k_2/(2*k_1+2)^{k_3})
+\backslash
+%(2*k_1+2)} )
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)))
+\backslash
+
+\backslash
+%k1-summa, k2-summa ja lim'i lopusulg sel real.
+\end_layout
+
+\begin_layout Plain Layout
+
+)%forall lopusulg$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+selle asemel et üle eri n2'e ristsummade summeeridaarvutan lihtsalt n2'e
+ ristsumma.
+ Valem sin_y_ln_x_multinomial_2:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_x(x>0 
+\backslash
+to sin(y*ln(x))=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+sum_{k_1=0}^{(2*M)^M-1}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+sum_{k_2=0}^{M-1}(floor(k_1/(2*M)^{k_2})
+\backslash
+%(2*M))
+\backslash
+%2)*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+sum_{k_2=0}^{M-1}(floor(k_1/(2*M)^{k_2})
+\backslash
+%(2*M))<2*M)*
+\backslash
+
+\backslash
+%sulgudega 0
+\end_layout
+
+\begin_layout Plain Layout
+
+(y*2)^{
+\backslash
+sum_{k_2=0}^{M-1}(floor(k_1/(2*M)^{k_2})
+\backslash
+%(2*M))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(-1)^{(
+\backslash
+sum_{k_2=0}^{M-1}(floor(k_1/(2*M)^{k_2})
+\backslash
+%(2*M))-1)/2}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(x-1)^{ 
+\backslash
+sum_{k_2=0}^{M-1}((2*k_2+1)*(floor(k_1/(2*M)^{k_2})
+\backslash
+%(2*M)))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(x+1)^{-
+\backslash
+sum_{k_2=0}^{M-1}((2*k_2+1)*(floor(k_1/(2*M)^{k_2})
+\backslash
+%(2*M)))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Pi_{k_2=0}^{M-1}(factorial(floor(k_1/(2*M)^{k_2})
+\backslash
+%(2*M))^{-1}*(2*k_2+1)^{-floor(k_1/(2*M)^{k_2})
+\backslash
+%(2*M)} )
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))
+\backslash
+
+\backslash
+%k2-summa ja lim'i lopusulg sel real.
+\end_layout
+
+\begin_layout Plain Layout
+
+)%forall lopusulg$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+kasutan multimomial astendajategenereerimiseks teist valemit 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$v[A]=
+\backslash
+sum_{k_4=0}^{
+\backslash
+infty}(k_2/2^{k_4*M+A}
+\backslash
+%2)$
+\end_layout
+
+\end_inset
+
+.
+ Ehk biti indexi jääk määrab, et mitmenda astendaja bit see on.
+\end_layout
+
+\begin_layout Subsubsection
+cos(ln(x)) maclaurin
+\end_layout
+
+\begin_layout Standard
+cos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_x(x 
+\backslash
+in R 
+\backslash
+to
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+cos(x)=
+\backslash
+sum_{k=0}^
+\backslash
+infty((-1)^k*x^{2*k}*factorial(2*k)^{-1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+cos(y*ln(x)):
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_x(x>0 
+\backslash
+to
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+sin(y*ln(x))=
+\backslash
+sum_{k_1=0}^
+\backslash
+infty((-1)^{k_1}*( 2*
+\backslash
+sum_{{k_2}=0}^
+\backslash
+infty((2*{k_2}+1)^{-1}*(x-1)^{2*{k_2}+1}*(x+1)^{-2*{k_2}-1}) )^{2*k_1}*y^{2*k_1}
+*
+\backslash
+Gamma(2*k_1+1)^{-1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Valem cos_y_ln_x_multinomial:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_x(x>0 
+\backslash
+to cos(y*ln(x))=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+sum_{k_1=0}^{M-1}(y^{2*k_1}*2^{2*k_1}*(-1)^{k_1}*
+\backslash
+sum_{k_2=0}^{(2*k_1+1)^M-1}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+sum_{k_3=0}^{M-1}(
+\backslash
+ floor(k_2/(2*k_1+1)^{k_3})
+\backslash
+%(2*k_1+1)
+\backslash
+ )=2*k_1)*
+\backslash
+
+\backslash
+%sulgudega 0
+\end_layout
+
+\begin_layout Plain Layout
+
+(x-1)^{ 
+\backslash
+sum_{k_3=0}^{M-1}((2*k_3+1)*(floor(k_2/(2*k_1+1)^{k_3})
+\backslash
+%(2*k_1+1)))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(x+1)^{-
+\backslash
+sum_{k_3=0}^{M-1}((2*k_3+1)*(floor(k_2/(2*k_1+1)^{k_3})
+\backslash
+%(2*k_1+1)))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Pi_{k_3=0}^{M-1}(factorial(
+\backslash
+ floor(k_2/(2*k_1+1)^{k_3})
+\backslash
+%(2*k_1+1)
+\backslash
+ )^{-1}*(2*k_3+1)^{-floor(k_2/(2*k_1+1)^{k_3})
+\backslash
+%(2*k_1+1)} )
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)))
+\backslash
+
+\backslash
+%k1-summa, k2-summa ja lim'i lopusulg sel real.
+\end_layout
+
+\begin_layout Plain Layout
+
+)%forall lopusulg$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
