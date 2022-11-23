@@ -2158,6 +2158,44 @@ status open
 
 $
 \backslash
+forall_{q_1}(
+\backslash
+forall_{q_2}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+to 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+zeta(x_1+i*x_2)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
 lim_{M 
 \backslash
 to 
@@ -2295,11 +2333,16 @@ pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}
 
 \begin_layout Plain Layout
 
-)=
+)
 \backslash
 
 \backslash
-$
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))))$
 \end_layout
 
 \end_inset
@@ -2318,6 +2361,44 @@ status open
 \begin_layout Plain Layout
 
 $
+\backslash
+forall_{q_1}(
+\backslash
+forall_{q_2}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+to 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+zeta(x_1+i*x_2)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
 lim_{M 
 \backslash
@@ -2448,11 +2529,16 @@ pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}
 
 \begin_layout Plain Layout
 
-)=
+)
 \backslash
 
 \backslash
-$
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))))$
 \end_layout
 
 \end_inset
@@ -2471,6 +2557,44 @@ status open
 \begin_layout Plain Layout
 
 $
+\backslash
+forall_{q_1}(
+\backslash
+forall_{q_2}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+to 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+zeta(x_1+i*x_2)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
 lim_{M 
 \backslash
@@ -2665,7 +2789,16 @@ pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}
 
 \begin_layout Plain Layout
 
-)$
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))))$
 \end_layout
 
 \end_inset
@@ -2684,6 +2817,44 @@ status open
 \begin_layout Plain Layout
 
 $
+\backslash
+forall_{q_1}(
+\backslash
+forall_{q_2}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+to 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+zeta(x_1+i*x_2)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
 lim_{M 
 \backslash
@@ -2946,7 +3117,16 @@ pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}
 
 \begin_layout Plain Layout
 
-)$
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))))$
 \end_layout
 
 \end_inset
@@ -2966,6 +3146,44 @@ status open
 \begin_layout Plain Layout
 
 $
+\backslash
+forall_{q_1}(
+\backslash
+forall_{q_2}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+to 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+zeta(x_1+i*x_2)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
 lim_{M 
 \backslash
@@ -2997,9 +3215,9 @@ sum_{n_1=0}^{(2*M)^M-1}(
 
 (
 \backslash
-sum_{n_2=0}^{M-1}((floor(n_1/(2*M-1)^{n_2})
+sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 \backslash
-%(2*M-1))+1)
+%(2*M))
 \backslash
 %2)*
 \backslash
@@ -3012,22 +3230,22 @@ sum_{n_2=0}^{M-1}((floor(n_1/(2*M-1)^{n_2})
 
 (
 \backslash
-sum_{n_2=0}^{M-1}(floor(n_1/(2*M-1)^{n_2})
+sum_{k_2=0}^{M-1}(floor(k_1/(2*M-1)^{k_2})
 \backslash
 %(2*M-1))<2*M-1)*
 \backslash
 
 \backslash
-%sulgudega 0
+
 \end_layout
 
 \begin_layout Plain Layout
 
 (y*2)^{
 \backslash
-sum_{n_2=0}^{M-1}(floor(n_1/(2*M-1)^{n_2})
+sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 \backslash
-%(2*M-1))}*
+%(2*M))}*
 \backslash
 
 \backslash
@@ -3038,22 +3256,9 @@ sum_{n_2=0}^{M-1}(floor(n_1/(2*M-1)^{n_2})
 
 (-1)^{
 \backslash
-sum_{n_2=0}^{M-1}(floor(n_1/(2*M-1)^{n_2})
+sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 \backslash
-%(2*M-1))/2}*
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-(n_0-1)^{ 
-\backslash
-sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M-1)^{n_2})
-\backslash
-%(2*M-1)))}*
+%(2*M))/2}*
 \backslash
 
 \backslash
@@ -3062,11 +3267,24 @@ sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M-1)^{n_2})
 
 \begin_layout Plain Layout
 
-(n_0+1)^{-
+(x-1)^{ 
 \backslash
-sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M-1)^{n_2})
+sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})
 \backslash
-%(2*M-1)))}*
+%(2*M)))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(x+1)^{-
+\backslash
+sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})
+\backslash
+%(2*M)))}*
 \backslash
 
 \backslash
@@ -3077,11 +3295,11 @@ sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M-1)^{n_2})
 
 
 \backslash
-Pi_{n_2=0}^{M-1}(factorial(floor(n_1/(2*M-1)^{n_2})
+Pi_{n_2=0}^{M-1}(factorial(floor(n_1/(2*M)^{n_2})
 \backslash
-%(2*M-1))^{-1}*(2*n_2+1)^{-floor(n_1/(2*M-1)^{n_2})
+%(2*M))^{-1}*(2*n_2+1)^{-floor(n_1/(2*M)^{n_2})
 \backslash
-%(2*M-1)} )
+%(2*M)} )
 \backslash
 
 \backslash
@@ -3090,7 +3308,7 @@ Pi_{n_2=0}^{M-1}(factorial(floor(n_1/(2*M-1)^{n_2})
 
 \begin_layout Plain Layout
 
-))/2
+))
 \backslash
 
 \backslash
@@ -3198,7 +3416,7 @@ sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 \backslash
 sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 \backslash
-%(2*M))-1)/2}*
+%(2*M))+3)/2}*
 \backslash
 
 \backslash
@@ -3276,7 +3494,12 @@ pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
 
 \backslash
-$
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))))$
 \end_layout
 
 \end_inset
@@ -3297,6 +3520,44 @@ status open
 \begin_layout Plain Layout
 
 $
+\backslash
+forall_{q_1}(
+\backslash
+forall_{q_2}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+to 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+zeta(x_1+i*x_2)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
 lim_{M 
 \backslash
@@ -3503,7 +3764,7 @@ sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 \backslash
 sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 \backslash
-%(2*M))-1)/2}*
+%(2*M))+3)/2}*
 \backslash
 
 \backslash
@@ -3581,7 +3842,12 @@ pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
 
 \backslash
-$
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))))$
 \end_layout
 
 \end_inset
@@ -3622,6 +3888,44 @@ status open
 \begin_layout Plain Layout
 
 $
+\backslash
+forall_{q_1}(
+\backslash
+forall_{q_2}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+to 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+zeta(x_1+i*x_2)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
 lim_{M 
 \backslash
@@ -3911,7 +4215,12 @@ pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
 
 \backslash
-$
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))))$
 \end_layout
 
 \end_inset
@@ -10396,6 +10705,11 @@ pi)/2
 
 \begin_layout Plain Layout
 
+
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -10414,6 +10728,11 @@ pi}{2*x_2}}
 \end_layout
 
 \begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
 
 \end_layout
 
@@ -10434,6 +10753,11 @@ pi}
 
 \begin_layout Plain Layout
 
+
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -10444,12 +10768,7 @@ pi/ln(M)/2=
 \backslash
 frac{k*2
 \backslash
-pi}{ln(M)*2}
-\end_layout
-
-\begin_layout Plain Layout
-
-$
+pi}{ln(M)*2}$
 \end_layout
 
 \end_inset
@@ -12044,6 +12363,156 @@ Pi_{k_2=0}^{M-1}(factorial(floor(k_1/(2*M-1)^{k_2})
 \begin_layout Plain Layout
 
 ))/2
+\backslash
+
+\backslash
+%k2-summa ja lim'i lopusulg sel real.
+\end_layout
+
+\begin_layout Plain Layout
+
+)%forall lopusulg$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+veel üks valem:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_x(x>0 
+\backslash
+to cos(y*ln(x))=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+sum_{n_1=0}^{(2*M)^M-1}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
+\backslash
+%(2*M))
+\backslash
+%2)*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+sum_{k_2=0}^{M-1}(floor(k_1/(2*M-1)^{k_2})
+\backslash
+%(2*M-1))<2*M-1)*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(y*2)^{
+\backslash
+sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
+\backslash
+%(2*M))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(-1)^{
+\backslash
+sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
+\backslash
+%(2*M))/2}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(x-1)^{ 
+\backslash
+sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})
+\backslash
+%(2*M)))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(x+1)^{-
+\backslash
+sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})
+\backslash
+%(2*M)))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Pi_{n_2=0}^{M-1}(factorial(floor(n_1/(2*M)^{n_2})
+\backslash
+%(2*M))^{-1}*(2*n_2+1)^{-floor(n_1/(2*M)^{n_2})
+\backslash
+%(2*M)} )
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))
 \backslash
 
 \backslash

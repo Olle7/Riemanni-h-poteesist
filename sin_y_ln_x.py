@@ -480,5 +480,7 @@ ln(x)=2*\sum_{k=0}^\infty((2*k+1)^{-1}*(x-1)^{2*k+1}*(x+1)^{-2*k-1})\\
 #print(sin_y_ln_x_multinomial_1(0.5,0.5,6),sin_y_ln_x_multinomial(0.5,0.5,6))
 
 #print(ln_maclaurin(e**4.2642))
-kontrolli_cos_y_ln_x(cos_y_ln_x_multinomial_4_2)
+#kontrolli_cos_y_ln_x(cos_y_ln_x_multinomial_4_2)
 #kontrolli_sin_x(sin_x_maclaurin_optimeeritud)
+
+print(sin_y_ln_x_multinomial_4(1,1))
