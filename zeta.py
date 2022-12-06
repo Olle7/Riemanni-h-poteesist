@@ -1,5 +1,4 @@
-from math import sin,cos,log,pi,e,exp,floor,atan
-
+from math import sin,cos,log,pi,e,exp,floor,atan,factorial
 def sgn(x):
     if x>0:
         return 1
@@ -493,13 +492,316 @@ def zeta13_tagumine_pool_nulliks_optimeeritud(*args, **kwargs):
 
     return(v_Re+1j*v_Im)
 
+def zeta14_tagumine_pool_nulliks_tayloriga(*args, **kwargs):
+    latex=r"""$\forall_{x_1}(\forall_{x_2}(x_1 \in R \land x_2 \in R \land x_1>0 \to \\
+\zeta(x_1+i*x_2)=\\
+\lim_{M \to \infty}( \sum_{n_0=0}^{floor(e^{floor(M)/2*2\pi/abs(x_2)-arctan((1-x_1)/x_2)/x_2})}(\sum_{n_1=0}^{(2*M)^M-1}(\\
+(\sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})\%(2*M))\%2)*\\
+(x_2*2)^{\sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})\%(2*M))}*\\
+(-1)^{\sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})\%(2*M))/2}*\\
+n_0^{\sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})\%(2*M)))}*\\
+(n_0+1)^{-x_1}\\
+(n_0+2)^{-\sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})\%(2*M)))}*\\
+\Pi_{n_2=0}^{M-1}(factorial(floor(n_1/(2*M)^{n_2})\%(2*M))^{-1}*(2*n_2+1)^{-floor(n_1/(2*M)^{n_2})\%(2*M)} )\\
+)))\\
+
++i*\lim_{M \to \infty}(\sum_{n_0=0}^{floor(e^{(floor(M)/2+1/4)*2\pi/abs(x_2)-arctan((1-x_1)/x_2)/x_2})}(\sum_{n_1=0}^{(2*M)^M-1}(\\
+(\sum_{n_2=0}^{M-1}(1+floor(n_1/(2*M)^{n_2})\%(2*M))\%2)*\\
+(x_2*2)^{\sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})\%(2*M))}*\\
+(-1)^{(\sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})\%(2*M))+1)/2}*\\
+n_0^{ \sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})\%(2*M)))}*\\
+(n_0+1)^{-x_1}\\
+(n_0+2)^{-\sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})\%(2*M)))}*\\
+\Pi_{n_2=0}^{M-1}(factorial(floor(n_1/(2*M)^{n_2})\%(2*M))^{-1}*(2*n_2+1)^{-floor(n_1/(2*M)^{n_2})\%(2*M)} )\\
+)))\\
+))%forallide- lopusulud
+$"""
+    if len(args)==1:
+        x_1=args[0].real
+        x_2=args[0].imag
+    elif len(args)==2:
+        x_1=args[0]
+        x_2=args[1]
+    if x_1<=0:
+        raise NotImplementedError
+    if "iteratsioone" in kwargs:
+        soovitud_iteratsioone=kwargs["iteratsioone"]
+    else:
+        soovitud_iteratsioone=20
+        M=max(
+    (log(soovitud_iteratsioone)*abs(x_2)+atan((1-x_1)/x_2)*sgn(x_2))*2/(2*pi),
+    (log(soovitud_iteratsioone)+atan((1-x_1)/x_2)/x_2)*2*abs(x_2)/(2*pi)-1/2
+    )
+    iteratsioone_1=floor(e**(floor(M)/2*2*pi/abs(x_2)-atan((1-x_1)/x_2)/x_2))
+    iteratsioone_2=floor(e**((floor(M)/2+1/4)*2*pi/abs(x_2)-atan((1-x_1)/x_2)/x_2))
+    print("iteratsioone1=",iteratsioone_1)
+    print("iteratsioone2=",iteratsioone_2)
+    s0_real=0
+    assert M>0
+    M=int(M)
+    print(M)
+    for n0 in range(iteratsioone_1):
+        print("n0=",n0)
+        for n1 in range((2*M)**M):
+            #if n1%100000==0:
+            #    print(n1)
+            p=1
+            s2_0=0
+            for n2 in range(M):
+                s2_0+=(n1//(2*M)**n2)%(2*M)
+            p*=(s2_0+1)%2
+            if p==0:
+                continue
+            p*=(x_2*2)**s2_0
+            p*=(-1)**(s2_0/2)
+            s2_1=0
+            for n2 in range(M):
+                s2_1+=(2*n2+1)*(n1//(2*M)**n2)%(2*M)
+            p*=n0**s2_1
+            p*=(n0+1)**(-x_1)
+            p*=(n0+2)**-s2_1
+            for n2 in range(M):
+                p*=factorial((n1//(2*M)**n2)%(2*M))**-1*(2*n2+1)**(-s2_0)
+            s0_real+=p
+    print("real=",s0_real)
+    s0_imag=0
+    for n0 in range(iteratsioone_2):
+        print("n0=", n0)
+        for n1 in range((2*M)**M):
+            p=1
+            s2_0=0
+            for n2 in range(M):
+                s2_0+=(n1//(2*M)**n2)%(2*M)
+            p*=s2_0%2
+            if p==0:
+                continue
+            p*=(x_2*2)**s2_0
+            p*=(-1)**((s2_0+1)/2)
+            s2_1=0
+            for n2 in range(M):
+                s2_1+=(2*n2+1)*(n1//(2*M)**n2)%(2*M)
+            p*=n0**s2_1
+            p*=(n0+1)**-x_1
+            p*=(n0+2)**-s2_1
+            for n2 in range(M):
+                p*=factorial((n1//(2*M)**n2)%(2*M))**-1*(2*n2+1)**(-s2_0)
+            s0_imag+=p
+    return s0_real+1j*s0_imag
+
+def zeta14_tagumine_pool_nulliks_tayloriga_optimeeritud(*args, **kwargs):
+    latex=r"""$\forall_{x_1}(\forall_{x_2}(x_1 \in R \land x_2 \in R \land x_1>0 \to \\
+\zeta(x_1+i*x_2)=\\
+\lim_{M \to \infty}( \sum_{n_0=0}^{floor(e^{floor(M)/2*2\pi/abs(x_2)-arctan((1-x_1)/x_2)/x_2})}(\sum_{n_1=0}^{(2*M)^M-1}(\\
+(\sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})\%(2*M))\%2)*\\
+(x_2*2)^{\sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})\%(2*M))}*\\
+(-1)^{\sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})\%(2*M))/2}*\\
+n_0^{\sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})\%(2*M)))}*\\
+(n_0+1)^{-x_1}\\
+(n_0+2)^{-\sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})\%(2*M)))}*\\
+\Pi_{n_2=0}^{M-1}(factorial(floor(n_1/(2*M)^{n_2})\%(2*M))^{-1}*(2*n_2+1)^{-floor(n_1/(2*M)^{n_2})\%(2*M)} )\\
+)))\\
+
++i*\lim_{M \to \infty}(\sum_{n_0=0}^{floor(e^{(floor(M)/2+1/4)*2\pi/abs(x_2)-arctan((1-x_1)/x_2)/x_2})}(\sum_{n_1=0}^{(2*M)^M-1}(\\
+(\sum_{n_2=0}^{M-1}(1+floor(n_1/(2*M)^{n_2})\%(2*M))\%2)*\\
+(x_2*2)^{\sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})\%(2*M))}*\\
+(-1)^{(\sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})\%(2*M))+1)/2}*\\
+n_0^{ \sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})\%(2*M)))}*\\
+(n_0+1)^{-x_1}\\
+(n_0+2)^{-\sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})\%(2*M)))}*\\
+\Pi_{n_2=0}^{M-1}(factorial(floor(n_1/(2*M)^{n_2})\%(2*M))^{-1}*(2*n_2+1)^{-floor(n_1/(2*M)^{n_2})\%(2*M)} )\\
+)))\\
+))%forallide- lopusulud
+$"""
+    if len(args)==1:
+        x_1=args[0].real
+        x_2=args[0].imag
+    elif len(args)==2:
+        x_1=args[0]
+        x_2=args[1]
+    if x_1<=0:
+        raise NotImplementedError
+    if "iteratsioone" in kwargs:
+        soovitud_iteratsioone=kwargs["iteratsioone"]
+    else:
+        soovitud_iteratsioone=25
+        M=max(
+    (log(soovitud_iteratsioone)*abs(x_2)+atan((1-x_1)/x_2)*sgn(x_2))*2/(2*pi),
+    (log(soovitud_iteratsioone)+atan((1-x_1)/x_2)/x_2)*2*abs(x_2)/(2*pi)-1/2
+    )
+
+    print("M:",M)
+    assert M > 0
+    M = floor(M)
+
+    iteratsioone_1=floor(e**(floor(M)/2*2*pi/abs(x_2)-atan((1-x_1)/x_2)/x_2))
+    iteratsioone_2=floor(e**((floor(M)/2+1/4)*2*pi/abs(x_2)-atan((1-x_1)/x_2)/x_2))
+    print("iteratsioone1=",iteratsioone_1)
+    print("iteratsioone2=",iteratsioone_2)
+    s0_real=0
+    M2=2*M
+    #print("n0=",n0)
+    for n1 in range((2*M)**M):
+        #if n1%100000==0:
+        #    print(n1)
+        p=1
+        s2_0=0
+        s2_1=0
+        for n2 in range(M):
+            k=(n1//M2**n2)%M2
+            s2_0+=k
+            s2_1+=(2*n2+1)*k
+            p/=factorial(k)*(2*n2+1)**s2_0
+        p*=(s2_0+1)%2
+        if p==0:
+            continue
+        p*=(x_2*2)**s2_0
+        p*=(-1)**(s2_0/2)
+        sx=0
+        for n0 in range(1,iteratsioone_1):
+            sx+=(n0+1)**-x_1
+            sx+=(n0/(n0+2))**s2_1
+        p*=sx
+        s0_real+=p
+    print("real=",s0_real)
+        
+    s0_imag=0
+    for n1 in range((2*M)**M):
+        p=1
+        s2_0=0
+        s2_1=0
+        for n2 in range(M):
+            k=(n1//(2*M)**n2)%(2*M)
+            s2_0+=k
+            s2_1+=(2*n2+1)*k
+            p*=factorial(k)**-1*(2*n2+1)**(-s2_0)
+        p*=s2_0%2
+        if p==0:
+            continue
+        p*=(x_2*2)**s2_0
+        p*=(-1)**((s2_0+1)/2)
+        sx=0
+        for n0 in range(iteratsioone_2+1):
+            sx+=(n0+1)**-x_1
+            sx+=(n0/(n0+2))**s2_1
+        p*=sx
+        s0_imag+=p
+    return s0_real+1j*s0_imag
+def cos_y_ln_x_multinomial_5(x,y,M=6):
+    latex=r"""$\forall_x(x>0 \to cos(y*ln(x))=\\
+lim_{M \to \infty}(\sum_{n_1=0}^{(2*M)^M-1}(\\
+(\sum_{n_2=0}^{M-1}(1+floor(n_1/(2*M)^{n_2})\%(2*M))\%2)*\\
+(y*2)^{\sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})\%(2*M))}*\\
+(-1)^{\sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})\%(2*M))/2}*\\
+(x-1)^{ \sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})\%(2*M)))}*\\
+(x+1)^{-\sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})\%(2*M)))}*\\
+\Pi_{n_2=0}^{M-1}(factorial(floor(n_1/(2*M)^{n_2})\%(2*M))^{-1}*(2*n_2+1)^{-floor(n_1/(2*M)^{n_2})\%(2*M)} )\\
+))\\%k2-summa ja lim'i lopusulg sel real.
+)%forall lopusulg$"""
+    s1=0
+    for k1 in range((2*M)**M):
+        p=1
+        s2=0
+        for k2 in range(M):
+            s2+=(k1//(2*M)**k2)%(2*M)
+        p*=(s2+1)%2
+        #p*=s2<2*M
+        if p==0:
+            continue
+        p*=(y*2)**s2
+        #print("s2:",s2)
+        p*=(-1)**(s2/2)
+
+
+        s2=0
+        for k2 in range(M):
+            s2+=(2*k2+1)* ((k1//(2*M)**k2)%(2*M))
+        p*=((x-1)/(x+1))**s2
+
+        for k2 in range(M):
+            p*=factorial((k1//(2*M)**k2)%(2*M))**(-1)*(2*k2+1)**(-((k1//(2*M)**k2)%(2*M)))
+        s1+=p
+    return s1
+def sin_y_ln_x_multinomial_5(x,y,M=5):
+    latex=r"""$\forall_x(x>0 \to sin(y*ln(x))=\\
+lim_{M \to \infty}(\sum_{k_1=0}^{(2*M)^M-1}(\\
+(\sum_{k_2=0}^{M-1}(floor(k_1/(2*M)^{k_2})\%(2*M))\%2)*\\
+(y*2)^{\sum_{k_2=0}^{M-1}(floor(k_1/(2*M)^{k_2})\%(2*M))}*\\
+(-1)^{(\sum_{k_2=0}^{M-1}(floor(k_1/(2*M)^{k_2})\%(2*M))+3)/2}*\\
+(x-1)^{ \sum_{k_2=0}^{M-1}((2*k_2+1)*(floor(k_1/(2*M)^{k_2})\%(2*M)))}*\\
+(x+1)^{-\sum_{k_2=0}^{M-1}((2*k_2+1)*(floor(k_1/(2*M)^{k_2})\%(2*M)))}*\\
+\Pi_{k_2=0}^{M-1}(factorial(floor(k_1/(2*M)^{k_2})\%(2*M))^{-1}*(2*k_2+1)^{-floor(k_1/(2*M)^{k_2})\%(2*M)} )\\
+))\\%k2-summa ja lim'i lopusulg sel real.
+)%forall lopusulg$"""
+    s1=0
+    for k1 in range((2*M)**M):
+        p=1
+        s2=0
+        for k2 in range(M):
+            s2+=(k1//(2*M)**k2)%(2*M)
+        p*=s2%2
+        #p*=s2<2*M
+        if p==0:
+            continue
+        p*=(y*2)**s2
+        #print("s2:",s2)
+        p*=(-1)**((s2+3)/2)
+
+        s2=0
+        for k2 in range(M):
+            s2+=(2*k2+1)* ((k1//(2*M)**k2)%(2*M))
+        p*=((x-1)/(x+1))**s2
+
+        for k2 in range(M):
+            p/=factorial((k1//(2*M)**k2)%(2*M))*(2*k2+1)**((k1//(2*M)**k2)%(2*M))
+        s1+=p
+    return s1
+
+
+def zeta15(*args, **kwargs):
+
+    if len(args)==1:
+        x_1=args[0].real
+        x_2=args[0].imag
+    elif len(args)==2:
+        x_1=args[0]
+        x_2=args[1]
+    if x_1<=0:
+        raise NotImplementedError
+    if "iteratsioone" in kwargs:
+        iteratsioone=kwargs["iteratsioone"]
+    else:
+        iteratsioone=43
+
+    #M = (log(iteratsioone) * abs(x_2)) / (2 * pi) * 2 - max(q_1, q_2) / pi#vana
+
+    M=max(
+    (log(iteratsioone)*abs(x_2)+atan((1-x_1)/x_2)*sgn(x_2))*2/(2*pi),
+    (log(iteratsioone)+atan((1-x_1)/x_2)/x_2)*2*abs(x_2)/(2*pi)-1/2
+    )
+    iteratsioone_1=floor(e**(floor(M)/2*2*pi/abs(x_2)-atan((1-x_1)/x_2)/x_2))
+    iteratsioone_2=floor(e**((floor(M)/2+1/4)*2*pi/abs(x_2)-atan((1-x_1)/x_2)/x_2))
+
+    print("M:",M,"; iteratsioone_1:",iteratsioone_1,"; iteratsioone_2:",iteratsioone_2)
+
+    v_Re=0
+    for n in range(1,iteratsioone_1+1):
+        print(cos_y_ln_x_multinomial_4_2(n, x_2), cos(x_2 * log(n)))
+        #v_Re+=cos_y_ln_x_multinomial_5(n,x_2)*n**(-x_1)
+        v_Re+=cos(x_2*log(n))*n**(-x_1)
+    v_Im=0
+    for n in range(1,iteratsioone_2+1):
+        #print(sin_y_ln_x_multinomial_5(n,x_2),sin(x_2*log(n)))
+        #v_Im+=sin_y_ln_x_multinomial_5(n,x_2)*n**(-x_1)
+        v_Im+=sin(x_2*log(n))*n**(-x_1)
+
+    return(v_Re-1j*v_Im)
+
 def suhted(z):
     return zeta5(z.real,z.imag).real / zeta1_Dirichlet_series_Wikipediast(z).real, zeta5(z.real, z.imag).imag / zeta1_Dirichlet_series_Wikipediast(z).imag
 
 #print(zeta1(1-2j,iteratsioone=10000))
 #input()
 #print(zeta6(3.54+5.21j))z
-
 
 
 #print(suhted(4+1j))
@@ -523,5 +825,5 @@ def test(zeta=zeta2_reaalosa_ja_imaginaarosa_eraldatud):
     for zeta_argument,zeta_väärtus in zeta_väärtused.items():
         vastus=zeta(zeta_argument)
         print("jagatised:",vastus.real/zeta_väärtus.real,vastus.imag/zeta_väärtus.imag,"vahed:",vastus.real-zeta_väärtus.real,vastus.imag-zeta_väärtus.imag)
-
+print(77)
 test(zeta13_tagumine_pool_nulliks)

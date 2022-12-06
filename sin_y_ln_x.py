@@ -264,7 +264,7 @@ lim_{M \to \infty}(\sum_{k_1=0}^{(2*M)^M-1}(\\
 (x-1)^{ \sum_{k_2=0}^{M-1}((2*k_2+1)*(floor(k_1/(2*M)^{k_2})\%(2*M)))}*\\
 (x+1)^{-\sum_{k_2=0}^{M-1}((2*k_2+1)*(floor(k_1/(2*M)^{k_2})\%(2*M)))}*\\
 \Pi_{k_2=0}^{M-1}(factorial(floor(k_1/(2*M)^{k_2})\%(2*M))^{-1}*(2*k_2+1)^{-floor(k_1/(2*M)^{k_2})\%(2*M)} )\\
-))\\%k2-summa ja lim'i lopusulg sel real.
+))\\%k1-summa ja lim'i lopusulg sel real.
 )%forall lopusulg$"""
     s1=0
     for k1 in range((2*M)**M):
@@ -290,16 +290,16 @@ lim_{M \to \infty}(\sum_{k_1=0}^{(2*M)^M-1}(\\
             p*=factorial((k1//(2*M)**k2)%(2*M))**(-1)*(2*k2+1)**(-((k1//(2*M)**k2)%(2*M)))
         s1+=p
     return s1
-def cos_y_ln_x_multinomial_4_2(x,y,M=6):
+def cos_y_ln_x_multinomial_4_2(x,y,M=5):
     latex=r"""$\forall_x(x>0 \to cos(y*ln(x))=\\
-lim_{M \to \infty}(\sum_{k_1=0}^{(2*M)^M-1}(\\
-(\sum_{k_2=0}^{M-1}(floor(k_1/(2*M)^{k_2})\%(2*M))\%2)*\\
-(y*2)^{\sum_{k_2=0}^{M-1}(floor(k_1/(2*M)^{k_2})\%(2*M))}*\\
-(-1)^{\sum_{k_2=0}^{M-1}(floor(k_1/(2*M)^{k_2})\%(2*M))/2}*\\
-(x-1)^{ \sum_{k_2=0}^{M-1}((2*k_2+1)*(floor(k_1/(2*M)^{k_2})\%(2*M)))}*\\
-(x+1)^{-\sum_{k_2=0}^{M-1}((2*k_2+1)*(floor(k_1/(2*M)^{k_2})\%(2*M)))}*\\
-\Pi_{k_2=0}^{M-1}(factorial(floor(k_1/(2*M)^{k_2})\%(2*M))^{-1}*(2*k_2+1)^{-floor(k_1/(2*M)^{k_2})\%(2*M)} )\\
-))\\%k2-summa ja lim'i lopusulg sel real.
+lim_{M \to \infty}(\sum_{n_1=0}^{(2*M)^M-1}(\\
+(\sum_{n_2=0}^{M-1}(1+floor(n_1/(2*M)^{n_2})\%(2*M))\%2)*\\
+(y*2)^{\sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})\%(2*M))}*\\
+(-1)^{\sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})\%(2*M))/2}*\\
+(x-1)^{ \sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})\%(2*M)))}*\\
+(x+1)^{-\sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})\%(2*M)))}*\\
+\Pi_{n_2=0}^{M-1}(factorial(floor(n_1/(2*M)^{n_2})\%(2*M))^{-1}*(2*n_2+1)^{-floor(n_1/(2*M)^{n_2})\%(2*M)} )\\
+))\\%n1-summa ja lim'i lopusulg sel real.
 )%forall lopusulg$"""
     s1=0
     for k1 in range((2*M)**M):
@@ -313,7 +313,10 @@ lim_{M \to \infty}(\sum_{k_1=0}^{(2*M)^M-1}(\\
             continue
         p*=(y*2)**s2
         #print("s2:",s2)
-        p*=(-1)**(s2/2)
+        #input(type(p))
+        assert type(s2)==int and s2>=0
+        p*=(-1)**(s2//2)
+
 
         s2=0
         for k2 in range(M):
@@ -438,15 +441,23 @@ def kontrolli_sin_y_ln_x(sin_y_ln_x_maclaurin_funktsioon):
         vastus=sin_y_ln_x_maclaurin_funktsioon(x,y)
         print(õige-vastus,"vastus:",vastus,"; õige:",õige,"; x:",x,"; y:",y)
 
-def kontrolli_cos_y_ln_x(sin_y_ln_x_maclaurin_funktsioon):
-    for x_y in [(2.845902,1),(1,2),(4,2),(2,3),(0.234,1),(3.232,0.3),(e**pi,3),(0.4242,0.3421),(1.1352,0.724241)]:
+def kontrolli_cos_y_ln_x(sin_y_ln_x_maclaurin_funktsioon,M=None):
+    for x_y in [(1,3),(3,3),(10,3),(20,3),(40,3),(80,3),(111,3)]:
         x,y=x_y[0],x_y[1]
         õige=cos(y*log(x))
-        vastus=sin_y_ln_x_maclaurin_funktsioon(x,y)
+        try:
+            if M==None:
+                vastus=sin_y_ln_x_maclaurin_funktsioon(x,y)
+            else:
+                vastus=sin_y_ln_x_maclaurin_funktsioon(x,y,M=M)
+        except Exception as vastus:
+            raise vastus
+            print("vastus:",vastus,"; õige:",õige,"; x:",x,"; y:",y)
+            return
         print(õige-vastus,"vastus:",vastus,"; õige:",õige,"; x:",x,"; y:",y)
 
 def kontrolli_sin_x(sin_x):
-    for x in [1,2,3,pi,2*pi,3.1,-0.4,0.243]:
+    for x in [1,2,3,pi,2*pi,3.1,-0.4,0.243,10,60]:
         õige=sin(x)
         vastus=sin_x(x)
         print(õige-vastus,"vastus:",vastus,"; õige:",õige,"; x:",x)
@@ -480,7 +491,11 @@ ln(x)=2*\sum_{k=0}^\infty((2*k+1)^{-1}*(x-1)^{2*k+1}*(x+1)^{-2*k-1})\\
 #print(sin_y_ln_x_multinomial_1(0.5,0.5,6),sin_y_ln_x_multinomial(0.5,0.5,6))
 
 #print(ln_maclaurin(e**4.2642))
+#print("4_2:")
 #kontrolli_cos_y_ln_x(cos_y_ln_x_multinomial_4_2)
+#print("2:")
+#kontrolli_cos_y_ln_x(cos_y_ln_x_multinomial_2)
+print(111)
 #kontrolli_sin_x(sin_x_maclaurin_optimeeritud)
 
-print(sin_y_ln_x_multinomial_4(1,1))
+print(cos_y_ln_x_multinomial_4_2(1,2))

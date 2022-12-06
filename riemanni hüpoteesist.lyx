@@ -94,6 +94,10 @@
 Riemanni hüpoteesist
 \end_layout
 
+\begin_layout Author
+Olger Männik
+\end_layout
+
 \begin_layout Part
 hüpotees
 \end_layout
@@ -3933,9 +3937,18 @@ to
 \backslash
 infty}(
 \backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
 sum_{n_0=0}^{floor(e^{(floor(M)/abs(x_2)+q_1/x_2)*2
 \backslash
-pi})}(
+pi})-1}(
 \backslash
 sum_{n_1=0}^{(2*M)^M-1}(
 \backslash
@@ -3948,7 +3961,7 @@ sum_{n_1=0}^{(2*M)^M-1}(
 
 (
 \backslash
-sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
+sum_{n_2=0}^{M-1}(1+floor(n_1/(2*M)^{n_2})
 \backslash
 %(2*M))
 \backslash
@@ -3987,7 +4000,7 @@ sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 
 \begin_layout Plain Layout
 
-n_0^{ 
+n_0^{
 \backslash
 sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})
 \backslash
@@ -4000,7 +4013,11 @@ sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})
 
 \begin_layout Plain Layout
 
-(n_0+1)^{-x_1}
+(n_0+1)^{-x_1}*
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -4085,7 +4102,7 @@ infty}(
 \backslash
 sum_{n_0=0}^{floor(e^{(floor(M)/abs(x_2)+q_2/x_2)*2
 \backslash
-pi})}(
+pi})-1}(
 \backslash
 sum_{n_1=0}^{(2*M)^M-1}(
 \backslash
@@ -4137,7 +4154,7 @@ sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 
 \begin_layout Plain Layout
 
-n_0^{ 
+n_0^{
 \backslash
 sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})
 \backslash
@@ -4150,7 +4167,7 @@ sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})
 
 \begin_layout Plain Layout
 
-(n_0+1)^{-x_1}*}}
+(n_0+1)^{-x_1}*
 \backslash
 
 \backslash
@@ -4220,7 +4237,774 @@ pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}
 
 \begin_layout Plain Layout
 
-))))$
+))))%q1-,q2-,x_1-,x_2-foarallide lopusulud sel real$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+lihtsustan viies n0-summa n1-summa sisse.
+ ja muudan summade indekseid.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{q_1}(
+\backslash
+forall_{q_2}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+to 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+zeta(x_1+i*x_2)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n_0=0}^{(2*M)^M-1}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+sum_{n_1=0}^{M-1}(1+floor(n_0/(2*M)^{n_1})
+\backslash
+%(2*M))
+\backslash
+%2)*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(x_2*2)^{
+\backslash
+sum_{n_1=0}^{M-1}(floor(n_0/(2*M)^{n_1})
+\backslash
+%(2*M))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(-1)^{
+\backslash
+sum_{n_1=0}^{M-1}(floor(n_0/(2*M)^{n_1})
+\backslash
+%(2*M))/2}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n_1=0}^{floor(e^{(floor(M)/abs(x_2)+q_1/x_2)*2
+\backslash
+pi})-1}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+n_1^{
+\backslash
+sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_0/(2*M)^{n_2})
+\backslash
+%(2*M)))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(n_1+1)^{-x_1}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(n_1+2)^{-
+\backslash
+sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_0/(2*M)^{n_2})
+\backslash
+%(2*M)))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Pi_{n_1=0}^{M-1}(factorial(floor(n_0/(2*M)^{n_1})
+\backslash
+%(2*M))^{-1}*(2*n_1+1)^{-floor(n_0/(2*M)^{n_1})
+\backslash
+%(2*M)} )
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin((q_1+1/4)*2
+\backslash
+pi)*(1-x_1)+sin((q_1+0/4)*2
+\backslash
+pi)*x_2)*e^{(floor(M)/abs(x_2)+q_1/x_2)*2
+\backslash
+pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n_0=0}^{(2*M)^M-1}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+sum_{n_1=0}^{M-1}(floor(n_0/(2*M)^{n_1})
+\backslash
+%(2*M))
+\backslash
+%2)*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(x_2*2)^{
+\backslash
+sum_{n_1=0}^{M-1}(floor(n_0/(2*M)^{n_1})
+\backslash
+%(2*M))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(-1)^{(
+\backslash
+sum_{n_1=0}^{M-1}(floor(n_0/(2*M)^{n_1})
+\backslash
+%(2*M))+3)/2}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n_1=0}^{floor(e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi})-1}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+n_1^{
+\backslash
+sum_{n_2=2}^{M-1}((2*n_2+1)*(floor(n_0/(2*M)^{n_2})
+\backslash
+%(2*M)))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(n_1+1)^{-x_1}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(n_1+2)^{-
+\backslash
+sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_0/(2*M)^{n_2})
+\backslash
+%(2*M)))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Pi_{n_1=0}^{M-1}(factorial(floor(n_0/(2*M)^{n_1})
+\backslash
+%(2*M))^{-1}*(2*n_1+1)^{-floor(n_0/(2*M)^{n_1})
+\backslash
+%(2*M)} )
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin((q_2+2/4)*2
+\backslash
+pi)*(1-x_1)+sin((q_2+1/4)*2
+\backslash
+pi)*x_2)*e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))))%q1-,q2-,x_1-,x_2-foarallide lopusulud sel real$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+lihtsustan n1-summa(vana n0-summa) sees olevat osa:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{q_1}(
+\backslash
+forall_{q_2}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}(x_1 
+\backslash
+in R 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_1>0 
+\backslash
+to 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+zeta(x_1+i*x_2)=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n_0=0}^{(2*M)^M-1}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+sum_{n_1=0}^{M-1}(1+floor(n_0/(2*M)^{n_1})
+\backslash
+%(2*M))
+\backslash
+%2)*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(x_2*2)^{
+\backslash
+sum_{n_1=0}^{M-1}(floor(n_0/(2*M)^{n_1})
+\backslash
+%(2*M))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(-1)^{
+\backslash
+sum_{n_1=0}^{M-1}(floor(n_0/(2*M)^{n_1})
+\backslash
+%(2*M))/2}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n_1=2}^{floor(e^{(floor(M)/abs(x_2)+q_1/x_2)*2
+\backslash
+pi})+1}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(1-2/n_1)^{
+\backslash
+sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_0/(2*M)^{n_2})
+\backslash
+%(2*M)))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(n_1-1)^{-x_1}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Pi_{n_1=0}^{M-1}(factorial(floor(n_0/(2*M)^{n_1})
+\backslash
+%(2*M))^{-1}*(2*n_1+1)^{-floor(n_0/(2*M)^{n_1})
+\backslash
+%(2*M)} )
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin((q_1+1/4)*2
+\backslash
+pi)*(1-x_1)+sin((q_1+0/4)*2
+\backslash
+pi)*x_2)*e^{(floor(M)/abs(x_2)+q_1/x_2)*2
+\backslash
+pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
++i*
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n_0=0}^{(2*M)^M-1}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+sum_{n_1=0}^{M-1}(floor(n_0/(2*M)^{n_1})
+\backslash
+%(2*M))
+\backslash
+%2)*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(x_2*2)^{
+\backslash
+sum_{n_1=0}^{M-1}(floor(n_0/(2*M)^{n_1})
+\backslash
+%(2*M))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(-1)^{(
+\backslash
+sum_{n_1=0}^{M-1}(floor(n_0/(2*M)^{n_1})
+\backslash
+%(2*M))+3)/2}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n_1=2}^{floor(e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi})+1}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(1-2/n_1)^{
+\backslash
+sum_{n_2=2}^{M-1}((2*n_2+1)*(floor(n_0/(2*M)^{n_2})
+\backslash
+%(2*M)))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(n_1-1)^{-x_1}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Pi_{n_1=0}^{M-1}(factorial(floor(n_0/(2*M)^{n_1})
+\backslash
+%(2*M))^{-1}*(2*n_1+1)^{-floor(n_0/(2*M)^{n_1})
+\backslash
+%(2*M)} )
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-(sin((q_2+2/4)*2
+\backslash
+pi)*(1-x_1)+sin((q_2+1/4)*2
+\backslash
+pi)*x_2)*e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))))%q1-,q2-,x_1-,x_2-foarallide lopusulud sel real$
 \end_layout
 
 \end_inset
@@ -4879,7 +5663,12 @@ $
 \end_layout
 
 \begin_layout Standard
-asendan siinuse ja logaritmi vastavate Taylori ridadega:
+asendan siinuse ja logaritmi vastavate Taylori ridadega.
+\end_layout
+
+\begin_layout Standard
+valem zeta14_tagumine_pool_nulliks_tayloriga(ei suutnud kontrollida, aga
+ vb sest arvutusvõime piiratuse tõttu ei saanud piidsavaölt suurt Mi vsalida):
 \end_layout
 
 \begin_layout Standard
@@ -4943,9 +5732,9 @@ sum_{n_1=0}^{(2*M)^M-1}(
 
 \begin_layout Plain Layout
 
-(
+
 \backslash
-sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
+sum_{n_2=0}^{M-1}(1+floor(n_1/(2*M)^{n_2})
 \backslash
 %(2*M))
 \backslash
@@ -4997,7 +5786,7 @@ sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})
 
 \begin_layout Plain Layout
 
-(n_0+1)^{-x_1}
+(n_0+1)^{-x_1}*
 \backslash
 
 \backslash
@@ -5038,7 +5827,7 @@ Pi_{n_2=0}^{M-1}(factorial(floor(n_1/(2*M)^{n_2})
 \backslash
 
 \backslash
-
+%n1-summa, n0-summa ja lim lopusulg sel real.
 \end_layout
 
 \begin_layout Plain Layout
@@ -5068,7 +5857,7 @@ sum_{n_1=0}^{(2*M)^M-1}(
 
 \begin_layout Plain Layout
 
-(
+
 \backslash
 sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 \backslash
@@ -5109,7 +5898,7 @@ sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 
 \begin_layout Plain Layout
 
-n_0^{ 
+n_0^{
 \backslash
 sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})
 \backslash
@@ -5122,7 +5911,7 @@ sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})
 
 \begin_layout Plain Layout
 
-(n_0+1)^{-x_1}
+(n_0+1)^{-x_1}*
 \backslash
 
 \backslash
@@ -5163,17 +5952,16 @@ Pi_{n_2=0}^{M-1}(factorial(floor(n_1/(2*M)^{n_2})
 \backslash
 
 \backslash
+%n1-summa, n0-summa ja lim lopusulg sel real.
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
 \begin_layout Plain Layout
 
-))%forallide- lopusulud
-\end_layout
-
-\begin_layout Plain Layout
-
-$
+))%foarallide lõpusulud sel real$
 \end_layout
 
 \end_inset
@@ -11974,7 +12762,7 @@ Pi_{k_2=0}^{M-1}(factorial(floor(k_1/(2*M)^{k_2})
 \backslash
 
 \backslash
-%k2-summa ja lim'i lopusulg sel real.
+%k1-summa ja lim'i lopusulg sel real.
 \end_layout
 
 \begin_layout Plain Layout
@@ -12569,7 +13357,7 @@ sum_{n_1=0}^{(2*M)^M-1}(
 
 (
 \backslash
-sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
+sum_{n_2=0}^{M-1}(1+floor(n_1/(2*M)^{n_2})
 \backslash
 %(2*M))
 \backslash
@@ -12653,7 +13441,7 @@ Pi_{n_2=0}^{M-1}(factorial(floor(n_1/(2*M)^{n_2})
 \backslash
 
 \backslash
-%k2-summa ja lim'i lopusulg sel real.
+%n1-summa ja lim'i lopusulg sel real.
 \end_layout
 
 \begin_layout Plain Layout
@@ -12664,6 +13452,288 @@ Pi_{n_2=0}^{M-1}(factorial(floor(n_1/(2*M)^{n_2})
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsubsection
+sisemine summa
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$A=
+\backslash
+sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_0/(2*M)^{n_2})
+\backslash
+%(2*M)))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+_
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sum_{n_1=0}^{floor(e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi})-1}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+n_1^{A}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(n_1+1)^{-x_1}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(n_1+2)^{-A}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+$
+\end_layout
+
+\end_inset
+
+kasutan binomial valemit:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_n(
+\backslash
+forall_a(
+\backslash
+forall_b((a+b)^n=
+\backslash
+sum_{k=0}^
+\backslash
+infty( faktorial(n)*faktorial(k)^{-1}*faktorial(n-k)^{-1}*a^k*b^{n-k})$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+saadud tulemus:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sum_{n_1=0}^{floor(e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi})-1}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{k=0}^
+\backslash
+infty( faktorial(-x_1)*faktorial(k)^{-1}*faktorial(-x_1-k)^{-1}*n_1^{k+A})*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{k=0}^
+\backslash
+infty( faktorial(-A)*faktorial(k)^{-1}*faktorial(-A-k)^{-1}*n_1^k*2^{-A-k})*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+panen 1 summa 2 sisse:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sum_{n_1=0}^{floor(e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi})-1}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{k_1=0}^
+\backslash
+infty(
+\backslash
+sum_{k_2=0}^
+\backslash
+infty( faktorial(-x_1)*faktorial(k_1)^{-1}*faktorial(-x_1-k_1)^{-1}*n_1^{k_1+A}*
+faktorial(-A)*faktorial(k_2)^{-1}*faktorial(-A-k_2)^{-1}*n_1^{k_2}*2^{-A-k_2}
+ ))*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\backslash
+
+\backslash
+$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+lihtsustan seest ja viin n1 summa sisse:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{k_1=0}^
+\backslash
+infty(
+\backslash
+sum_{k_2=0}^
+\backslash
+infty( faktorial(-x_1)*faktorial(k_1)^{-1}*faktorial(-x_1-k_1)^{-1}*faktorial(-A
+)*faktorial(k_2)^{-1}*faktorial(-A-k_2)^{-1}*2^{-A-k_2}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n_1=0}^{floor(e^{(floor(M)/abs(x_2)+q_2/x_2)*2
+\backslash
+pi})-1}(n_1^{k_1+k_2+A})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))
+\backslash
+
+\backslash
+$
+\end_layout
+
+\end_inset
+
+kasutan
 \end_layout
 
 \end_body
