@@ -17,7 +17,7 @@ def zeta1_Dirichlet_series_Wikipediast(z, iteratsioone=10000):
     return s*(z-1)**-1
 
 #print(zeta1(3+5.5j))
-default_iteratsioone=10**6*5
+default_iteratsioone=10**6*8
 
 
 
@@ -416,17 +416,20 @@ $"""
         x_2=args[1]
     if x_1<=0:
         raise NotImplementedError
-    if "iteratsioone" in kwargs:
-        iteratsioone=kwargs["iteratsioone"]
+    if "M" in kwargs:
+        M=kwargs["M"]
     else:
-        iteratsioone=default_iteratsioone
+        if "iteratsioone" in kwargs:
+            iteratsioone=kwargs["iteratsioone"]
+        else:
+            iteratsioone=default_iteratsioone
 
-    #M = (log(iteratsioone) * abs(x_2)) / (2 * pi) * 2 - max(q_1, q_2) / pi#vana
+        #M = (log(iteratsioone) * abs(x_2)) / (2 * pi) * 2 - max(q_1, q_2) / pi#vana
 
-    M=max(
-    (log(iteratsioone)*abs(x_2)+atan((1-x_1)/x_2)*sgn(x_2))*2/(2*pi),
-    (log(iteratsioone)+atan((1-x_1)/x_2)/x_2)*2*abs(x_2)/(2*pi)-1/2
-    )
+        M=max(
+        (log(iteratsioone)*abs(x_2)+atan((1-x_1)/x_2)*sgn(x_2))*2/(2*pi),
+        (log(iteratsioone)+atan((1-x_1)/x_2)/x_2)*2*abs(x_2)/(2*pi)-1/2
+        )
     iteratsioone_1=floor(e**(floor(M)/2*2*pi/abs(x_2)-atan((1-x_1)/x_2)/x_2))
     iteratsioone_2=floor(e**((floor(M)/2+1/4)*2*pi/abs(x_2)-atan((1-x_1)/x_2)/x_2))
 
@@ -454,6 +457,59 @@ def zeta13_tagumine_pool_nulliks_optimeeritud(*args, **kwargs):
         x_2=args[1]
     if x_1<=0:
         raise NotImplementedError
+    q_1 = -atan((1 - x_1) / x_2)
+    # q_2=+atan(x_2/(1-x_1))
+    q_2 = q_1 + 1 / 4 * sgn((1 - x_1) * x_2) * 2 * pi
+    # print("q_1-q_2=",q_1-q_2)
+    if "M" in kwargs:
+        M=kwargs["M"]
+    else:
+        if "iteratsioone" in kwargs:
+            iteratsioone=kwargs["iteratsioone"]
+        else:
+            iteratsioone=default_iteratsioone
+
+        M=(log(iteratsioone)*x_2)/(2*pi)*2-max(q_1,q_2)/pi
+
+    iteratsioone_1=floor(e**((floor(M)*pi+q_1)/x_2))
+    iteratsioone_2=floor(e**((floor(M)*pi+q_2)/x_2))
+
+    print("M:",M,"; iteratsioone_1:",iteratsioone_1,"; iteratsioone_2:",iteratsioone_2)
+
+    v_Re=0
+    #for n in range(1,iteratsioone_1+1):
+    #    v_Re+=sin(x_2*log(n)+1*(2*pi)/4)*n**(-x_1)
+    v_Im=0
+    #for n in range(1,iteratsioone_2+1):
+    #    v_Im+=sin(x_2*log(n))*n**(-x_1)
+    mini=min(iteratsioone_1,iteratsioone_2)
+    for n in range(1,mini+1):
+        n_x1=n**x_1
+        logx2=x_2*log(n)
+        v_Re+=cos(logx2)/n_x1
+        v_Im-=sin(logx2)/n_x1
+    if iteratsioone_1>iteratsioone_2:
+        for n in range(mini+1,iteratsioone_1+1):
+            v_Re+=cos(x_2*log(n))*n**-x_1
+    else:
+        for n in range(mini+1,iteratsioone_2+1):
+            v_Im-=sin(x_2*log(n))*n**-x_1
+
+    return(v_Re+1j*v_Im)
+
+def zeta13_tagumine_pool_nulliks_optimeeritud_ilma_floorita(*args, **kwargs):#VALED VASTUSED. EI TOIMI.
+
+    latex=r"""\lim_{M \to \infty}( \sum_{n=1}^M(sin(x_2*ln(n)+2\pi/4)*n^{-x_1}))\\
++i* \lim_{M \to \infty}(-\sum_{n=1}^M(sin(x_2*ln(n))*n^{-x_1}))"""
+
+    if len(args)==1:
+        x_1=args[0].real
+        x_2=args[0].imag
+    elif len(args)==2:
+        x_1=args[0]
+        x_2=args[1]
+    if x_1<=0:
+        raise NotImplementedError
     if "iteratsioone" in kwargs:
         iteratsioone=kwargs["iteratsioone"]
     else:
@@ -462,12 +518,12 @@ def zeta13_tagumine_pool_nulliks_optimeeritud(*args, **kwargs):
     q_1=-atan((1-x_1)/x_2)
     #q_2=+atan(x_2/(1-x_1))
     q_2=q_1+1/4*sgn((1-x_1)*x_2)*2*pi
-    print("q_1-q_2=",q_1-q_2)
+    #print("q_1-q_2=",q_1-q_2)
 
     M=(log(iteratsioone)*x_2)/(2*pi)*2-max(q_1,q_2)/pi
 
-    iteratsioone_1=floor(e**((floor(M)*pi+q_1)/x_2))
-    iteratsioone_2=floor(e**((floor(M)*pi+q_2)/x_2))
+    iteratsioone_1=int(iteratsioone)+1
+    iteratsioone_2=int(iteratsioone)+1
 
     print("M:",M,"; iteratsioone_1:",iteratsioone_1,"; iteratsioone_2:",iteratsioone_2)
 
@@ -825,5 +881,7 @@ def test(zeta=zeta2_reaalosa_ja_imaginaarosa_eraldatud):
     for zeta_argument,zeta_väärtus in zeta_väärtused.items():
         vastus=zeta(zeta_argument)
         print("jagatised:",vastus.real/zeta_väärtus.real,vastus.imag/zeta_väärtus.imag,"vahed:",vastus.real-zeta_väärtus.real,vastus.imag-zeta_väärtus.imag)
-print(77)
-test(zeta13_tagumine_pool_nulliks)
+#print(77)
+#test(zeta13_tagumine_pool_nulliks_optimeeritud)
+print(zeta13_tagumine_pool_nulliks_optimeeritud(0.5,227))
+#print(zeta13_tagumine_pool_nulliks_optimeeritud(0.5,21.022040))
