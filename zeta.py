@@ -455,7 +455,7 @@ def zeta13_tagumine_pool_nulliks_optimeeritud(*args, **kwargs):
     elif len(args)==2:
         x_1=args[0]
         x_2=args[1]
-    if x_1<=0:
+    if x_1<=0 or x_1==1:
         raise NotImplementedError
     q_1 = -atan((1 - x_1) / x_2)
     # q_2=+atan(x_2/(1-x_1))
@@ -508,7 +508,7 @@ def zeta13_tagumine_pool_nulliks_optimeeritud_ilma_floorita(*args, **kwargs):#VA
     elif len(args)==2:
         x_1=args[0]
         x_2=args[1]
-    if x_1<=0:
+    if x_1<=0 or x_1==1:
         raise NotImplementedError
     if "iteratsioone" in kwargs:
         iteratsioone=kwargs["iteratsioone"]

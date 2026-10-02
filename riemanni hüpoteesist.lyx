@@ -2968,7 +2968,18 @@ pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1/2}
 
 \begin_layout Standard
 lihtsustan.
- 
+ Kui 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x1<1$
+\end_layout
+
+\end_inset
+
+, siis 
 \begin_inset ERT
 status open
 
@@ -2994,6 +3005,18 @@ $sin(x_2*ln(0)+arctan((1-x_1)/x_2))$
 \end_layout
 
 \begin_layout Standard
+Kui 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x1<1$
+\end_layout
+
+\end_inset
+
+, siis 
 \begin_inset ERT
 status open
 
@@ -3021,7 +3044,7 @@ $sin(x_2*ln(0)-arctan(x_2/(1-x_1)))$
 \begin_layout Standard
 
 \color red
-SIIN VIGA VIST!
+SIIN OLI VIGA! kas nüüd korras?
 \end_layout
 
 \begin_layout Standard
@@ -3052,6 +3075,8 @@ land x_2
 in R 
 \backslash
 land x_1>0 
+\backslash
+land x_1<1 
 \backslash
 to 
 \backslash
@@ -3381,6 +3406,8 @@ land x_2
 in R 
 \backslash
 land x_1>0 
+\backslash
+land x_1<1 
 \backslash
 to 
 \backslash
@@ -3786,6 +3813,8 @@ in R
 \backslash
 land x_1>0 
 \backslash
+land x_1<1 
+\backslash
 to 
 \backslash
 zeta(x_1+i*x_2)=
@@ -3966,6 +3995,8 @@ in R
 \backslash
 land x_1>0 
 \backslash
+land x_1<1 
+\backslash
 to 
 \backslash
 zeta(x_1+i*x_2)=
@@ -4116,6 +4147,8 @@ land x_2
 in R 
 \backslash
 land x_1>0 
+\backslash
+land x_1<1 
 \backslash
 to 
 \backslash
@@ -4269,6 +4302,8 @@ land x_2
 in R 
 \backslash
 land x_1>0 
+\backslash
+land x_1<1 
 \backslash
 to 
 \backslash
@@ -6426,9 +6461,7 @@ sum_{n_1=0}^{(2*M)^M-1}(
 
 (
 \backslash
-sum_{n_2=0}^{M-1}(1+floor(n_1/(2*M)^{n_2})
-\backslash
-%(2*M))
+((1+%(2*M))=
 \backslash
 %2)*
 \backslash
@@ -8336,11 +8369,11 @@ sum_{n_1=0}^{(2*M)^M-1}(
 
 
 \backslash
-sum_{n_2=0}^{M-1}(1+floor(n_1/(2*M)^{n_2})
+(1+sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 \backslash
 %(2*M))
 \backslash
-%2)*
+%2))*
 \backslash
 
 \backslash
@@ -15997,9 +16030,9 @@ sum_{n_1=0}^{(2*M)^M-1}(
 
 \begin_layout Plain Layout
 
-(
+(1+
 \backslash
-sum_{n_2=0}^{M-1}(1+floor(n_1/(2*M)^{n_2})
+sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 \backslash
 %(2*M))
 \backslash
