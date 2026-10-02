@@ -2401,6 +2401,18 @@ $
 \begin_layout Standard
 igalt summa elemendilt lahutan integraali eelmisest elemendist selle elemendine
  ja liidan maha lahutatud osa peale summerimist uuesti tagasi.
+ Mingil põhjusel, mille chatgpt kirjutas tomib see ainult tingimusel 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x_1<1$
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2431,6 +2443,8 @@ land x_2
 in R 
 \backslash
 land x_1>0 
+\backslash
+land x_1<1 
 \backslash
 to 
 \backslash
@@ -2683,6 +2697,8 @@ land x_2
 in R 
 \backslash
 land x_1>0 
+\backslash
+land x_1<1  
 \backslash
 to 
 \backslash
@@ -2968,18 +2984,7 @@ pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1/2}
 
 \begin_layout Standard
 lihtsustan.
- Kui 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$x1<1$
-\end_layout
-
-\end_inset
-
-, siis 
+ Kuna 
 \begin_inset ERT
 status open
 
@@ -3005,18 +3010,7 @@ $sin(x_2*ln(0)+arctan((1-x_1)/x_2))$
 \end_layout
 
 \begin_layout Standard
-Kui 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$x1<1$
-\end_layout
-
-\end_inset
-
-, siis 
+Kuna 
 \begin_inset ERT
 status open
 
@@ -6461,7 +6455,7 @@ sum_{n_1=0}^{(2*M)^M-1}(
 
 (
 \backslash
-((1+%(2*M))=
+((1+
 \backslash
 %2)*
 \backslash
@@ -8369,11 +8363,11 @@ sum_{n_1=0}^{(2*M)^M-1}(
 
 
 \backslash
-(1+sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
+((1+
 \backslash
 %(2*M))
 \backslash
-%2))*
+%2)*
 \backslash
 
 \backslash
@@ -16030,13 +16024,7 @@ sum_{n_1=0}^{(2*M)^M-1}(
 
 \begin_layout Plain Layout
 
-(1+
-\backslash
-sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
-\backslash
-%(2*M))
-\backslash
-%2)*
+((1+
 \backslash
 
 \backslash
