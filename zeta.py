@@ -584,7 +584,7 @@ $"""
         soovitud_iteratsioone=kwargs["iteratsioone"]
     else:
         soovitud_iteratsioone=20
-        M=max(
+    M=max(
     (log(soovitud_iteratsioone)*abs(x_2)+atan((1-x_1)/x_2)*sgn(x_2))*2/(2*pi),
     (log(soovitud_iteratsioone)+atan((1-x_1)/x_2)/x_2)*2*abs(x_2)/(2*pi)-1/2
     )
@@ -612,7 +612,8 @@ $"""
             p*=(-1)**(s2_0/2)
             s2_1=0
             for n2 in range(M):
-                s2_1+=(2*n2+1)*(n1//(2*M)**n2)%(2*M)
+                s2_1+=(2*n2+1)*((n1//(2*M)**n2)%(2*M))
+                #s2_1+=(2*n2+1)*(n1//(2*M)**n2)%(2*M)
             p*=n0**s2_1
             p*=(n0+1)**(-x_1)
             p*=(n0+2)**-s2_1
@@ -635,7 +636,8 @@ $"""
             p*=(-1)**((s2_0+1)/2)
             s2_1=0
             for n2 in range(M):
-                s2_1+=(2*n2+1)*(n1//(2*M)**n2)%(2*M)
+                s2_1+=(2*n2+1)*((n1//(2*M)**n2)%(2*M))
+                #s2_1+=(2*n2+1)*(n1//(2*M)**n2)%(2*M)
             p*=n0**s2_1
             p*=(n0+1)**-x_1
             p*=(n0+2)**-s2_1
@@ -680,7 +682,7 @@ $"""
         soovitud_iteratsioone=kwargs["iteratsioone"]
     else:
         soovitud_iteratsioone=25
-        M=max(
+    M=max(
     (log(soovitud_iteratsioone)*abs(x_2)+atan((1-x_1)/x_2)*sgn(x_2))*2/(2*pi),
     (log(soovitud_iteratsioone)+atan((1-x_1)/x_2)/x_2)*2*abs(x_2)/(2*pi)-1/2
     )
@@ -885,3 +887,4 @@ def test(zeta=zeta2_reaalosa_ja_imaginaarosa_eraldatud):
 #test(zeta13_tagumine_pool_nulliks_optimeeritud)
 print(zeta13_tagumine_pool_nulliks_optimeeritud(0.5,227))
 #print(zeta13_tagumine_pool_nulliks_optimeeritud(0.5,21.022040))
+print(zeta14_tagumine_pool_nulliks_tayloriga(0.5,227,iteratsioone=10))

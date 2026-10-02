@@ -2990,7 +2990,7 @@ $sin(x_2*ln(0)+arctan((1-x_1)/x_2))$
 
 \end_inset
 
- on määramatu, aga kindlalt piirides 0 kuni 1.
+ on määramatu, aga kindlalt piirides -1 kuni 1.
 \end_layout
 
 \begin_layout Standard
@@ -3015,7 +3015,13 @@ $sin(x_2*ln(0)-arctan(x_2/(1-x_1)))$
 
 \end_inset
 
- on määrmatu, aga kindlalt piirides 0 kuni 1.
+ on määrmatu, aga kindlalt piirides -1 kuni 1.
+\end_layout
+
+\begin_layout Standard
+
+\color red
+SIIN VIGA VIST!
 \end_layout
 
 \begin_layout Standard
@@ -13184,6 +13190,10 @@ muu
 
 \begin_layout Subsubsection
 c
+\end_layout
+
+\begin_layout Standard
+SIIN VIGA!
 \end_layout
 
 \begin_layout Standard
