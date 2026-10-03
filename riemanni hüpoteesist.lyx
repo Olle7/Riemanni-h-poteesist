@@ -2984,7 +2984,33 @@ pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1/2}
 
 \begin_layout Standard
 lihtsustan.
- Kuna 
+ Kuna kui 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x_1<1$
+\end_layout
+
+\end_inset
+
+ siis 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lim_{y
+\backslash
+to0^+}(y^{1-x_1}*sin(x_2*ln(y)+arctan((1-x_1)/x_2)))=0$
+\end_layout
+
+\end_inset
+
+ (
 \begin_inset ERT
 status open
 
@@ -2995,7 +3021,7 @@ $0^{1-x_1}*sin(x_2*ln(0)+arctan((1-x_1)/x_2))=0$
 
 \end_inset
 
-, sest 
+), sest 
 \begin_inset ERT
 status open
 
@@ -3010,7 +3036,33 @@ $sin(x_2*ln(0)+arctan((1-x_1)/x_2))$
 \end_layout
 
 \begin_layout Standard
-Kuna 
+Kuna kui 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x_1<1$
+\end_layout
+
+\end_inset
+
+ siis 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+lim_{y
+\backslash
+to0^+}(y^{1-x_1}*sin(x_2*ln(y)+arctan(x_2/(1-x_1))))=0$
+\end_layout
+
+\end_inset
+
+ (
 \begin_inset ERT
 status open
 
@@ -3021,7 +3073,7 @@ $0^{1-x_1}*sin(x_2*ln(0)-arctan(x_2/(1-x_1)))=0$
 
 \end_inset
 
-,sest 
+),sest 
 \begin_inset ERT
 status open
 
@@ -13247,91 +13299,7 @@ infty}(  M*(M+1)^{-x_1} - M^{1-x_1}  )=
 
 \begin_layout Plain Layout
 
-lim_{M
-\backslash
-to 
-\backslash
-infty}(  M*(M+1)^{-x_1} - M*(M+1)^{-x_1}* (M+1)/M  )=
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-lim_{M
-\backslash
-to 
-\backslash
-infty}(  M*(M+1)^{-x_1} - M*(M+1)^{-x_1}* (1+1/M)  )=
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-lim_{M
-\backslash
-to 
-\backslash
-infty}(  M*(M+1)^{-x_1}*(1-(1+1/M))  )=
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-lim_{M
-\backslash
-to 
-\backslash
-infty}(  M*(M+1)^{-x_1}*(-1/M)  )=
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-lim_{M
-\backslash
-to 
-\backslash
-infty}(  -(M+1)^{-x_1}  )=
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-lim_{M
-\backslash
-to 
-\backslash
-infty}(  
-\backslash
-frac{-1}{(M+1)^{x_1}}  )=
-\backslash
-
-\backslash
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-x_1>0 
+x_1>=0 
 \backslash
 to return(0)
 \backslash
@@ -13342,7 +13310,7 @@ to return(0)
 
 \begin_layout Plain Layout
 
-x_1<=0 
+x_1<0 
 \backslash
 to return(
 \backslash
