@@ -265,7 +265,7 @@ def zeta10(*args,**kwargs):
     elif len(args)==2:
         x_1=args[0]
         x_2=args[1]
-    if x_1<=0:
+    if x_1<=0 or x_2==0:
         raise NotImplementedError
     if "iteratsioone" in kwargs:
         iteratsioone=kwargs["iteratsioone"]
@@ -292,7 +292,7 @@ def zeta11(*args,**kwargs):
     elif len(args)==2:
         x_1=args[0]
         x_2=args[1]
-    if x_1<=0:
+    if x_1<=0 or x_2==0:
         raise NotImplementedError
     if "iteratsioone" in kwargs:
         iteratsioone=kwargs["iteratsioone"]
@@ -338,7 +338,7 @@ $"""
     elif len(args)==2:
         x_1=args[0]
         x_2=args[1]
-    if x_1<=0:
+    if x_1<=0 or x_2==0:
         raise NotImplementedError
     if "iteratsioone" in kwargs:
         iteratsioone=kwargs["iteratsioone"]
@@ -346,7 +346,6 @@ $"""
         iteratsioone=default_iteratsioone
 
     M=(log(iteratsioone)/(2*pi)-q/x_2)*abs(x_2)
-
     iteratsioone=floor(e**((floor(M)/abs(x_2)+q/x_2)*2*pi))
     print("M:",M,"; iteratsioone:",iteratsioone)
 
@@ -373,7 +372,7 @@ def zeta12_1(*args, **kwargs):
     elif len(args)==2:
         x_1=args[0]
         x_2=args[1]
-    if x_1<=0:
+    if x_1<=0 or x_2==0:
         raise NotImplementedError
     if "iteratsioone" in kwargs:
         iteratsioone=kwargs["iteratsioone"]
@@ -414,7 +413,7 @@ $"""
     elif len(args)==2:
         x_1=args[0]
         x_2=args[1]
-    if x_1<=0:
+    if x_1<=0 or x_2==0:
         raise NotImplementedError
     if "M" in kwargs:
         M=kwargs["M"]
@@ -455,7 +454,7 @@ def zeta13_tagumine_pool_nulliks_optimeeritud(*args, **kwargs):
     elif len(args)==2:
         x_1=args[0]
         x_2=args[1]
-    if x_1<=0 or x_1==1:
+    if x_1<=0 or x_1==1 or x_2==0:
         raise NotImplementedError
     q_1 = -atan((1 - x_1) / x_2)
     # q_2=+atan(x_2/(1-x_1))
@@ -508,7 +507,7 @@ def zeta13_tagumine_pool_nulliks_optimeeritud_ilma_floorita(*args, **kwargs):#VA
     elif len(args)==2:
         x_1=args[0]
         x_2=args[1]
-    if x_1<=0 or x_1==1:
+    if x_1<=0 or x_1==1 or x_2==0:
         raise NotImplementedError
     if "iteratsioone" in kwargs:
         iteratsioone=kwargs["iteratsioone"]
@@ -578,7 +577,7 @@ $"""
     elif len(args)==2:
         x_1=args[0]
         x_2=args[1]
-    if x_1<=0:
+    if x_1<=0 or x_2==0:
         raise NotImplementedError
     if "iteratsioone" in kwargs:
         soovitud_iteratsioone=kwargs["iteratsioone"]
@@ -676,7 +675,7 @@ $"""
     elif len(args)==2:
         x_1=args[0]
         x_2=args[1]
-    if x_1<=0:
+    if x_1<=0 or x_2==0:
         raise NotImplementedError
     if "iteratsioone" in kwargs:
         soovitud_iteratsioone=kwargs["iteratsioone"]
@@ -823,7 +822,7 @@ def zeta15(*args, **kwargs):
     elif len(args)==2:
         x_1=args[0]
         x_2=args[1]
-    if x_1<=0:
+    if x_1<=0 or x_2==0:
         raise NotImplementedError
     if "iteratsioone" in kwargs:
         iteratsioone=kwargs["iteratsioone"]

@@ -13272,7 +13272,9 @@ c
 \end_layout
 
 \begin_layout Standard
-SIIN VIGA!
+
+\color red
+SIIN oli VIGA!
 \end_layout
 
 \begin_layout Standard
@@ -13324,7 +13326,7 @@ $
 
 \end_inset
 
-¨
+
 \end_layout
 
 \begin_layout Subsubsection
