@@ -5690,6 +5690,12 @@ selle asemel et üle erinevate n2'ede ristsummade summeeridaarvutan lihtsalt
 \end_layout
 
 \begin_layout Standard
+
+\color red
+SIIN VIGA!
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -15645,6 +15651,12 @@ Valem cos_y_ln_x_multinomial_2:
 \end_layout
 
 \begin_layout Standard
+
+\color red
+SIIN VIGA!
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -15800,6 +15812,12 @@ veel üks valem:
 \end_layout
 
 \begin_layout Standard
+
+\color red
+SIIN VIGA!
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -15952,6 +15970,12 @@ $
 
 \begin_layout Standard
 Valem cos_y_ln_x_multinomial_4_2:
+\end_layout
+
+\begin_layout Standard
+
+\color red
+SIIN VIGA!
 \end_layout
 
 \begin_layout Standard
