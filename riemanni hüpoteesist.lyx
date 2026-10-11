@@ -15808,7 +15808,9 @@ $
 \end_layout
 
 \begin_layout Standard
-veel üks valem:
+positsioonsüsteemi, millega eksponendid on kodeeritud on nüüd 2*M-1 asemel
+ 2*M.
+ veel üks valem:
 \end_layout
 
 \begin_layout Standard
@@ -15862,9 +15864,9 @@ sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 
 (
 \backslash
-sum_{k_2=0}^{M-1}(floor(k_1/(2*M-1)^{k_2})
+sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{k_2})
 \backslash
-%(2*M-1))<2*M-1)*
+%(2*M))<2*M-1)*
 \backslash
 
 \backslash
