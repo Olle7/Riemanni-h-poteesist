@@ -15657,12 +15657,6 @@ Valem cos_y_ln_x_multinomial_2:
 \end_layout
 
 \begin_layout Standard
-
-\color red
-SIIN VIGA!
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -15672,7 +15666,7 @@ $
 \backslash
 forall_x(x>0 
 \backslash
-to sin(y*ln(x))=
+to cos(y*ln(x))=
 \backslash
 
 \backslash
@@ -15696,11 +15690,11 @@ sum_{k_1=0}^{(2*M)^M-1}(
 
 \begin_layout Plain Layout
 
-(
+(1+
 \backslash
 sum_{k_2=0}^{M-1}((floor(k_1/(2*M-1)^{k_2})
 \backslash
-%(2*M-1))+1)
+%(2*M-1)))
 \backslash
 %2)*
 \backslash
@@ -15818,12 +15812,6 @@ veel üks valem:
 \end_layout
 
 \begin_layout Standard
-
-\color red
-SIIN VIGA!
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -15857,13 +15845,13 @@ sum_{n_1=0}^{(2*M)^M-1}(
 
 \begin_layout Plain Layout
 
-(
+(1+(
 \backslash
 sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 \backslash
 %(2*M))
 \backslash
-%2)*
+%2))*
 \backslash
 
 \backslash
