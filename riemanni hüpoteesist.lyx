@@ -14800,15 +14800,15 @@ sum_{k_3=0}^{M-1}(
 
 
 \backslash
-Pi_{k_3=0}^{M-1}(factorial(
+Pi_{k_3=0}^{M-1}(factorial(-(
 \backslash
- floor(k_2/(2*k_1+2)^{k_3})
+floor(k_2/(2*k_1+2)^{k_3})
 \backslash
 %(2*k_1+2)
 \backslash
  )^{-1}*(2*k_3+1)^{-floor(k_2/(2*k_1+2)^{k_3})
 \backslash
-%(2*k_1+2)} )*((x-1)/(x+1))^{
+%(2*k_1+2))} )*((x-1)/(x+1))^{
 \backslash
 sum_{k_3=0}^{M-1}(2*k_3+1)*(-(floor(k_2/(2*k_1+2)^{k_3})
 \backslash
@@ -14965,7 +14965,7 @@ $
 \end_layout
 
 \begin_layout Standard
-viin teguri sulgude sisse::
+viin teguri sulgude sisse:
 \end_layout
 
 \begin_layout Standard
@@ -15107,6 +15107,12 @@ selle asemel et üle eri n2'e ristsummade summeeridaarvutan lihtsalt n2'e
 
 \color red
 SIIN VIGA!
+\end_layout
+
+\begin_layout Standard
+(2*k_2+1)^{-(floor(k_1/(2*M)^{k_2})
+\backslash
+%(2*M))}
 \end_layout
 
 \begin_layout Standard
