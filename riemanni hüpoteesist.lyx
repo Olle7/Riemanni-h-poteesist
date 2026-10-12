@@ -14931,9 +14931,9 @@ Pi_{k_3=0}^{M-1}(factorial(
 \backslash
 %(2*k_1+2)
 \backslash
- )^{-1}*(2*k_3+1)^{-floor(k_2/(2*k_1+2)^{k_3})
+ )^{-1}*(2*k_3+1)^{-(floor(k_2/(2*k_1+2)^{k_3})
 \backslash
-%(2*k_1+2)} )
+%(2*k_1+2)}))
 \backslash
 
 \backslash
@@ -15064,9 +15064,9 @@ Pi_{k_3=0}^{M-1}(factorial(
 \backslash
 %(2*k_1+2)
 \backslash
- )^{-1}*(2*k_3+1)^{-floor(k_2/(2*k_1+2)^{k_3})
+ )^{-1}*(2*k_3+1)^{-(floor(k_2/(2*k_1+2)^{k_3})
 \backslash
-%(2*k_1+2)} )
+%(2*k_1+2)}))
 \backslash
 
 \backslash
@@ -15128,7 +15128,7 @@ to sin(y*ln(x))=
 
 \begin_layout Plain Layout
 
--lim_{M 
+lim_{M 
 \backslash
 to 
 \backslash
@@ -15227,9 +15227,9 @@ sum_{k_2=0}^{M-1}((2*k_2+1)*(floor(k_1/(2*M)^{k_2})
 \backslash
 Pi_{k_2=0}^{M-1}(factorial(floor(k_1/(2*M)^{k_2})
 \backslash
-%(2*M))^{-1}*(2*k_2+1)^{-floor(k_1/(2*M)^{k_2})
+%(2*M))^{-1}*(2*k_2+1)^{-(floor(k_1/(2*M)^{k_2})
 \backslash
-%(2*M)} )
+%(2*M)}))
 \backslash
 
 \backslash
@@ -15372,9 +15372,9 @@ sum_{k_2=0}^{M-1}((2*k_2+1)*(floor(k_1/(2*M)^{k_2})
 \backslash
 Pi_{k_2=0}^{M-1}(factorial(floor(k_1/(2*M)^{k_2})
 \backslash
-%(2*M))^{-1}*(2*k_2+1)^{-floor(k_1/(2*M)^{k_2})
+%(2*M))^{-1}*(2*k_2+1)^{-(floor(k_1/(2*M)^{k_2})
 \backslash
-%(2*M)} )
+%(2*M)}))
 \backslash
 
 \backslash
@@ -15966,12 +15966,6 @@ $
 
 \begin_layout Standard
 Valem cos_y_ln_x_multinomial_4_2:
-\end_layout
-
-\begin_layout Standard
-
-\color red
-SIIN VIGA! vist parandatud nüüd.
 \end_layout
 
 \begin_layout Standard
