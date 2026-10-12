@@ -15971,7 +15971,7 @@ Valem cos_y_ln_x_multinomial_4_2:
 \begin_layout Standard
 
 \color red
-SIIN VIGA!
+SIIN VIGA! vist parandatud nüüd.
 \end_layout
 
 \begin_layout Standard
@@ -16010,9 +16010,11 @@ sum_{n_1=0}^{(2*M)^M-1}(
 
 ((1+
 \backslash
-
+sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 \backslash
-
+%(2*M)))
+\backslash
+%2)*
 \end_layout
 
 \begin_layout Plain Layout
@@ -16073,9 +16075,9 @@ sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})
 \backslash
 Pi_{n_2=0}^{M-1}(factorial(floor(n_1/(2*M)^{n_2})
 \backslash
-%(2*M))^{-1}*(2*n_2+1)^{-floor(n_1/(2*M)^{n_2})
+%(2*M))^{-1}*(2*n_2+1)^{-(floor(n_1/(2*M)^{n_2})
 \backslash
-%(2*M)} )
+%(2*M))} )
 \backslash
 
 \backslash
