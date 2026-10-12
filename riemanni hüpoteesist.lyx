@@ -14800,24 +14800,15 @@ sum_{k_3=0}^{M-1}(
 
 
 \backslash
-Pi_{k_3=0}^{M-1}(factorial(-(
+Pi_{k_3=0}^{M-1}( factorial(floor(k_2/(2*k_1+2)^{k_3})
 \backslash
-floor(k_2/(2*k_1+2)^{k_3})
+%(2*k_1+2))^{-1} *(2*k_3+1)^{-(floor(k_2/(2*k_1+2)^{k_3})
 \backslash
-%(2*k_1+2)
+%(2*k_1+2))} ) *((x-1)/(x+1))^{ 
 \backslash
- )^{-1}*(2*k_3+1)^{-floor(k_2/(2*k_1+2)^{k_3})
+sum_{k_3=0}^{M-1}((2*k_3+1)*(floor(k_2/(2*k_1+2)^{k_3})
 \backslash
-%(2*k_1+2))} )*((x-1)/(x+1))^{
-\backslash
-sum_{k_3=0}^{M-1}(2*k_3+1)*(-(floor(k_2/(2*k_1+2)^{k_3})
-\backslash
-%(2*k_1+2)))
-\end_layout
-
-\begin_layout Plain Layout
-
-)*y^{2*k_1+1}*2^{2*k_1+1}*(-1)^{k_1}))
+%(2*k_1+2))) }*y^{2*k_1+1}*2^{2*k_1+1}*(-1)^{k_1}))
 \backslash
 
 \backslash
