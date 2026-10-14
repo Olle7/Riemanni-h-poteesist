@@ -14808,7 +14808,7 @@ Pi_{k_3=0}^{M-1}( factorial(floor(k_2/(2*k_1+2)^{k_3})
 \backslash
 sum_{k_3=0}^{M-1}((2*k_3+1)*(floor(k_2/(2*k_1+2)^{k_3})
 \backslash
-%(2*k_1+2))) }*y^{2*k_1+1}*2^{2*k_1+1}*(-1)^{k_1}))
+%(2*k_1+2))) }*y^{2*k_1+1}*2^{2*k_1+1}*(-1)^{k_1})))
 \backslash
 
 \backslash
@@ -15057,7 +15057,7 @@ Pi_{k_3=0}^{M-1}(factorial(
 \backslash
  )^{-1}*(2*k_3+1)^{-(floor(k_2/(2*k_1+2)^{k_3})
 \backslash
-%(2*k_1+2)}))
+%(2*k_1+2))})
 \backslash
 
 \backslash
