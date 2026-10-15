@@ -15087,12 +15087,6 @@ selle asemel et üle eri n2'e ristsummade summeeridaarvutan lihtsalt n2'e
 \end_layout
 
 \begin_layout Standard
-
-\color red
-SIIN VIGA!
-\end_layout
-
-\begin_layout Standard
 (2*k_2+1)^{-(floor(k_1/(2*M)^{k_2})
 \backslash
 %(2*M))}
@@ -15250,10 +15244,7 @@ $
 \end_layout
 
 \begin_layout Standard
-kuna Mi lähenedes lõpmatusele see avaldis nagu nii koondub ja selle muutuse
- tegemine ainult lisab liikmeid, mis on absoluutväärtuselt väiksemad kui
- oleksid liikmed, mis lisanduksid Mi suurendamisel.
- Valem sin_y_ln_x_multinomial_4:
+Valem sin_y_ln_x_multinomial_4:
 \end_layout
 
 \begin_layout Standard
