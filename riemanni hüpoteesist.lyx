@@ -14914,36 +14914,13 @@ sum_{k_3=0}^{M-1}((2*k_3+1)*(floor(k_2/(2*k_1+2)^{k_3})
 
 \begin_layout Plain Layout
 
-\end_layout
 
-\begin_layout Plain Layout
-
-%
-\backslash
-Pi_{k_3=0}^{M-1}(factorial(floor(k_2/(2*k_1+2)^{k_3})
-\backslash
-%(2*k_1+2))^{-1}*(2*k_3+1)^{-(floor(k_2/(2*k_1+2)^{k_3})
-\backslash
-%(2*k_1+2)}))
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
- 
 \backslash
 Pi_{k_3=0}^{M-1}(factorial(floor(k_2/(2*k_1+2)^{k_3})
 \backslash
 %(2*k_1+2))^{-1}*(2*k_3+1)^{-(floor(k_2/(2*k_1+2)^{k_3})
 \backslash
 %(2*k_1+2))})
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \begin_layout Plain Layout
