@@ -5769,11 +5769,11 @@ sum_{n_1=0}^{(2*M)^M-1}(
 
 \begin_layout Plain Layout
 
-(
+((1+
 \backslash
 sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 \backslash
-%(2*M))
+%(2*M)))
 \backslash
 %2)*
 \backslash
@@ -5786,9 +5786,9 @@ sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 
 (
 \backslash
-sum_{k_2=0}^{M-1}(floor(k_1/(2*M-1)^{k_2})
+sum_{k_2=0}^{M-1}(floor(k_1/(2*M)^{k_2})
 \backslash
-%(2*M-1))<2*M-1)*
+%(2*M))<2*M-1)*
 \backslash
 
 \backslash
@@ -5797,7 +5797,7 @@ sum_{k_2=0}^{M-1}(floor(k_1/(2*M-1)^{k_2})
 
 \begin_layout Plain Layout
 
-(y*2)^{
+(x_2*2)^{
 \backslash
 sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 \backslash
@@ -5823,7 +5823,7 @@ sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 
 \begin_layout Plain Layout
 
-(x-1)^{ 
+(n_0-1)^{ 
 \backslash
 sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})
 \backslash
@@ -5836,7 +5836,7 @@ sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})
 
 \begin_layout Plain Layout
 
-(x+1)^{-
+(n_0+1)^{-
 \backslash
 sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})
 \backslash
