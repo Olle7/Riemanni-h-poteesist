@@ -15534,7 +15534,7 @@ Pi_{k_2=0}^{M-1}(factorial(
 \backslash
 sum_{k_3=0}^{
 \backslash
-infty}(floor(k_2/2^{k_3*M+k_2}
+infty}(floor(k_1/2^{k_3*M+k_2}
 \backslash
 %2)*2^{k_3}))^{-1}*(2*k_2+1)^{-
 \backslash
