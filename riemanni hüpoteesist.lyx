@@ -15443,9 +15443,13 @@ sum_{k_1=0}^{(2*M)^M-1}(
 
 (
 \backslash
-sum_{k_2=0}^{M-1}(floor(k_1/(2*M)^{k_2})
+sum_{k_2=0}^{M-1}(
 \backslash
-%(2*M))
+sum_{k_3=0}^{
+\backslash
+infty}(floor(k_2/2^{k_3*M+A}
+\backslash
+%2)*2^{k_3}))
 \backslash
 %2)*
 \backslash
@@ -15458,9 +15462,13 @@ sum_{k_2=0}^{M-1}(floor(k_1/(2*M)^{k_2})
 
 (y*2)^{
 \backslash
-sum_{k_2=0}^{M-1}(floor(k_1/(2*M)^{k_2})
+sum_{k_2=0}^{M-1}(
 \backslash
-%(2*M))}*
+sum_{k_3=0}^{
+\backslash
+infty}(floor(k_2/2^{k_3*M+A}
+\backslash
+%2)*2^{k_3}))}*
 \backslash
 
 \backslash
@@ -15471,9 +15479,13 @@ sum_{k_2=0}^{M-1}(floor(k_1/(2*M)^{k_2})
 
 (-1)^{(
 \backslash
-sum_{k_2=0}^{M-1}(floor(k_1/(2*M)^{k_2})
+sum_{k_2=0}^{M-1}(
 \backslash
-%(2*M))+3)/2}*
+sum_{k_3=0}^{
+\backslash
+infty}(floor(k_2/2^{k_3*M+A}
+\backslash
+%2)*2^{k_3}))+3)/2}*
 \backslash
 
 \backslash
@@ -15484,9 +15496,13 @@ sum_{k_2=0}^{M-1}(floor(k_1/(2*M)^{k_2})
 
 (x-1)^{ 
 \backslash
-sum_{k_2=0}^{M-1}((2*k_2+1)*(floor(k_1/(2*M)^{k_2})
+sum_{k_2=0}^{M-1}((2*k_2+1)*(
 \backslash
-%(2*M)))}*
+sum_{k_3=0}^{
+\backslash
+infty}(floor(k_2/2^{k_3*M+A}
+\backslash
+%2)*2^{k_3})))}*
 \backslash
 
 \backslash
@@ -15497,9 +15513,13 @@ sum_{k_2=0}^{M-1}((2*k_2+1)*(floor(k_1/(2*M)^{k_2})
 
 (x+1)^{-
 \backslash
-sum_{k_2=0}^{M-1}((2*k_2+1)*(floor(k_1/(2*M)^{k_2})
+sum_{k_2=0}^{M-1}((2*k_2+1)*(
 \backslash
-%(2*M)))}*
+sum_{k_3=0}^{
+\backslash
+infty}(floor(k_2/2^{k_3*M+A}
+\backslash
+%2)*2^{k_3})))}*
 \backslash
 
 \backslash
@@ -15510,9 +15530,13 @@ sum_{k_2=0}^{M-1}((2*k_2+1)*(floor(k_1/(2*M)^{k_2})
 
 
 \backslash
-Pi_{k_2=0}^{M-1}(factorial(floor(k_1/(2*M)^{k_2})
+Pi_{k_2=0}^{M-1}(factorial(
 \backslash
-%(2*M))^{-1}*(2*k_2+1)^{
+sum_{k_3=0}^{
+\backslash
+infty}(floor(k_2/2^{k_3*M+A}
+\backslash
+%2)*2^{k_3}))^{-1}*(2*k_2+1)^{-
 \backslash
 sum_{k_3=0}^{
 \backslash
