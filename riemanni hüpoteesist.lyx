@@ -15394,11 +15394,11 @@ status open
 
 $v(A,k_2,M)=
 \backslash
-sum_{k_4=0}^{
+sum_{k_3=0}^{
 \backslash
-infty}(floor(k_2/2^{k_4*M+A}
+infty}(floor(k_2/2^{k_3*M+A}
 \backslash
-%2))$
+%2)*2^{k_3})$
 \end_layout
 
 \end_inset
@@ -15516,9 +15516,9 @@ Pi_{k_2=0}^{M-1}(factorial(floor(k_1/(2*M)^{k_2})
 \backslash
 sum_{k_3=0}^{
 \backslash
-infty}(floor(k_3/2^{k_3*M+A}
+infty}(floor(k_2/2^{k_3*M+A}
 \backslash
-%2))})
+%2)*2^{k_3})})
 \backslash
 
 \backslash
