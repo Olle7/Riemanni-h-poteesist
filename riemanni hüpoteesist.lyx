@@ -15392,19 +15392,161 @@ status open
 
 \begin_layout Plain Layout
 
-$v[A]=
+$v(A,k_2,M)=
 \backslash
 sum_{k_4=0}^{
 \backslash
-infty}(k_2/2^{k_4*M+A}
+infty}(floor(k_2/2^{k_4*M+A}
 \backslash
-%2)$
+%2))$
 \end_layout
 
 \end_inset
 
 .
  Ehk biti indexi jääk määrab, et mitmenda astendaja bit see on.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_x(x>0 
+\backslash
+to sin(y*ln(x))=
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+sum_{k_1=0}^{(2*M)^M-1}(
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+sum_{k_2=0}^{M-1}(floor(k_1/(2*M)^{k_2})
+\backslash
+%(2*M))
+\backslash
+%2)*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(y*2)^{
+\backslash
+sum_{k_2=0}^{M-1}(floor(k_1/(2*M)^{k_2})
+\backslash
+%(2*M))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(-1)^{(
+\backslash
+sum_{k_2=0}^{M-1}(floor(k_1/(2*M)^{k_2})
+\backslash
+%(2*M))+3)/2}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(x-1)^{ 
+\backslash
+sum_{k_2=0}^{M-1}((2*k_2+1)*(floor(k_1/(2*M)^{k_2})
+\backslash
+%(2*M)))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(x+1)^{-
+\backslash
+sum_{k_2=0}^{M-1}((2*k_2+1)*(floor(k_1/(2*M)^{k_2})
+\backslash
+%(2*M)))}*
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Pi_{k_2=0}^{M-1}(factorial(floor(k_1/(2*M)^{k_2})
+\backslash
+%(2*M))^{-1}*(2*k_2+1)^{
+\backslash
+sum_{k_3=0}^{
+\backslash
+infty}(floor(k_3/2^{k_3*M+A}
+\backslash
+%2))})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))
+\backslash
+
+\backslash
+%k1-summa ja lim'i lopusulg sel real.
+\end_layout
+
+\begin_layout Plain Layout
+
+)%forall lopusulg
+\end_layout
+
+\begin_layout Plain Layout
+
+$
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
