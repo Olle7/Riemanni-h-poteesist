@@ -5786,7 +5786,7 @@ sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 
 (
 \backslash
-sum_{k_2=0}^{M-1}(floor(k_1/(2*M)^{k_2})
+sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 \backslash
 %(2*M))<2*M-1)*
 \backslash
@@ -5897,7 +5897,7 @@ pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}
 
 \begin_layout Plain Layout
 
--i*
++i*
 \backslash
 lim_{M 
 \backslash
@@ -5972,7 +5972,7 @@ sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 \backslash
 sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 \backslash
-%(2*M))+3)/2}*
+%(2*M))+3)/2+1}*
 \backslash
 
 \backslash
