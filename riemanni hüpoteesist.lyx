@@ -9762,7 +9762,7 @@ pi)*1/4)*n^{-x_1})
 \backslash
 pi)*(1-x_1)+sin((q_1+0/4)*2
 \backslash
-pi)*x_2)*e^{(floor(M)+q_1)*2
+pi)*x_2)*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
@@ -9816,7 +9816,7 @@ pi)*2/4)*n^{-x_1})
 \backslash
 pi)*(1-x_1)+sin((q_2+1/4)*2
 \backslash
-pi)*x_2)*e^{(floor(M)+q_2)*2
+pi)*x_2)*e^{(floor(M)*sgn(x_2)+q_2)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
