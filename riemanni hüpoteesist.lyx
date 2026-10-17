@@ -4638,7 +4638,7 @@ pi})}(
 \backslash
 sum_{{n_1}=0}^
 \backslash
-infty((-1)^{n_1+}*(x_2*ln(n_0))^{2*{n_1}+1}*factorial(2*{n_1}+1)^{-1})
+infty((-1)^{n_1}*(x_2*ln(n_0))^{2*{n_1}+1}*factorial(2*{n_1}+1)^{-1})
 \backslash
 
 \backslash
@@ -5033,7 +5033,7 @@ infty}(
 
 \begin_layout Plain Layout
 
-
+-
 \backslash
 sum_{{n_0}=1}^{floor(e^{(floor(M)/abs(x_2)+q_2/x_2)*2
 \backslash
@@ -5261,7 +5261,7 @@ infty}(
 
 \begin_layout Plain Layout
 
-
+-
 \backslash
 sum_{{n_0}=1}^{floor(e^{(floor(M)/abs(x_2)+q_2/x_2)*2
 \backslash
@@ -5357,7 +5357,7 @@ pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}
 \end_layout
 
 \begin_layout Standard
-lihtsustan teades, et korutamise asemel võib astmd liita.
+lihtsustan teades, et korutamise asemel võib astmed liita.
 \end_layout
 
 \begin_layout Standard
@@ -5487,9 +5487,9 @@ Pi_{n_3=0}^{M-1}(factorial(
 \backslash
 %(2*n_1+1)
 \backslash
- )^{-1}*(2*n_3+1)^{-floor(n_2/(2*n_1+1)^{n_3})
+ )^{-1}*(2*n_3+1)^{-(floor(n_2/(2*n_1+1)^{n_3})
 \backslash
-%(2*n_1+1)} )
+%(2*n_1+1))} )
 \backslash
 
 \backslash
@@ -5623,9 +5623,9 @@ Pi_{n_3=0}^{M-1}(factorial(
 \backslash
 %(2*n_1+2)
 \backslash
- )^{-1}*(2*n_3+1)^{-floor(n_2/(2*n_1+2)^{n_3})
+ )^{-1}*(2*n_3+1)^{-(floor(n_2/(2*n_1+2)^{n_3})
 \backslash
-%(2*n_1+2)} )
+%(2*n_1+2))} )
 \backslash
 
 \backslash
