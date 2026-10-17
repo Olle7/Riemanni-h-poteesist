@@ -6832,6 +6832,10 @@ in R
 \backslash
 land x_1>0 
 \backslash
+land x_2
+\backslash
+ne0 
+\backslash
 to 
 \backslash
 
@@ -6865,7 +6869,7 @@ infty}(
 
 
 \backslash
-sum_{n_0=0}^{(2*M)^M-1}(
+sum_{n_0=0}^{(2*M^M)^{M^M}-1}(
 \backslash
 
 \backslash
@@ -6874,11 +6878,11 @@ sum_{n_0=0}^{(2*M)^M-1}(
 
 \begin_layout Plain Layout
 
-(
+((1+
 \backslash
-sum_{n_1=0}^{M-1}(1+floor(n_0/(2*M)^{n_1})
+sum_{n_1=0}^{M^M-1}(floor(n_0/(2*M^M)^{n_1})
 \backslash
-%(2*M))
+%(2*M^M)))
 \backslash
 %2)*
 \backslash
@@ -6891,9 +6895,9 @@ sum_{n_1=0}^{M-1}(1+floor(n_0/(2*M)^{n_1})
 
 (x_2*2)^{
 \backslash
-sum_{n_1=0}^{M-1}(floor(n_0/(2*M)^{n_1})
+sum_{n_1=0}^{M^M-1}(floor(n_0/(2*M^M)^{n_1})
 \backslash
-%(2*M))}*
+%(2*M^M))}*
 \backslash
 
 \backslash
@@ -6904,9 +6908,9 @@ sum_{n_1=0}^{M-1}(floor(n_0/(2*M)^{n_1})
 
 (-1)^{
 \backslash
-sum_{n_1=0}^{M-1}(floor(n_0/(2*M)^{n_1})
+sum_{n_1=0}^{M^M-1}(floor(n_0/(2*M^M)^{n_1})
 \backslash
-%(2*M))/2}*
+%(2*M^M))/2}*
 \backslash
 
 \backslash
@@ -6930,9 +6934,9 @@ pi})-1}(
 
 n_1^{
 \backslash
-sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_0/(2*M)^{n_2})
+sum_{n_2=0}^{M^M-1}((2*n_2+1)*(floor(n_0/(2*M^M)^{n_2})
 \backslash
-%(2*M)))}*
+%(2*M^M)))}*
 \backslash
 
 \backslash
@@ -6952,18 +6956,9 @@ sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_0/(2*M)^{n_2})
 
 (n_1+2)^{-
 \backslash
-sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_0/(2*M)^{n_2})
+sum_{n_2=0}^{M^M-1}((2*n_2+1)*(floor(n_0/(2*M^M)^{n_2})
 \backslash
-%(2*M)))}*
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-)
+%(2*M^M)))}
 \backslash
 
 \backslash
@@ -6972,13 +6967,22 @@ sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_0/(2*M)^{n_2})
 
 \begin_layout Plain Layout
 
+)*
+\backslash
 
 \backslash
-Pi_{n_1=0}^{M-1}(factorial(floor(n_0/(2*M)^{n_1})
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
-%(2*M))^{-1}*(2*n_1+1)^{-floor(n_0/(2*M)^{n_1})
+Pi_{n_1=0}^{M^M-1}(factorial(floor(n_0/(2*M^M)^{n_1})
 \backslash
-%(2*M)} )
+%(2*M^M))^{-1}*(2*n_1+1)^{-(floor(n_0/(2*M^M)^{n_1})
+\backslash
+%(2*M^M))} )
 \backslash
 
 \backslash
@@ -7037,7 +7041,7 @@ infty}(
 
 
 \backslash
-sum_{n_0=0}^{(2*M)^M-1}(
+sum_{n_0=0}^{(2*M^M)^{M^M}-1}(
 \backslash
 
 \backslash
@@ -7048,9 +7052,9 @@ sum_{n_0=0}^{(2*M)^M-1}(
 
 (
 \backslash
-sum_{n_1=0}^{M-1}(floor(n_0/(2*M)^{n_1})
+sum_{n_1=0}^{M^M-1}(floor(n_0/(2*M^M)^{n_1})
 \backslash
-%(2*M))
+%(2*M^M))
 \backslash
 %2)*
 \backslash
@@ -7063,9 +7067,9 @@ sum_{n_1=0}^{M-1}(floor(n_0/(2*M)^{n_1})
 
 (x_2*2)^{
 \backslash
-sum_{n_1=0}^{M-1}(floor(n_0/(2*M)^{n_1})
+sum_{n_1=0}^{M^M-1}(floor(n_0/(2*M^M)^{n_1})
 \backslash
-%(2*M))}*
+%(2*M^M))}*
 \backslash
 
 \backslash
@@ -7076,9 +7080,9 @@ sum_{n_1=0}^{M-1}(floor(n_0/(2*M)^{n_1})
 
 (-1)^{(
 \backslash
-sum_{n_1=0}^{M-1}(floor(n_0/(2*M)^{n_1})
+sum_{n_1=0}^{M^M-1}(floor(n_0/(2*M^M)^{n_1})
 \backslash
-%(2*M))+3)/2}*
+%(2*M^M))+3)/2+1}*
 \backslash
 
 \backslash
@@ -7102,9 +7106,9 @@ pi})-1}(
 
 n_1^{
 \backslash
-sum_{n_2=2}^{M-1}((2*n_2+1)*(floor(n_0/(2*M)^{n_2})
+sum_{n_2=0}^{M^M-1}((2*n_2+1)*(floor(n_0/(2*M^M)^{n_2})
 \backslash
-%(2*M)))}*
+%(2*M^M)))}*
 \backslash
 
 \backslash
@@ -7124,18 +7128,9 @@ sum_{n_2=2}^{M-1}((2*n_2+1)*(floor(n_0/(2*M)^{n_2})
 
 (n_1+2)^{-
 \backslash
-sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_0/(2*M)^{n_2})
+sum_{n_2=0}^{M^M-1}((2*n_2+1)*(floor(n_0/(2*M^M)^{n_2})
 \backslash
-%(2*M)))}*
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-)
+%(2*M^M)))}
 \backslash
 
 \backslash
@@ -7144,13 +7139,22 @@ sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_0/(2*M)^{n_2})
 
 \begin_layout Plain Layout
 
+)*
+\backslash
 
 \backslash
-Pi_{n_1=0}^{M-1}(factorial(floor(n_0/(2*M)^{n_1})
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
-%(2*M))^{-1}*(2*n_1+1)^{-floor(n_0/(2*M)^{n_1})
+Pi_{n_1=0}^{M^M-1}(factorial(floor(n_0/(2*M^M)^{n_1})
 \backslash
-%(2*M)} )
+%(2*M^M))^{-1}*(2*n_1+1)^{-(floor(n_0/(2*M^M)^{n_1})
+\backslash
+%(2*M^M))} )
 \backslash
 
 \backslash
@@ -7192,7 +7196,7 @@ pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}
 
 \begin_layout Plain Layout
 
-))))%q1-,q2-,x_1-,x_2-foarallide lopusulud sel real$
+))))$%q1-,q2-,x_1-,x_2-foarallide lopusulud sel real
 \end_layout
 
 \end_inset
@@ -7228,6 +7232,10 @@ in R
 \backslash
 land x_1>0 
 \backslash
+land x_2
+\backslash
+ne0 
+\backslash
 to 
 \backslash
 
@@ -7261,7 +7269,7 @@ infty}(
 
 
 \backslash
-sum_{n_0=0}^{(2*M)^M-1}(
+sum_{n_0=0}^{(2*M^M)^{M^M}-1}(
 \backslash
 
 \backslash
@@ -7270,11 +7278,11 @@ sum_{n_0=0}^{(2*M)^M-1}(
 
 \begin_layout Plain Layout
 
-(
+((1+
 \backslash
-sum_{n_1=0}^{M-1}(1+floor(n_0/(2*M)^{n_1})
+sum_{n_1=0}^{M^M-1}(floor(n_0/(2*M^M)^{n_1})
 \backslash
-%(2*M))
+%(2*M^M)))
 \backslash
 %2)*
 \backslash
@@ -7287,9 +7295,9 @@ sum_{n_1=0}^{M-1}(1+floor(n_0/(2*M)^{n_1})
 
 (x_2*2)^{
 \backslash
-sum_{n_1=0}^{M-1}(floor(n_0/(2*M)^{n_1})
+sum_{n_1=0}^{M^M-1}(floor(n_0/(2*M^M)^{n_1})
 \backslash
-%(2*M))}*
+%(2*M^M))}*
 \backslash
 
 \backslash
@@ -7300,9 +7308,9 @@ sum_{n_1=0}^{M-1}(floor(n_0/(2*M)^{n_1})
 
 (-1)^{
 \backslash
-sum_{n_1=0}^{M-1}(floor(n_0/(2*M)^{n_1})
+sum_{n_1=0}^{M^M-1}(floor(n_0/(2*M^M)^{n_1})
 \backslash
-%(2*M))/2}*
+%(2*M^M))/2}*
 \backslash
 
 \backslash
@@ -7326,18 +7334,9 @@ pi})+1}(
 
 (1-2/n_1)^{
 \backslash
-sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_0/(2*M)^{n_2})
+sum_{n_2=0}^{M^M-1}((2*n_2+1)*(floor(n_0/(2*M^M)^{n_2})
 \backslash
-%(2*M)))}*
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-(n_1-1)^{-x_1}*
+%(2*M^M)))}*
 \backslash
 
 \backslash
@@ -7346,7 +7345,16 @@ sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_0/(2*M)^{n_2})
 
 \begin_layout Plain Layout
 
-)
+(n_1-1)^{-x_1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)*
 \backslash
 
 \backslash
@@ -7357,11 +7365,11 @@ sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_0/(2*M)^{n_2})
 
 
 \backslash
-Pi_{n_1=0}^{M-1}(factorial(floor(n_0/(2*M)^{n_1})
+Pi_{n_1=0}^{M^M-1}(factorial(floor(n_0/(2*M^M)^{n_1})
 \backslash
-%(2*M))^{-1}*(2*n_1+1)^{-floor(n_0/(2*M)^{n_1})
+%(2*M^M))^{-1}*(2*n_1+1)^{-(floor(n_0/(2*M^M)^{n_1})
 \backslash
-%(2*M)} )
+%(2*M^M))} )
 \backslash
 
 \backslash
@@ -7420,7 +7428,7 @@ infty}(
 
 
 \backslash
-sum_{n_0=0}^{(2*M)^M-1}(
+sum_{n_0=0}^{(2*M^M)^{M^M}-1}(
 \backslash
 
 \backslash
@@ -7431,9 +7439,9 @@ sum_{n_0=0}^{(2*M)^M-1}(
 
 (
 \backslash
-sum_{n_1=0}^{M-1}(floor(n_0/(2*M)^{n_1})
+sum_{n_1=0}^{M^M-1}(floor(n_0/(2*M^M)^{n_1})
 \backslash
-%(2*M))
+%(2*M^M))
 \backslash
 %2)*
 \backslash
@@ -7446,9 +7454,9 @@ sum_{n_1=0}^{M-1}(floor(n_0/(2*M)^{n_1})
 
 (x_2*2)^{
 \backslash
-sum_{n_1=0}^{M-1}(floor(n_0/(2*M)^{n_1})
+sum_{n_1=0}^{M^M-1}(floor(n_0/(2*M^M)^{n_1})
 \backslash
-%(2*M))}*
+%(2*M^M))}*
 \backslash
 
 \backslash
@@ -7459,9 +7467,9 @@ sum_{n_1=0}^{M-1}(floor(n_0/(2*M)^{n_1})
 
 (-1)^{(
 \backslash
-sum_{n_1=0}^{M-1}(floor(n_0/(2*M)^{n_1})
+sum_{n_1=0}^{M^M-1}(floor(n_0/(2*M^M)^{n_1})
 \backslash
-%(2*M))+3)/2}*
+%(2*M^M))+3)/2+1}*
 \backslash
 
 \backslash
@@ -7485,18 +7493,9 @@ pi})+1}(
 
 (1-2/n_1)^{
 \backslash
-sum_{n_2=2}^{M-1}((2*n_2+1)*(floor(n_0/(2*M)^{n_2})
+sum_{n_2=0}^{M^M-1}((2*n_2+1)*(floor(n_0/(2*M^M)^{n_2})
 \backslash
-%(2*M)))}*
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-(n_1-1)^{-x_1}*
+%(2*M^M)))}*
 \backslash
 
 \backslash
@@ -7505,7 +7504,16 @@ sum_{n_2=2}^{M-1}((2*n_2+1)*(floor(n_0/(2*M)^{n_2})
 
 \begin_layout Plain Layout
 
-)
+(n_1-1)^{-x_1}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)*
 \backslash
 
 \backslash
@@ -7516,11 +7524,11 @@ sum_{n_2=2}^{M-1}((2*n_2+1)*(floor(n_0/(2*M)^{n_2})
 
 
 \backslash
-Pi_{n_1=0}^{M-1}(factorial(floor(n_0/(2*M)^{n_1})
+Pi_{n_1=0}^{M^M-1}(factorial(floor(n_0/(2*M^M)^{n_1})
 \backslash
-%(2*M))^{-1}*(2*n_1+1)^{-floor(n_0/(2*M)^{n_1})
+%(2*M^M))^{-1}*(2*n_1+1)^{-(floor(n_0/(2*M^M)^{n_1})
 \backslash
-%(2*M)} )
+%(2*M^M))} )
 \backslash
 
 \backslash
@@ -7562,7 +7570,7 @@ pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}
 
 \begin_layout Plain Layout
 
-))))%q1-,q2-,x_1-,x_2-foarallide lopusulud sel real$
+))))$%q1-,q2-,x_1-,x_2-foarallide lopusulud sel real
 \end_layout
 
 \end_inset
