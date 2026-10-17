@@ -5124,6 +5124,10 @@ in R
 \backslash
 land x_1>0 
 \backslash
+land x_2
+\backslash
+ne0 
+\backslash
 to 
 \backslash
 
@@ -5165,9 +5169,9 @@ sum_{{n_0}=1}^{floor(e^{(floor(M)/abs(x_2)+q_1/x_2)*2
 \backslash
 pi})}({n_0}^{-x_1}*
 \backslash
-sum_{n_1=0}^{M-1}(x_2^{2*n_1}*2^{2*n_1}*(-1)^{n_1}*
+sum_{n_1=0}^{M^M-1}(x_2^{2*n_1}*2^{2*n_1}*(-1)^{n_1}*
 \backslash
-sum_{n_2=0}^{(2*n_1+1)^M-1}(
+sum_{n_2=0}^{(2*n_1+1)^{M^M}-1}(
 \backslash
 
 \backslash
@@ -5178,7 +5182,7 @@ sum_{n_2=0}^{(2*n_1+1)^M-1}(
 
 (
 \backslash
-sum_{n_3=0}^{M-1}(
+sum_{n_3=0}^{M^M-1}(
 \backslash
  floor(n_2/(2*n_1+1)^{n_3})
 \backslash
@@ -5195,7 +5199,7 @@ sum_{n_3=0}^{M-1}(
 
 
 \backslash
-Pi_{n_3=0}^{M-1}(factorial(
+Pi_{n_3=0}^{M^M-1}(factorial(
 \backslash
  floor(n_2/(2*n_1+1)^{n_3})
 \backslash
@@ -5267,9 +5271,9 @@ sum_{{n_0}=1}^{floor(e^{(floor(M)/abs(x_2)+q_2/x_2)*2
 \backslash
 pi})}({n_0}^{-x_1}*
 \backslash
-sum_{n_1=0}^{M-1}(x_2^{2*n_1+1}*2^{2*n_1+1}*(-1)^{n_1}*
+sum_{n_1=0}^{M^M-1}(x_2^{2*n_1+1}*2^{2*n_1+1}*(-1)^{n_1}*
 \backslash
-sum_{n_2=0}^{(2*n_1+2)^M-1}(
+sum_{n_2=0}^{(2*n_1+2)^{M^M}-1}(
 \backslash
 
 \backslash
@@ -5280,7 +5284,7 @@ sum_{n_2=0}^{(2*n_1+2)^M-1}(
 
 (
 \backslash
-sum_{n_3=0}^{M-1}(
+sum_{n_3=0}^{M^M-1}(
 \backslash
  floor(n_2/(2*n_1+2)^{n_3})
 \backslash
@@ -5297,7 +5301,7 @@ sum_{n_3=0}^{M-1}(
 
 
 \backslash
-Pi_{n_3=0}^{M-1}(factorial(
+Pi_{n_3=0}^{M^M-1}(factorial(
 \backslash
  floor(n_2/(2*n_1+2)^{n_3})
 \backslash
@@ -5384,6 +5388,10 @@ in R
 \backslash
 land x_1>0 
 \backslash
+land x_2
+\backslash
+ne0 
+\backslash
 to 
 \backslash
 
@@ -5425,9 +5433,9 @@ sum_{{n_0}=1}^{floor(e^{(floor(M)/abs(x_2)+q_1/x_2)*2
 \backslash
 pi})}({n_0}^{-x_1}*
 \backslash
-sum_{n_1=0}^{M-1}(x_2^{2*n_1}*2^{2*n_1}*(-1)^{n_1}*
+sum_{n_1=0}^{M^M-1}(x_2^{2*n_1}*2^{2*n_1}*(-1)^{n_1}*
 \backslash
-sum_{n_2=0}^{(2*n_1+1)^M-1}(
+sum_{n_2=0}^{(2*n_1+1)^{M^M}-1}(
 \backslash
 
 \backslash
@@ -5438,7 +5446,7 @@ sum_{n_2=0}^{(2*n_1+1)^M-1}(
 
 (
 \backslash
-sum_{n_3=0}^{M-1}(
+sum_{n_3=0}^{M^M-1}(
 \backslash
  floor(n_2/(2*n_1+1)^{n_3})
 \backslash
@@ -5455,7 +5463,7 @@ sum_{n_3=0}^{M-1}(
 
 (n_0-1)^{ 
 \backslash
-sum_{n_3=0}^{M-1}((2*n_3+1)*(floor(n_2/(2*n_1+1)^{n_3})
+sum_{n_3=0}^{M^M-1}((2*n_3+1)*(floor(n_2/(2*n_1+1)^{n_3})
 \backslash
 %(2*n_1+1)))}*
 \backslash
@@ -5468,7 +5476,7 @@ sum_{n_3=0}^{M-1}((2*n_3+1)*(floor(n_2/(2*n_1+1)^{n_3})
 
 (n_0+1)^{-
 \backslash
-sum_{n_3=0}^{M-1}((2*n_3+1)*(floor(n_2/(2*n_1+1)^{n_3})
+sum_{n_3=0}^{M^M-1}((2*n_3+1)*(floor(n_2/(2*n_1+1)^{n_3})
 \backslash
 %(2*n_1+1)))}*
 \backslash
@@ -5481,7 +5489,7 @@ sum_{n_3=0}^{M-1}((2*n_3+1)*(floor(n_2/(2*n_1+1)^{n_3})
 
 
 \backslash
-Pi_{n_3=0}^{M-1}(factorial(
+Pi_{n_3=0}^{M^M-1}(factorial(
 \backslash
  floor(n_2/(2*n_1+1)^{n_3})
 \backslash
@@ -5503,11 +5511,7 @@ Pi_{n_3=0}^{M-1}(factorial(
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
-)))
+)
 \backslash
 
 \backslash
@@ -5555,15 +5559,15 @@ infty}(
 
 \begin_layout Plain Layout
 
-
+-
 \backslash
 sum_{{n_0}=1}^{floor(e^{(floor(M)/abs(x_2)+q_2/x_2)*2
 \backslash
 pi})}({n_0}^{-x_1}*
 \backslash
-sum_{n_1=0}^{M-1}(x_2^{2*n_1+1}*2^{2*n_1+1}*(-1)^{n_1}*
+sum_{n_1=0}^{M^M-1}(x_2^{2*n_1+1}*2^{2*n_1+1}*(-1)^{n_1}*
 \backslash
-sum_{n_2=0}^{(2*n_1+2)^M-1}(
+sum_{n_2=0}^{(2*n_1+2)^{M^M}-1}(
 \backslash
 
 \backslash
@@ -5574,7 +5578,7 @@ sum_{n_2=0}^{(2*n_1+2)^M-1}(
 
 (
 \backslash
-sum_{n_3=0}^{M-1}(
+sum_{n_3=0}^{M^M-1}(
 \backslash
  floor(n_2/(2*n_1+2)^{n_3})
 \backslash
@@ -5591,7 +5595,7 @@ sum_{n_3=0}^{M-1}(
 
 (n_0-1)^{ 
 \backslash
-sum_{n_3=0}^{M-1}((2*n_3+1)*(floor(n_2/(2*n_1+2)^{n_3})
+sum_{n_3=0}^{M^M-1}((2*n_3+1)*(floor(n_2/(2*n_1+2)^{n_3})
 \backslash
 %(2*n_1+2)))}*
 \backslash
@@ -5604,7 +5608,7 @@ sum_{n_3=0}^{M-1}((2*n_3+1)*(floor(n_2/(2*n_1+2)^{n_3})
 
 (n_0+1)^{-
 \backslash
-sum_{n_3=0}^{M-1}((2*n_3+1)*(floor(n_2/(2*n_1+2)^{n_3})
+sum_{n_3=0}^{M^M-1}((2*n_3+1)*(floor(n_2/(2*n_1+2)^{n_3})
 \backslash
 %(2*n_1+2)))}*
 \backslash
@@ -5617,7 +5621,7 @@ sum_{n_3=0}^{M-1}((2*n_3+1)*(floor(n_2/(2*n_1+2)^{n_3})
 
 
 \backslash
-Pi_{n_3=0}^{M-1}(factorial(
+Pi_{n_3=0}^{M^M-1}(factorial(
 \backslash
  floor(n_2/(2*n_1+2)^{n_3})
 \backslash
@@ -5639,11 +5643,7 @@ Pi_{n_3=0}^{M-1}(factorial(
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
-)))
+)
 \backslash
 
 \backslash
