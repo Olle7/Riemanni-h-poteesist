@@ -9936,7 +9936,7 @@ pi)*(1-x_1)+sin((q_1+0/4)*2
 \backslash
 pi)*x_2)*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
-pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}=0
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
 
 \backslash
@@ -10008,7 +10008,7 @@ pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 
 \begin_layout Plain Layout
 
-))))$
+)))))$
 \end_layout
 
 \end_inset
