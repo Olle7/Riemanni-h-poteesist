@@ -9705,11 +9705,15 @@ forall_{x_2}(x_1
 \backslash
 in R 
 \backslash
+land x_1>0 
+\backslash
 land x_2 
 \backslash
 in R 
 \backslash
-land x_1>0 
+land x_2
+\backslash
+ne0 
 \backslash
 land 
 \backslash
@@ -9869,11 +9873,15 @@ forall_{x_2}(x_1
 \backslash
 in R 
 \backslash
+land x_1>0 
+\backslash
 land x_2 
 \backslash
 in R 
 \backslash
-land x_1>0 
+land x_2
+\backslash
+ne0 
 \backslash
 land 
 \backslash
@@ -10032,11 +10040,15 @@ forall_{x_2}(x_1
 \backslash
 in R 
 \backslash
+land x_1>0 
+\backslash
 land x_2 
 \backslash
 in R 
 \backslash
-land x_1>0 
+land x_2
+\backslash
+ne0 
 \backslash
 land 
 \backslash
@@ -10176,11 +10188,15 @@ forall_{x_2}(x_1
 \backslash
 in R 
 \backslash
+land x_1>0 
+\backslash
 land x_2 
 \backslash
 in R 
 \backslash
-land x_1>0 
+land x_2
+\backslash
+ne0 
 \backslash
 land 
 \backslash
@@ -10283,11 +10299,15 @@ forall_{x_2}(x_1
 \backslash
 in R 
 \backslash
+land x_1>0 
+\backslash
 land x_2 
 \backslash
 in R 
 \backslash
-land x_1>0 
+land x_2
+\backslash
+ne0 
 \backslash
 land 
 \backslash
@@ -10391,11 +10411,15 @@ forall_{x_2}(x_1
 \backslash
 in R 
 \backslash
+land x_1>0 
+\backslash
 land x_2 
 \backslash
 in R 
 \backslash
-land x_1>0 
+land x_2
+\backslash
+ne0 
 \backslash
 land 
 \backslash
@@ -10507,11 +10531,15 @@ forall_{x_2}(x_1
 \backslash
 in R 
 \backslash
+land x_1>0 
+\backslash
 land x_2 
 \backslash
 in R 
 \backslash
-land x_1>0 
+land x_2
+\backslash
+ne0 
 \backslash
 land 
 \backslash
@@ -10623,11 +10651,15 @@ forall_{x_2}(x_1
 \backslash
 in R 
 \backslash
+land x_1>0 
+\backslash
 land x_2 
 \backslash
 in R 
 \backslash
-land x_1>0 
+land x_2
+\backslash
+ne0 
 \backslash
 land 
 \backslash
@@ -10739,11 +10771,15 @@ forall_{x_2}(x_1
 \backslash
 in R 
 \backslash
+land x_1>0 
+\backslash
 land x_2 
 \backslash
 in R 
 \backslash
-land x_1>0 
+land x_2
+\backslash
+ne0 
 \backslash
 land 
 \backslash
@@ -10874,11 +10910,15 @@ land x_1
 \backslash
 in R 
 \backslash
+land x_1>0 
+\backslash
 land x_2 
 \backslash
 in R 
 \backslash
-land x_1>0 
+land x_2
+\backslash
+ne0 
 \backslash
 land 
 \backslash
@@ -11093,11 +11133,15 @@ land x_1
 \backslash
 in R 
 \backslash
+land x_1>0 
+\backslash
 land x_2 
 \backslash
 in R 
 \backslash
-land x_1>0 
+land x_2
+\backslash
+ne0 
 \backslash
 land 
 \backslash
@@ -11333,11 +11377,15 @@ land x_1
 \backslash
 in R 
 \backslash
+land x_1>0 
+\backslash
 land x_2 
 \backslash
 in R 
 \backslash
-land x_1>0 
+land x_2
+\backslash
+ne0 
 \backslash
 land 
 \backslash
@@ -11578,11 +11626,15 @@ land x_1
 \backslash
 in R 
 \backslash
+land x_1>0 
+\backslash
 land x_2 
 \backslash
 in R 
 \backslash
-land x_1>0 
+land x_2
+\backslash
+ne0 
 \backslash
 land 
 \backslash
@@ -11822,11 +11874,15 @@ land x_1
 \backslash
 in R 
 \backslash
+land x_1>0 
+\backslash
 land x_2 
 \backslash
 in R 
 \backslash
-land x_1>0 
+land x_2
+\backslash
+ne0 
 \backslash
 land 
 \backslash
@@ -12270,11 +12326,15 @@ land x_1
 \backslash
 in R 
 \backslash
+land x_1>0 
+\backslash
 land x_2 
 \backslash
 in R 
 \backslash
-land x_1>0 
+land x_2
+\backslash
+ne0 
 \backslash
 land 
 \backslash
@@ -12538,11 +12598,15 @@ land x_1
 \backslash
 in R 
 \backslash
+land x_1>0 
+\backslash
 land x_2 
 \backslash
 in R 
 \backslash
-land x_1>0 
+land x_2
+\backslash
+ne0 
 \backslash
 land 
 \backslash
@@ -12675,11 +12739,15 @@ land x_1
 \backslash
 in R 
 \backslash
+land x_1>0 
+\backslash
 land x_2 
 \backslash
 in R 
 \backslash
-land x_1>0 
+land x_2
+\backslash
+ne0 
 \backslash
 land 
 \backslash
@@ -12808,11 +12876,15 @@ land x_1
 \backslash
 in R 
 \backslash
+land x_1>0 
+\backslash
 land x_2 
 \backslash
 in R 
 \backslash
-land x_1>0 
+land x_2
+\backslash
+ne0 
 \backslash
 land 
 \backslash
@@ -13007,13 +13079,15 @@ land x_1
 \backslash
 in R 
 \backslash
+land x_1>0 
+\backslash
 land x_2 
 \backslash
 in R 
 \backslash
-land x_1>0 
+land x_2
 \backslash
-land 
+ne0 
 \backslash
 zeta(x_1+i*x_2)=0 
 \backslash
@@ -13182,11 +13256,15 @@ land x_1
 \backslash
 in R 
 \backslash
+land x_1>0 
+\backslash
 land x_2 
 \backslash
 in R 
 \backslash
-land x_1>0 
+land x_2
+\backslash
+ne0 
 \backslash
 land 
 \backslash
