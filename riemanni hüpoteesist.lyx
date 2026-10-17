@@ -3090,7 +3090,7 @@ $sin(x_2*ln(0)-arctan(x_2/(1-x_1)))$
 \begin_layout Standard
 
 \color red
-SIIN OLI VIGA! kas nüüd korras?
+SIIN ON VIGA!
 \end_layout
 
 \begin_layout Standard
@@ -9140,7 +9140,7 @@ pi)*(1-x_1)+sin((1/8+0/4)*2
 \backslash
 pi)*x_2)*e^{(floor(M)/abs(x_2)+1/8/x_2)*2
 \backslash
-pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
 
 \backslash
@@ -9252,7 +9252,7 @@ pi)*n^{-x_1})
 
 -((1-x_1)+x_2)*e^{(floor(M)/abs(x_2)+1/8/x_2)*2
 \backslash
-pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}*2^{-1/2}
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}*2^{-1/2}
 \backslash
 
 \backslash
@@ -9304,7 +9304,7 @@ pi)*n^{-x_1})
 
 -((1-x_1)+x_2)*e^{(floor(M)/abs(x_2)-1/8/x_2)*2
 \backslash
-pi*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1}*2^{-1/2}
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}*2^{-1/2}
 \backslash
 
 \backslash
