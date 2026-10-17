@@ -9917,7 +9917,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi/x_2})}(sin(x_2*ln(n)+(2
 \backslash
@@ -9934,7 +9934,7 @@ pi)*1/4)*n^{-x_1})
 \backslash
 pi)*(1-x_1)+sin((q_1+0/4)*2
 \backslash
-pi)*x_2)*e^{(floor(M)+q_1)*2
+pi)*x_2)*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}=0
 \backslash
@@ -9971,7 +9971,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+q_2)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_2)*2
 \backslash
 pi/x_2})}(sin(x_2*ln(n)+(2
 \backslash
@@ -9988,7 +9988,7 @@ pi)*2/4)*n^{-x_1})
 \backslash
 pi)*(1-x_1)+sin((q_2+1/4)*2
 \backslash
-pi)*x_2)*e^{(floor(M)+q_2)*2
+pi)*x_2)*e^{(floor(M)*sgn(x_2)+q_2)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
