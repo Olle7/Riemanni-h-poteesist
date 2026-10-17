@@ -5690,12 +5690,6 @@ selle asemel et üle erinevate n2'ede ristsummade summeeridaarvutan lihtsalt
 \end_layout
 
 \begin_layout Standard
-
-\color red
-SIIN VIGA!
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -5718,6 +5712,10 @@ land x_2
 in R 
 \backslash
 land x_1>0 
+\backslash
+land x_2
+\backslash
+ne0 
 \backslash
 to 
 \backslash
@@ -5760,7 +5758,7 @@ sum_{n_0=1}^{floor(e^{(floor(M)/abs(x_2)+q_1/x_2)*2
 \backslash
 pi})}(n_0^{-x_1}*
 \backslash
-sum_{n_1=0}^{(2*M)^M-1}(
+sum_{n_1=0}^{(2*M^M)^{M^M}-1}(
 \backslash
 
 \backslash
@@ -5771,9 +5769,9 @@ sum_{n_1=0}^{(2*M)^M-1}(
 
 ((1+
 \backslash
-sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
+sum_{n_2=0}^{M^M-1}(floor(n_1/(2*M^M)^{n_2})
 \backslash
-%(2*M)))
+%(2*M^M)))
 \backslash
 %2)*
 \backslash
@@ -5786,9 +5784,9 @@ sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 
 (
 \backslash
-sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
+sum_{n_2=0}^{M^M-1}(floor(n_1/(2*M^M)^{n_2})
 \backslash
-%(2*M))<2*M-1)*
+%(2*M^M))<2*M^M-1)*
 \backslash
 
 \backslash
@@ -5799,9 +5797,9 @@ sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 
 (x_2*2)^{
 \backslash
-sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
+sum_{n_2=0}^{M^M-1}(floor(n_1/(2*M^M)^{n_2})
 \backslash
-%(2*M))}*
+%(2*M^M))}*
 \backslash
 
 \backslash
@@ -5812,9 +5810,9 @@ sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 
 (-1)^{
 \backslash
-sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
+sum_{n_2=0}^{M^M-1}(floor(n_1/(2*M^M)^{n_2})
 \backslash
-%(2*M))/2}*
+%(2*M^M))/2}*
 \backslash
 
 \backslash
@@ -5825,9 +5823,9 @@ sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 
 (n_0-1)^{ 
 \backslash
-sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})
+sum_{n_2=0}^{M^M-1}((2*n_2+1)*(floor(n_1/(2*M^M)^{n_2})
 \backslash
-%(2*M)))}*
+%(2*M^M)))}*
 \backslash
 
 \backslash
@@ -5838,9 +5836,9 @@ sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})
 
 (n_0+1)^{-
 \backslash
-sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})
+sum_{n_2=0}^{M^M-1}((2*n_2+1)*(floor(n_1/(2*M^M)^{n_2})
 \backslash
-%(2*M)))}*
+%(2*M^M)))}*
 \backslash
 
 \backslash
@@ -5851,11 +5849,11 @@ sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})
 
 
 \backslash
-Pi_{n_2=0}^{M-1}(factorial(floor(n_1/(2*M)^{n_2})
+Pi_{n_2=0}^{M^M-1}(factorial(floor(n_1/(2*M^M)^{n_2})
 \backslash
-%(2*M))^{-1}*(2*n_2+1)^{-(floor(n_1/(2*M)^{n_2})
+%(2*M^M))^{-1}*(2*n_2+1)^{-(floor(n_1/(2*M^M)^{n_2})
 \backslash
-%(2*M))} )
+%(2*M^M))} )
 \backslash
 
 \backslash
@@ -5918,7 +5916,7 @@ sum_{n_0=1}^{floor(e^{(floor(M)/abs(x_2)+q_2/x_2)*2
 \backslash
 pi})}(n_0^{-x_1}*
 \backslash
-sum_{n_1=0}^{(2*M)^M-1}(
+sum_{n_1=0}^{(2*M^M)^{M^M}-1}(
 \backslash
 
 \backslash
@@ -5929,9 +5927,9 @@ sum_{n_1=0}^{(2*M)^M-1}(
 
 (
 \backslash
-sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
+sum_{n_2=0}^{M^M-1}(floor(n_1/(2*M^M)^{n_2})
 \backslash
-%(2*M))
+%(2*M^M))
 \backslash
 %2)*
 \backslash
@@ -5944,9 +5942,9 @@ sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 
 (
 \backslash
-sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
+sum_{n_2=0}^{M^M-1}(floor(n_1/(2*M^M)^{n_2})
 \backslash
-%(2*M))<2*M)*
+%(2*M^M))<2*M^M)*
 \backslash
 
 \backslash
@@ -5957,9 +5955,9 @@ sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 
 (x_2*2)^{
 \backslash
-sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
+sum_{n_2=0}^{M^M-1}(floor(n_1/(2*M^M)^{n_2})
 \backslash
-%(2*M))}*
+%(2*M^M))}*
 \backslash
 
 \backslash
@@ -5970,9 +5968,9 @@ sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 
 (-1)^{(
 \backslash
-sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
+sum_{n_2=0}^{M^M-1}(floor(n_1/(2*M^M)^{n_2})
 \backslash
-%(2*M))+3)/2+1}*
+%(2*M^M))+3)/2+1}*
 \backslash
 
 \backslash
@@ -5983,9 +5981,9 @@ sum_{n_2=0}^{M-1}(floor(n_1/(2*M)^{n_2})
 
 (n_0-1)^{ 
 \backslash
-sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})
+sum_{n_2=0}^{M^M-1}((2*n_2+1)*(floor(n_1/(2*M^M)^{n_2})
 \backslash
-%(2*M)))}*
+%(2*M^M)))}*
 \backslash
 
 \backslash
@@ -5996,9 +5994,9 @@ sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})
 
 (n_0+1)^{-
 \backslash
-sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})
+sum_{n_2=0}^{M^M-1}((2*n_2+1)*(floor(n_1/(2*M^M)^{n_2})
 \backslash
-%(2*M)))}*
+%(2*M^M)))}*
 \backslash
 
 \backslash
@@ -6009,11 +6007,11 @@ sum_{n_2=0}^{M-1}((2*n_2+1)*(floor(n_1/(2*M)^{n_2})
 
 
 \backslash
-Pi_{n_2=0}^{M-1}(factorial(floor(n_1/(2*M)^{n_2})
+Pi_{n_2=0}^{M^M-1}(factorial(floor(n_1/(2*M^M)^{n_2})
 \backslash
-%(2*M))^{-1}*(2*n_2+1)^{-(floor(n_1/(2*M)^{n_2})
+%(2*M^M))^{-1}*(2*n_2+1)^{-(floor(n_1/(2*M^M)^{n_2})
 \backslash
-%(2*M))} )
+%(2*M^M))} )
 \backslash
 
 \backslash
