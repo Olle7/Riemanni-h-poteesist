@@ -10166,7 +10166,7 @@ pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 
 \begin_layout Standard
 muudan kirjutan ümber viies ühiseid kordajaid sulguse ette.
- SIIN VIGA VIST(sp)!
+ SIIN VIGA VIST!
 \end_layout
 
 \begin_layout Standard
@@ -10212,10 +10212,6 @@ to
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
 
 \backslash
 lim_{M 
@@ -10231,13 +10227,13 @@ infty}(
 
 \begin_layout Plain Layout
 
-
++
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
+sum_{n=floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
-pi/x_2})}(Q_1*sin(x_2*ln(n)+(2
+pi/x_2})+1}^{floor(e^{(floor(M)*sgn(x_2)+q_2)*2
 \backslash
-pi)*1/4)*n^{-x_1}+sin(x_2*ln(n)+(2
+pi/x_2})}(sin(x_2*ln(n)+(2
 \backslash
 pi)*2/4)*n^{-x_1})
 \backslash
