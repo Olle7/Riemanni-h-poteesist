@@ -10156,7 +10156,7 @@ pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 
 \begin_layout Plain Layout
 
-))))$
+)))))$
 \end_layout
 
 \end_inset
@@ -10166,6 +10166,7 @@ pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 
 \begin_layout Standard
 muudan kirjutan ümber viies ühiseid kordajaid sulguse ette.
+ SIIN VIGA VIST(sp)!
 \end_layout
 
 \begin_layout Standard
@@ -10247,19 +10248,19 @@ pi)*2/4)*n^{-x_1})
 
 \begin_layout Plain Layout
 
--((Q_1*sin((q_1+1/4)*2
+-Q_1*(sin((q_1+1/4)*2
 \backslash
-pi)+sin((q_2+2/4)*2
+pi)*(1-x_1)+sin((q_1+0/4)*2
 \backslash
-pi))*(1-x_1)+(Q_1*sin((q_1+0/4)*2
+pi)*x_2)*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
-pi)+sin((q_2+1/4)*2
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1} - (sin((q_2+2/4)*2
 \backslash
-pi))*x_2)*e^{(floor(M)*sgn(x_2)+q_1)*2
+pi)*(1-x_1)+sin((q_2+1/4)*2
 \backslash
-pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+pi)*x_2)*e^{(floor(M)*sgn(x_2)+q_2)*2
 \backslash
- )=0
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1})=0
 \backslash
 
 \backslash
@@ -10268,7 +10269,7 @@ pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 
 \begin_layout Plain Layout
 
-))))$
+)))))$
 \end_layout
 
 \end_inset
