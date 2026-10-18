@@ -10166,7 +10166,23 @@ pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 
 \begin_layout Standard
 muudan kirjutan ümber viies ühiseid kordajaid sulguse ette.
- SIIN VIGA VIST!
+ eeldan siin, et summa ruuremast arvust väikseamani on sama, mi negatiivne
+ summa väiksemast arvust suuremani 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=a}^b(f(n))=-
+\backslash
+sum_{n=b}^a(f(n))
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
