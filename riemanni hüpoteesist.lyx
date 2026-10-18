@@ -10227,6 +10227,23 @@ infty}(
 
 \begin_layout Plain Layout
 
+
+\backslash
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
+\backslash
+pi/x_2})}(Q_1*sin(x_2*ln(n)+(2
+\backslash
+pi)*1/4)*n^{-x_1}+sin(x_2*ln(n)+(2
+\backslash
+pi)*2/4)*n^{-x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
 +
 \backslash
 sum_{n=floor(e^{(floor(M)*sgn(x_2)+q_1)*2
