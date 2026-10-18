@@ -10961,17 +10961,22 @@ sqrt{Q_1^2+1}*sin(x_2*ln(n)-arctan(Q_1))*n^{-x_1})
 
 \begin_layout Plain Layout
 
-+( e^{(floor(M)*sgn(x_2)+q_2)*2
+-( e^{(floor(M)*sgn(x_2)+q_2)*2
 \backslash
-pi*(1-x_1)/x_2}* cos(q_2*2
+pi*(1-x_1)/x_2}*cos(q_2*2
 \backslash
 pi+atan2(1-x_1,x_2)) 
 \backslash
 
 \backslash
- - e^{(floor(M)*sgn(x_2)+q_1)*2
+
+\end_layout
+
+\begin_layout Plain Layout
+
+- e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
-pi*(1-x_1)/x_2}* cos(q_1*2
+pi*(1-x_1)/x_2}*cos(q_1*2
 \backslash
 pi+atan2(1-x_1,x_2)) )*((1-x_1)^2+x_2^2)^{-1/2}
 \backslash
@@ -11046,7 +11051,8 @@ pi+atan2(1-x_1,x_2))
 \end_layout
 
 \begin_layout Standard
-lihtsustan:
+lihtsustan.
+ q2 taandub välja.
 \end_layout
 
 \begin_layout Standard
@@ -11057,9 +11063,7 @@ status open
 
 
 \backslash
-forall_{q_1}( 
-\backslash
-forall_{q_2}( 
+forall_{q_1}(
 \backslash
 forall_{Q_1}( 
 \backslash
@@ -11113,8 +11117,6 @@ infty}(
 
 
 \backslash
-sqrt{Q_1^2+1}*
-\backslash
 sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi/x_2})}(sin(x_2*ln(n)-arctan(Q_1))*n^{-x_1}) 
@@ -11128,38 +11130,9 @@ pi/x_2})}(sin(x_2*ln(n)-arctan(Q_1))*n^{-x_1})
 
 +e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
-pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1/2}*( 
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1/2}*sin(q_1*2
 \backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Q_1*sin(q_1*2
-\backslash
-pi+atan2(1-x_1,x_2)) 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-+cos(q_1*2
-\backslash
-pi+atan2(1-x_1,x_2)) 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-) 
+pi+atan2(1-x_1,x_2)+atan2(1,Q_1)) 
 \backslash
 
 \backslash
@@ -11177,7 +11150,7 @@ pi+atan2(1-x_1,x_2))
 
 \begin_layout Plain Layout
 
-)))))
+))))
 \end_layout
 
 \end_inset
