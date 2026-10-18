@@ -10177,7 +10177,7 @@ status open
 \backslash
 sum_{n=a}^b(f(n))=-
 \backslash
-sum_{n=b}^a(f(n))
+sum_{n=b+1}^{a-1}(f(n))
 \end_layout
 
 \end_inset
