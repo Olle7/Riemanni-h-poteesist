@@ -13313,7 +13313,7 @@ pi)*n^{-x_1})
 
 \begin_layout Plain Layout
 
--(1-x_1)*((floor(M)*sgn(x_2)
+-(1-x_1)*((floor(M)
 \backslash
 %2)*2-1)*e^{(floor(M)*sgn(x_2)/2+1/4-Q_1)*2
 \backslash
