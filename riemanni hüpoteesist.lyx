@@ -10321,6 +10321,8 @@ $
 \backslash
 forall_{q_1}(
 \backslash
+forall_{q_2}(
+\backslash
 forall_{Q_1}(
 \backslash
 forall_{x_1}(
@@ -10339,6 +10341,10 @@ land x_2
 \backslash
 ne0 
 \backslash
+land Q_1
+\backslash
+in R 
+\backslash
 land 
 \backslash
 zeta(x_1+i*x_2)=0 
@@ -10347,10 +10353,6 @@ to
 \backslash
 
 \backslash
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -10386,23 +10388,15 @@ sqrt{Q_1^2+1}*-sin(x_2*ln(n)+arctan(-Q_1))*n^{-x_1})
 
 \begin_layout Plain Layout
 
--((-
++
 \backslash
-sqrt{Q_1^2+1}*sin(q_1*2
+sum_{n=floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
-pi+arctan(-Q_1)))*(1-x_1)+
+pi/x_2})+1}^{floor(e^{(floor(M)*sgn(x_2)+q_2)*2
 \backslash
-sqrt{Q_1^2+1}*sin(q_1*2
+pi/x_2})}(sin(x_2*ln(n)+(2
 \backslash
-pi+arctan(1/Q_1) )*x_2)
-\backslash
-
-\backslash
-*e^{(floor(M)*sgn(x_2)+q_1)*2
-\backslash
-pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
-\backslash
- )=0
+pi)*2/4)*n^{-x_1})
 \backslash
 
 \backslash
@@ -10411,7 +10405,28 @@ pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 
 \begin_layout Plain Layout
 
-)))$
+-Q_1*(sin((q_1+1/4)*2
+\backslash
+pi)*(1-x_1)+sin((q_1+0/4)*2
+\backslash
+pi)*x_2)*e^{(floor(M)*sgn(x_2)+q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1} - (sin((q_2+2/4)*2
+\backslash
+pi)*(1-x_1)+sin((q_2+1/4)*2
+\backslash
+pi)*x_2)*e^{(floor(M)*sgn(x_2)+q_2)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1})=0
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)))))$
 \end_layout
 
 \end_inset
