@@ -10084,7 +10084,7 @@ infty}(
 
 Q_1*
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi/x_2})}(sin(x_2*ln(n)+(2
 \backslash
@@ -10101,7 +10101,7 @@ pi)*1/4)*n^{-x_1})
 \backslash
 pi)*(1-x_1)+sin((q_1+0/4)*2
 \backslash
-pi)*x_2)*e^{(floor(M)+q_1)*2
+pi)*x_2)*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 \end_layout
@@ -10119,7 +10119,7 @@ pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+q_2)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_2)*2
 \backslash
 pi/x_2})}(sin(x_2*ln(n)+(2
 \backslash
@@ -10136,7 +10136,7 @@ pi)*2/4)*n^{-x_1})
 \backslash
 pi)*(1-x_1)+sin((q_2+1/4)*2
 \backslash
-pi)*x_2)*e^{(floor(M)+q_2)*2
+pi)*x_2)*e^{(floor(M)*sgn(x_2)+q_2)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
@@ -10232,7 +10232,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi/x_2})}(Q_1*sin(x_2*ln(n)+(2
 \backslash
@@ -10255,7 +10255,7 @@ pi))*(1-x_1)+(Q_1*sin((q_1+0/4)*2
 \backslash
 pi)+sin((q_2+1/4)*2
 \backslash
-pi))*x_2)*e^{(floor(M)+q_1)*2
+pi))*x_2)*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
@@ -10343,7 +10343,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi/x_2})}(
 \backslash
@@ -10368,7 +10368,7 @@ pi+arctan(1/Q_1) )*x_2)
 \backslash
 
 \backslash
-*e^{(floor(M)+q_1)*2
+*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
@@ -10455,7 +10455,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi/x_2})}(-sin(x_2*ln(n)-arctan(Q_1))*n^{-x_1})
 \backslash
@@ -10479,7 +10479,7 @@ pi+arctan(1/Q_1))*x_2)
 
 \begin_layout Plain Layout
 
-*e^{(floor(M)+q_1)*2
+*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1})
 \backslash
@@ -10575,7 +10575,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi/x_2})}(-sin(x_2*ln(n)-arctan(Q_1))*n^{-x_1})
 \backslash
@@ -10601,7 +10601,7 @@ pi/4)*x_2)
 
 \begin_layout Plain Layout
 
-*e^{(floor(M)+q_1)*2
+*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1})
 \backslash
@@ -10695,7 +10695,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi/x_2})}(sin(x_2*ln(n)-arctan(Q_1))*n^{-x_1})
 \backslash
@@ -10721,7 +10721,7 @@ pi/4)*x_2)
 
 \begin_layout Plain Layout
 
-*e^{(floor(M)+q_1)*2
+*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1})
 \backslash
@@ -10815,7 +10815,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi/x_2})}(sin(x_2*ln(n)-arctan(Q_1))*n^{-x_1})
 \backslash
@@ -10841,7 +10841,7 @@ pi/4)*sgn(Q_1)*x_2)
 
 \begin_layout Plain Layout
 
-*e^{(floor(M)+q_1)*2
+*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1})
 \backslash
@@ -10959,7 +10959,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi/x_2})}(sin(x_2*ln(n)-arctan(Q_1))*n^{-x_1})
 \backslash
@@ -10985,7 +10985,7 @@ pi/4)*x_2)
 
 \begin_layout Plain Layout
 
-*e^{(floor(M)+q_1)*2
+*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1})
 \backslash
@@ -11044,7 +11044,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi/x_2})}(sin(x_2*ln(n)-arctan(Q_1))*n^{-x_1})
 \backslash
@@ -11070,7 +11070,7 @@ pi/4)*x_2)
 
 \begin_layout Plain Layout
 
-*e^{(floor(M)+q_1)*2
+*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1})
 \backslash
@@ -11188,7 +11188,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi/x_2})}(sin(x_2*ln(n)-Q_1)*n^{-x_1})
 \backslash
@@ -11214,7 +11214,7 @@ pi/4)*x_2)
 
 \begin_layout Plain Layout
 
-*e^{(floor(M)+q_1)*2
+*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
@@ -11277,7 +11277,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi/x_2})}(sin(x_2*ln(n)-Q_1)*n^{-x_1})
 \backslash
@@ -11303,7 +11303,7 @@ pi/4)*x_2)
 
 \begin_layout Plain Layout
 
-*e^{(floor(M)+q_1)*2
+*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
@@ -11432,7 +11432,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi/x_2})}(sin(x_2*ln(n)+Q_1)*n^{-x_1})
 \backslash
@@ -11458,7 +11458,7 @@ pi/4)*x_2)
 
 \begin_layout Plain Layout
 
-*e^{(floor(M)+q_1)*2
+*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
@@ -11523,7 +11523,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi/x_2})}(sin(x_2*ln(n)-2
 \backslash
@@ -11555,7 +11555,7 @@ pi/4)*x_2)
 
 \begin_layout Plain Layout
 
-*e^{(floor(M)+q_1)*2
+*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
@@ -11681,7 +11681,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi/x_2})}(sin(x_2*ln(n)+Q_1)*n^{-x_1})
 \backslash
@@ -11707,7 +11707,7 @@ pi/4)*x_2)
 
 \begin_layout Plain Layout
 
-*e^{(floor(M)+q_1)*2
+*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
@@ -11772,7 +11772,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi/x_2})}(-sin(x_2*ln(n)+Q_1)*n^{-x_1})
 \backslash
@@ -11798,7 +11798,7 @@ pi/4)*x_2)
 
 \begin_layout Plain Layout
 
-*e^{(floor(M)+q_1)*2
+*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
@@ -11929,7 +11929,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi/x_2})}(sin(x_2*ln(n)+Q_1)*n^{-x_1})
 \backslash
@@ -11955,7 +11955,7 @@ pi/4)*x_2)
 
 \begin_layout Plain Layout
 
-*e^{(floor(M)+q_1)*2
+*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
@@ -12029,7 +12029,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi/x_2})}(-sin(x_2*ln(n)+Q_1)*n^{-x_1})
 \backslash
@@ -12055,7 +12055,7 @@ pi/4)*x_2)
 
 \begin_layout Plain Layout
 
-*e^{(floor(M)+q_1)*2
+*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
@@ -12124,7 +12124,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi/x_2})}(sin(x_2*ln(n)+Q_1)*n^{-x_1})
 \backslash
@@ -12150,7 +12150,7 @@ pi/4)*x_2)
 
 \begin_layout Plain Layout
 
-*e^{(floor(M)+q_1)*2
+*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
@@ -12224,7 +12224,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi/x_2})}(-sin(x_2*ln(n)+Q_1)*n^{-x_1})
 \backslash
@@ -12250,7 +12250,7 @@ pi/4)*x_2)
 
 \begin_layout Plain Layout
 
-*e^{(floor(M)+q_1)*2
+*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
@@ -12389,7 +12389,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi/x_2})}(sin(x_2*ln(n)+Q_1)*n^{-x_1})
 \backslash
@@ -12415,7 +12415,7 @@ pi/4)*x_2)
 
 \begin_layout Plain Layout
 
-*e^{(floor(M)+q_1)*2
+*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
@@ -12497,7 +12497,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi/x_2})}(sin(x_2*ln(n)+Q_1)*n^{-x_1})
 \backslash
@@ -12523,7 +12523,7 @@ pi/4)*x_2)
 
 \begin_layout Plain Layout
 
-*e^{(floor(M)+q_1)*2
+*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
@@ -12638,7 +12638,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi/x_2})}(sin(x_2*ln(n)+Q_1)*n^{-x_1})
 \backslash
@@ -12670,7 +12670,7 @@ pi/4)*x_2)
 
 \begin_layout Plain Layout
 
-*e^{(floor(M)+q_1)*2
+*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
@@ -12779,7 +12779,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi/x_2})}(sin(x_2*ln(n)+Q_1*2
 \backslash
@@ -12807,7 +12807,7 @@ pi)*((floor(Q_1*4)
 
 \begin_layout Plain Layout
 
-*e^{(floor(M)+q_1)*2
+*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
@@ -12916,7 +12916,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi/x_2})}(sin(x_2*ln(n)+Q_1*2
 \backslash
@@ -12944,7 +12944,7 @@ pi)*((floor(Q_1*4)
 
 \begin_layout Plain Layout
 
-*e^{(floor(M)+q_1)*2
+*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
@@ -12988,7 +12988,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi/x_2})}(sin(x_2*ln(n)+Q_1*2
 \backslash
@@ -13016,7 +13016,7 @@ pi)*((floor(Q_1*4)
 
 \begin_layout Plain Layout
 
-*e^{(floor(M)+q_1)*2
+*e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
@@ -13121,7 +13121,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)-1/4-Q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)-1/4-Q_1)*2
 \backslash
 pi/x_2})}(sin(x_2*ln(n)+Q_1*2
 \backslash
@@ -13134,7 +13134,7 @@ pi)*n^{-x_1})
 
 \begin_layout Plain Layout
 
-+(1-x_1)*e^{(floor(M)-1/4-Q_1)*2
++(1-x_1)*e^{(floor(M)*sgn(x_2)-1/4-Q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
@@ -13178,7 +13178,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)+1/4-Q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+1/4-Q_1)*2
 \backslash
 pi/x_2})}(sin(x_2*ln(n)+Q_1*2
 \backslash
@@ -13191,7 +13191,7 @@ pi)*n^{-x_1})
 
 \begin_layout Plain Layout
 
--(1-x_1)*e^{(floor(M)+1/4-Q_1)*2
+-(1-x_1)*e^{(floor(M)*sgn(x_2)+1/4-Q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
@@ -13300,7 +13300,7 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)/2+1/4-Q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)/2+1/4-Q_1)*2
 \backslash
 pi/x_2})}(sin(x_2*ln(n)+Q_1*2
 \backslash
@@ -13313,9 +13313,9 @@ pi)*n^{-x_1})
 
 \begin_layout Plain Layout
 
--(1-x_1)*((floor(M)
+-(1-x_1)*((floor(M)*sgn(x_2)
 \backslash
-%2)*2-1)*e^{(floor(M)/2+1/4-Q_1)*2
+%2)*2-1)*e^{(floor(M)*sgn(x_2)/2+1/4-Q_1)*2
 \backslash
 pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 \backslash
