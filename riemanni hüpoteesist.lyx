@@ -11397,7 +11397,43 @@ pi/4+Q_1)
 \end_layout
 
 \begin_layout Standard
-arvestan, et sin(x-2pi/2)=-sin(x)
+Q_1 võib olla ükskõik milline reaalarv, sest mistahes Q_1 puhul saan arvutada
+ arvud k ja r 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k=floor((Q_1+2
+\backslash
+pi/4)/(2
+\backslash
+pi/2))
+\backslash
+ ;
+\backslash
+ r=Q_1-k*2
+\backslash
+pi/2$
+\end_layout
+
+\end_inset
+
+nii, et 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$sin(A+Q_1)=(-1)^k*sin(A+r)$
+\end_layout
+
+\end_inset
+
+.
+ kuna mälemad siinused muudavad k muutudes korraga märki, siis võrrandi
+ täesus see märgi muutmine ei mõjuta ja r on alati algses vahemikus -2pi/4
+ kuni 2pi/4.
 \end_layout
 
 \begin_layout Standard
@@ -11410,19 +11446,11 @@ $
 \backslash
 forall_{q_1}(
 \backslash
-forall_{x_1}(
+forall_{Q_1}( 
 \backslash
-forall_{x_2}(
+forall_{x_1}( 
 \backslash
-forall_{Q_1}(q_1 
-\backslash
-in R 
-\backslash
-land Q_1 
-\backslash
-in R 
-\backslash
-land x_1 
+forall_{x_2}(x_1 
 \backslash
 in R 
 \backslash
@@ -11436,26 +11464,15 @@ land x_2
 \backslash
 ne0 
 \backslash
+land Q_1 
+\backslash
+in R 
+\backslash
 land 
 \backslash
 zeta(x_1+i*x_2)=0 
 \backslash
-to(
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-(Q_1>0 
-\backslash
-land Q_1<2
-\backslash
-pi/4) 
-\backslash
-land(
+to 
 \backslash
 
 \backslash
@@ -11470,7 +11487,7 @@ lim_{M
 \backslash
 to 
 \backslash
-infty}(
+infty}( 
 \backslash
 
 \backslash
@@ -11483,7 +11500,7 @@ infty}(
 \backslash
 sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
-pi/x_2})}(sin(x_2*ln(n)+Q_1)*n^{-x_1})
+pi/x_2})}(sin(x_2*ln(n)+Q_1)*n^{-x_1}) 
 \backslash
 
 \backslash
@@ -11492,24 +11509,13 @@ pi/x_2})}(sin(x_2*ln(n)+Q_1)*n^{-x_1})
 
 \begin_layout Plain Layout
 
--(sin(q_1*2
++e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
-pi+Q_1)*(1-x_1)-sin(q_1*2
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1/2}*sin(q_1*2
 \backslash
-pi+Q_1+2
+pi+atan2(1-x_1,x_2)+2
 \backslash
-pi/4)*x_2)
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-*e^{(floor(M)*sgn(x_2)+q_1)*2
-\backslash
-pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+pi/4+Q_1) 
 \backslash
 
 \backslash
@@ -11520,568 +11526,8 @@ pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 
 )=0 
 \backslash
-lor
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-(Q_1>2
-\backslash
-pi/4 
-\backslash
-land Q_1<2
-\backslash
-pi/2) 
-\backslash
-land(
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-lim_{M 
-\backslash
-to 
-\backslash
-infty}(
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
-\backslash
-pi/x_2})}(-sin(x_2*ln(n)+Q_1)*n^{-x_1})
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
--(-sin(q_1*2
-\backslash
-pi+Q_1)*(1-x_1)-sin(q_1*2
-\backslash
-pi+Q_1+2
-\backslash
-pi/4)*x_2)
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-*e^{(floor(M)*sgn(x_2)+q_1)*2
-\backslash
-pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-)=0
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-)
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-))))$
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Arvestan, et 0*(-1)=0 ja sin(x+2
-\backslash
-pi/2)=-sin(x).
- Muutuja Q_1 asemele muuutuja Q_1-2
-\backslash
-pi/2.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$
-\backslash
-forall_{q_1}(
-\backslash
-forall_{x_1}(
-\backslash
-forall_{x_2}(
-\backslash
-forall_{Q_1}(q_1 
-\backslash
-in R 
-\backslash
-land Q_1 
-\backslash
-in R 
-\backslash
-land x_1 
-\backslash
-in R 
-\backslash
-land x_1>0 
-\backslash
-land x_2 
-\backslash
-in R 
-\backslash
-land x_2
-\backslash
-ne0 
-\backslash
-land 
-\backslash
-zeta(x_1+i*x_2)=0 
-\backslash
-to(
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-(Q_1>0 
-\backslash
-land Q_1<2
-\backslash
-pi/4) 
-\backslash
-land(
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-lim_{M 
-\backslash
-to 
-\backslash
-infty}(
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
-\backslash
-pi/x_2})}(sin(x_2*ln(n)+Q_1)*n^{-x_1})
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
--(sin(q_1*2
-\backslash
-pi+Q_1)*(1-x_1)-sin(q_1*2
-\backslash
-pi+Q_1+2
-\backslash
-pi/4)*x_2)
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-*e^{(floor(M)*sgn(x_2)+q_1)*2
-\backslash
-pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-)=0
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-lor
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-(Q_1>2
-\backslash
-pi/4 
-\backslash
-land Q_1<2
-\backslash
-pi/2) 
-\backslash
-land(
-\backslash
-
-\backslash
 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-lim_{M 
-\backslash
-to 
-\backslash
-infty}(
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
-\backslash
-pi/x_2})}(-sin(x_2*ln(n)+Q_1)*n^{-x_1})
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
--(-sin(q_1*2
-\backslash
-pi+Q_1)*(1-x_1)-sin(q_1*2
-\backslash
-pi+Q_1+2
-\backslash
-pi/4)*x_2)
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-*e^{(floor(M)*sgn(x_2)+q_1)*2
-\backslash
-pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-)=0
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-lor
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-(Q_1>2
-\backslash
-pi/2 
-\backslash
-land Q_1<2
-\backslash
-pi*3/4) 
-\backslash
-land(
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-lim_{M 
-\backslash
-to 
-\backslash
-infty}(
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
-\backslash
-pi/x_2})}(sin(x_2*ln(n)+Q_1)*n^{-x_1})
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
--(sin(q_1*2
-\backslash
-pi+Q_1)*(1-x_1)-sin(q_1*2
-\backslash
-pi+Q_1+2
-\backslash
-pi/4)*x_2)
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-*e^{(floor(M)*sgn(x_2)+q_1)*2
-\backslash
-pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-)=0
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-lor
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-(Q_1>2
-\backslash
-pi*3/4 
-\backslash
-land Q_1<2
-\backslash
-pi) 
-\backslash
-land(
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-lim_{M 
-\backslash
-to 
 \backslash
-infty}(
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
-\backslash
-pi/x_2})}(-sin(x_2*ln(n)+Q_1)*n^{-x_1})
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
--(-sin(q_1*2
-\backslash
-pi+Q_1)*(1-x_1)-sin(q_1*2
-\backslash
-pi+Q_1+2
-\backslash
-pi/4)*x_2)
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-*e^{(floor(M)*sgn(x_2)+q_1)*2
-\backslash
-pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-)=0
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-)
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
