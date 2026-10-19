@@ -11586,7 +11586,7 @@ pi)$
 
 \end_inset
 
-:
+ valem zeta_0koht_1:
 \end_layout
 
 \begin_layout Standard
@@ -11707,9 +11707,11 @@ q=+-1/4
 \end_layout
 
 \begin_layout Standard
-et see mõlemal juhul 0 oleks sin((q_1+Q_1+1/4)*2
+kuna valem valem zeta_0koht_1 kehtib iga q_1 väärtuse korral saan q_1 väärtuseks
+ valida q_1=-1/4-Q_1 või q_1=1/4-Q_1.
+ Sel juhul sin((q_1+Q_1+1/4)*2
 \backslash
-pi)=0 seega q_1=-1/4-Q_1 või q_1=1/4-Q_1
+pi)=0 seega:
 \end_layout
 
 \begin_layout Standard
@@ -11720,15 +11722,13 @@ status open
 
 $
 \backslash
-forall_{x_1}(
+forall_{q_1}(
 \backslash
-forall_{x_2}(
+forall_{Q_1}( 
 \backslash
-forall_{Q_1}(Q_1 
+forall_{x_1}( 
 \backslash
-in R 
-\backslash
-land x_1 
+forall_{x_2}(x_1 
 \backslash
 in R 
 \backslash
@@ -11742,16 +11742,18 @@ land x_2
 \backslash
 ne0 
 \backslash
+land Q_1 
+\backslash
+in R 
+\backslash
+land 
+\backslash
 zeta(x_1+i*x_2)=0 
 \backslash
-to(
+to 
 \backslash
 
 \backslash
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -11763,7 +11765,7 @@ lim_{M
 \backslash
 to 
 \backslash
-infty}(
+infty}( 
 \backslash
 
 \backslash
@@ -11774,22 +11776,11 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)-1/4-Q_1)*2
+sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+-1/4-Q_1)*2
 \backslash
-pi/x_2})}(sin(x_2*ln(n)+Q_1*2
+pi/x_2})}(sin(x_2*ln(n)+Q_1*(2
 \backslash
-pi)*n^{-x_1})
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-+(1-x_1)*e^{(floor(M)*sgn(x_2)-1/4-Q_1)*2
-\backslash
-pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+pi))*n^{-x_1}) 
 \backslash
 
 \backslash
@@ -11798,7 +11789,24 @@ pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 
 \begin_layout Plain Layout
 
-)=0
++e^{(floor(M)*sgn(x_2)+-1/4-Q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1/2}*sin(-1/4-Q_1*2
+\backslash
+pi+atan2(1-x_1,x_2)+2
+\backslash
+pi/4+Q_1*(2
+\backslash
+pi)) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+)=0 
 \backslash
 
 \backslash
@@ -11809,7 +11817,11 @@ pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 
 
 \backslash
-lor
+land
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -11820,7 +11832,7 @@ lim_{M
 \backslash
 to 
 \backslash
-infty}(
+infty}( 
 \backslash
 
 \backslash
@@ -11833,20 +11845,9 @@ infty}(
 \backslash
 sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+1/4-Q_1)*2
 \backslash
-pi/x_2})}(sin(x_2*ln(n)+Q_1*2
+pi/x_2})}(sin(x_2*ln(n)+Q_1*(2
 \backslash
-pi)*n^{-x_1})
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
--(1-x_1)*e^{(floor(M)*sgn(x_2)+1/4-Q_1)*2
-\backslash
-pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+pi))*n^{-x_1}) 
 \backslash
 
 \backslash
@@ -11855,7 +11856,15 @@ pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 
 \begin_layout Plain Layout
 
-)=0
++e^{(floor(M)*sgn(x_2)+1/4-Q_1)*2
+\backslash
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1/2}*sin(1/4-Q_1*2
+\backslash
+pi+atan2(1-x_1,x_2)+2
+\backslash
+pi/4+Q_1*(2
+\backslash
+pi)) 
 \backslash
 
 \backslash
@@ -11864,11 +11873,7 @@ pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
-)
+)=0 
 \backslash
 
 \backslash
@@ -11877,7 +11882,7 @@ pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 
 \begin_layout Plain Layout
 
-)))$
+))))$
 \end_layout
 
 \end_inset
