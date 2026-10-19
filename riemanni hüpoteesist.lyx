@@ -11061,7 +11061,7 @@ status open
 
 \begin_layout Plain Layout
 
-
+$
 \backslash
 forall_{q_1}(
 \backslash
@@ -11152,7 +11152,7 @@ pi/4-arctan(Q_1))
 
 \begin_layout Plain Layout
 
-))))
+))))$
 \end_layout
 
 \end_inset
@@ -11172,7 +11172,7 @@ status open
 
 \begin_layout Plain Layout
 
-
+$
 \backslash
 forall_{q_1}(
 \backslash
@@ -11202,7 +11202,9 @@ land Q_1>-2
 \backslash
 pi/4 
 \backslash
-land Q_1<2pi/4 
+land Q_1<2
+\backslash
+pi/4 
 \backslash
 land 
 \backslash
@@ -11269,7 +11271,7 @@ pi/4-Q_1)
 
 \begin_layout Plain Layout
 
-))))
+))))$
 \end_layout
 
 \end_inset
@@ -11278,10 +11280,7 @@ pi/4-Q_1)
 \end_layout
 
 \begin_layout Standard
-Ühes kohas Q_1 asemele samanimeline muutuja -Q_1.
- Teises kohas Q_1 asemele samanimeline muutuja 2
-\backslash
-pi/2-Q_1.
+Panen Q_1 asemele samanimeline muutuja -Q_1.
 \end_layout
 
 \begin_layout Standard
@@ -11294,19 +11293,11 @@ $
 \backslash
 forall_{q_1}(
 \backslash
-forall_{x_1}(
+forall_{Q_1}( 
 \backslash
-forall_{x_2}(
+forall_{x_1}( 
 \backslash
-forall_{Q_1}(q_1 
-\backslash
-in R 
-\backslash
-land Q_1 
-\backslash
-in R 
-\backslash
-land x_1 
+forall_{x_2}(x_1 
 \backslash
 in R 
 \backslash
@@ -11320,26 +11311,23 @@ land x_2
 \backslash
 ne0 
 \backslash
+land Q_1 
+\backslash
+in R 
+\backslash
+land Q_1>-2
+\backslash
+pi/4 
+\backslash
+land Q_1<2
+\backslash
+pi/4 
+\backslash
 land 
 \backslash
 zeta(x_1+i*x_2)=0 
 \backslash
-to(
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-(Q_1>0 
-\backslash
-land Q_1<2
-\backslash
-pi/4) 
-\backslash
-land(
+to 
 \backslash
 
 \backslash
@@ -11354,7 +11342,7 @@ lim_{M
 \backslash
 to 
 \backslash
-infty}(
+infty}( 
 \backslash
 
 \backslash
@@ -11367,7 +11355,7 @@ infty}(
 \backslash
 sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
-pi/x_2})}(sin(x_2*ln(n)+Q_1)*n^{-x_1})
+pi/x_2})}(sin(x_2*ln(n)+Q_1)*n^{-x_1}) 
 \backslash
 
 \backslash
@@ -11376,24 +11364,13 @@ pi/x_2})}(sin(x_2*ln(n)+Q_1)*n^{-x_1})
 
 \begin_layout Plain Layout
 
--(sin(q_1*2
++e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
-pi+Q_1)*(1-x_1)-sin(q_1*2
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1/2}*sin(q_1*2
 \backslash
-pi+Q_1+2
+pi+atan2(1-x_1,x_2)+2
 \backslash
-pi/4)*x_2)
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-*e^{(floor(M)*sgn(x_2)+q_1)*2
-\backslash
-pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
+pi/4+Q_1) 
 \backslash
 
 \backslash
@@ -11404,118 +11381,8 @@ pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
 
 )=0 
 \backslash
-lor
-\backslash
 
 \backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-(Q_1>2
-\backslash
-pi/4 
-\backslash
-land Q_1<2
-\backslash
-pi/2) 
-\backslash
-land(
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-lim_{M 
-\backslash
-to 
-\backslash
-infty}(
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
-\backslash
-pi/x_2})}(sin(x_2*ln(n)-2
-\backslash
-pi/2+Q_1)*n^{-x_1})
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
--(sin(q_1*2
-\backslash
-pi-2
-\backslash
-pi/2+Q_1)*(1-x_1)+sin(q_1*2
-\backslash
-pi-2
-\backslash
-pi/2+Q_1+2
-\backslash
-pi/4)*x_2)
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-*e^{(floor(M)*sgn(x_2)+q_1)*2
-\backslash
-pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1}
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-)=0
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-)
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
