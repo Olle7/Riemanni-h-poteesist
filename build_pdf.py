@@ -4,20 +4,20 @@
 Put this script beside 'riemanni hüpoteesist.lyx', then run:
     python3 build_pdf.py
     python3 build_pdf.py --watch
-    python3 build_pdf.py --allow-errors
+    python3 build_pdf.py --strict
 
 Requirements: Python 3.8+, LyX, and a working LaTeX installation.
 No Python packages are needed. The .lyx source is never modified.
-Normally the PDF is replaced only after a successful export. Nothing is committed.
-With --allow-errors, keep a generated PDF even if pdfLaTeX reports errors,
+By default, keep a generated PDF even if pdfLaTeX reports errors,
 like LyX's 'Show output anyway'. The resulting PDF may have formatting errors.
-If a pdfLaTeX export fails, diagnostic files are saved beside the PDF and
-the first LaTeX error is printed. These files do not replace the PDF.
+Use --strict to reject exports with errors. Nothing is committed.
+Compiler logs are saved beside the PDF. If no PDF can be produced, the
+previous PDF is kept and the final compiler messages are printed.
 
 Other examples:
     python3 build_pdf.py "another document.lyx"
     python3 build_pdf.py --lyx "/path/to/lyx"
-    python3 build_pdf.py --format pdf4   # XeLaTeX, if configured in LyX
+    python3 build_pdf.py --format pdf4   # XeLaTeX; uses strict LyX export
 
 Watch mode monitors the main .lyx file only, not images or included files.
 Save the document in LyX before building or committing.
@@ -89,10 +89,13 @@ def diagnose_pdflatex(source, output, lyx, env, allow_errors=False):
         with candidate.open("rb") as handle:
             if handle.read(5) == b"%PDF-":
                 return candidate
+    if first_error is not None:
+        print("\nFinal compiler messages (reason no PDF was accepted):\n"
+              + "\n".join(lines[-35:]), flush=True)
     return None
 
 
-def build_pdf(source, output, lyx, export_format, allow_errors=False):
+def build_pdf(source, output, lyx, export_format, allow_errors=True):
     """Stage a fresh export; leave an existing output untouched on failure."""
     output.parent.mkdir(parents=True, exist_ok=True)
     # Stage on the same filesystem so os.replace() can publish atomically.
@@ -108,6 +111,7 @@ def build_pdf(source, output, lyx, export_format, allow_errors=False):
         ):
             env.setdefault("QT_QPA_PLATFORM", "offscreen")
         print("Building: {}".format(source), flush=True)
+        print("Mode: {}".format("allow errors" if allow_errors else "strict"), flush=True)
         if allow_errors:
             if export_format != "pdf2":
                 raise RuntimeError("--allow-errors currently supports only --format pdf2")
@@ -156,10 +160,15 @@ def main():
                         help="LyX export format; default pdf2 (pdfLaTeX)")
     parser.add_argument("--watch", action="store_true",
                         help="Build now, then rebuild after the main .lyx file changes")
-    parser.add_argument("--allow-errors", action="store_true",
-                        help="Keep pdfLaTeX output despite errors, like 'Show output anyway' "
-                             "(pdf2 only; saves logs)")
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--allow-errors", action="store_true", dest="allow_errors",
+                      help="Keep PDF despite errors (default for pdf2; saves logs)")
+    mode.add_argument("--strict", action="store_false", dest="allow_errors",
+                      help="Reject exports with errors instead of keeping imperfect output")
+    parser.set_defaults(allow_errors=None)
     args = parser.parse_args()
+    if args.allow_errors is None:
+        args.allow_errors = args.export_format == "pdf2"
     if args.allow_errors and args.export_format != "pdf2":
         parser.error("--allow-errors currently supports only --format pdf2")
     source = args.source.expanduser().resolve()
