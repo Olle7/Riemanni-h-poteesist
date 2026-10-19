@@ -8,6 +8,8 @@ Put this script beside 'riemanni hüpoteesist.lyx', then run:
 Requirements: Python 3.8+, LyX, and a working LaTeX installation.
 No Python packages are needed. The .lyx source is never modified.
 The PDF is replaced only after a successful export. Nothing is committed.
+If a pdfLaTeX export fails, diagnostic files are saved beside the PDF and
+the first LaTeX error is printed. These files do not replace the PDF.
 
 Other examples:
     python3 build_pdf.py "another document.lyx"
@@ -31,6 +33,48 @@ import time
 DEFAULT_SOURCE = Path(__file__).resolve().parent / "riemanni hüpoteesist.lyx"
 
 
+def diagnose_pdflatex(source, output, lyx, env):
+    """Export TeX separately and retain a noninteractive compiler log."""
+    debug = Path(tempfile.mkdtemp(prefix="lyx-diagnostics-", dir=output.parent))
+    print("Saving diagnostics: {}".format(debug), flush=True)
+    tex = debug / "document.tex"
+    export_log = debug / "lyx-export.log"
+    with export_log.open("wb") as log:
+        result = subprocess.run(
+            [lyx, "--no-remote", "-batch", "--force-overwrite", "all",
+             "--export-to", "pdflatex", str(tex), str(source)],
+            cwd=source.parent, env=env, stdin=subprocess.DEVNULL,
+            stdout=log, stderr=subprocess.STDOUT,
+        )
+    if result.returncode != 0 or not tex.is_file():
+        print("Could not export diagnostic TeX; see {}".format(export_log), flush=True)
+        print(export_log.read_text(encoding="utf-8", errors="replace")[-6000:])
+        return
+    engine = shutil.which("pdflatex")
+    if engine is None:
+        print("pdflatex is not on PATH. Diagnostic TeX saved at {}".format(tex))
+        return
+    tex_env = env.copy()
+    # Keep source-relative inputs available, and preserve TeX's default paths.
+    tex_env["TEXINPUTS"] = str(source.parent) + os.pathsep + env.get("TEXINPUTS", "")
+    console_log = debug / "pdflatex-console.log"
+    with console_log.open("wb") as log:
+        subprocess.run(
+            [engine, "-interaction=nonstopmode", "-halt-on-error", tex.name],
+            cwd=debug, env=tex_env, stdin=subprocess.DEVNULL,
+            stdout=log, stderr=subprocess.STDOUT,
+        )
+    lines = console_log.read_text(encoding="utf-8", errors="replace").splitlines()
+    first_error = next((i for i, line in enumerate(lines) if line.startswith("!")), None)
+    if first_error is not None:
+        print("\nFirst LaTeX error:\n" + "\n".join(lines[first_error:first_error + 15]))
+    else:
+        print("\nDiagnostic compiler output:\n" + "\n".join(lines[-25:]))
+    print("Full diagnostic output: {}".format(console_log), flush=True)
+    if (debug / "document.log").is_file():
+        print("Full LaTeX log: {}".format(debug / "document.log"), flush=True)
+
+
 def build_pdf(source, output, lyx, export_format):
     """Stage a fresh export; leave an existing output untouched on failure."""
     output.parent.mkdir(parents=True, exist_ok=True)
@@ -49,9 +93,14 @@ def build_pdf(source, output, lyx, export_format):
         print("Building: {}".format(source), flush=True)
         result = subprocess.run(command, cwd=source.parent, env=env)
         if result.returncode != 0:
+            if export_format == "pdf2":
+                try:
+                    diagnose_pdflatex(source, output, lyx, env)
+                except OSError as error:
+                    print("Could not complete diagnostics: {}".format(error), file=sys.stderr)
             raise RuntimeError(
                 "LyX export failed (exit {}). Previous PDF kept. "
-                "See the LyX/LaTeX messages above.".format(result.returncode)
+                "See the diagnostic messages above.".format(result.returncode)
             )
         if not staged.is_file():
             raise RuntimeError("LyX produced no PDF. Previous PDF kept.")
