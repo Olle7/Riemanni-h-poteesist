@@ -11791,7 +11791,7 @@ pi))*n^{-x_1})
 
 +e^{(floor(M)*sgn(x_2)+-1/4-Q_1)*2
 \backslash
-pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1/2}*sin(-1/4-Q_1*2
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1/2}*sin((-1/4-Q_1)*2
 \backslash
 pi+atan2(1-x_1,x_2)+2
 \backslash
@@ -11858,7 +11858,7 @@ pi))*n^{-x_1})
 
 +e^{(floor(M)*sgn(x_2)+1/4-Q_1)*2
 \backslash
-pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1/2}*sin(1/4-Q_1*2
+pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1/2}*sin((1/4-Q_1)*2
 \backslash
 pi+atan2(1-x_1,x_2)+2
 \backslash
