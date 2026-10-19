@@ -11653,7 +11653,7 @@ infty}(
 \backslash
 sum_{n=1}^{floor(e^{(floor(M)*sgn(x_2)+q_1)*2
 \backslash
-pi/x_2})}(sin(x_2*ln(n)+Q_1/(2
+pi/x_2})}(sin(x_2*ln(n)+Q_1*(2
 \backslash
 pi))*n^{-x_1}) 
 \backslash
@@ -11670,7 +11670,7 @@ pi*(1-x_1)/x_2}*((1-x_1)^2+x_2^2)^{-1/2}*sin(q_1*2
 \backslash
 pi+atan2(1-x_1,x_2)+2
 \backslash
-pi/4+Q_1/(2
+pi/4+Q_1*(2
 \backslash
 pi)) 
 \backslash
