@@ -4,10 +4,13 @@
 Put this script beside 'riemanni hüpoteesist.lyx', then run:
     python3 build_pdf.py
     python3 build_pdf.py --watch
+    python3 build_pdf.py --allow-errors
 
 Requirements: Python 3.8+, LyX, and a working LaTeX installation.
 No Python packages are needed. The .lyx source is never modified.
-The PDF is replaced only after a successful export. Nothing is committed.
+Normally the PDF is replaced only after a successful export. Nothing is committed.
+With --allow-errors, keep a generated PDF even if pdfLaTeX reports errors,
+like LyX's 'Show output anyway'. The resulting PDF may have formatting errors.
 If a pdfLaTeX export fails, diagnostic files are saved beside the PDF and
 the first LaTeX error is printed. These files do not replace the PDF.
 
@@ -33,8 +36,8 @@ import time
 DEFAULT_SOURCE = Path(__file__).resolve().parent / "riemanni hüpoteesist.lyx"
 
 
-def diagnose_pdflatex(source, output, lyx, env):
-    """Export TeX separately and retain a noninteractive compiler log."""
+def diagnose_pdflatex(source, output, lyx, env, allow_errors=False):
+    """Export TeX and retain compiler logs; optionally return an imperfect PDF."""
     debug = Path(tempfile.mkdtemp(prefix="lyx-diagnostics-", dir=output.parent))
     print("Saving diagnostics: {}".format(debug), flush=True)
     tex = debug / "document.tex"
@@ -59,11 +62,19 @@ def diagnose_pdflatex(source, output, lyx, env):
     tex_env["TEXINPUTS"] = str(source.parent) + os.pathsep + env.get("TEXINPUTS", "")
     console_log = debug / "pdflatex-console.log"
     with console_log.open("wb") as log:
-        subprocess.run(
-            [engine, "-interaction=nonstopmode", "-halt-on-error", tex.name],
-            cwd=debug, env=tex_env, stdin=subprocess.DEVNULL,
-            stdout=log, stderr=subprocess.STDOUT,
-        )
+        command = [engine, "-interaction=nonstopmode"]
+        if not allow_errors:
+            command.append("-halt-on-error")
+        command.append(tex.name)
+        # In permissive mode run twice for ordinary labels and references.
+        # A nonzero exit status is acceptable only if a PDF was produced.
+        for _ in range(2 if allow_errors else 1):
+            subprocess.run(
+                command, cwd=debug, env=tex_env, stdin=subprocess.DEVNULL,
+                stdout=log, stderr=subprocess.STDOUT,
+            )
+            if not (debug / "document.pdf").is_file():
+                break
     lines = console_log.read_text(encoding="utf-8", errors="replace").splitlines()
     first_error = next((i for i, line in enumerate(lines) if line.startswith("!")), None)
     if first_error is not None:
@@ -73,9 +84,15 @@ def diagnose_pdflatex(source, output, lyx, env):
     print("Full diagnostic output: {}".format(console_log), flush=True)
     if (debug / "document.log").is_file():
         print("Full LaTeX log: {}".format(debug / "document.log"), flush=True)
+    candidate = debug / "document.pdf"
+    if allow_errors and candidate.is_file():
+        with candidate.open("rb") as handle:
+            if handle.read(5) == b"%PDF-":
+                return candidate
+    return None
 
 
-def build_pdf(source, output, lyx, export_format):
+def build_pdf(source, output, lyx, export_format, allow_errors=False):
     """Stage a fresh export; leave an existing output untouched on failure."""
     output.parent.mkdir(parents=True, exist_ok=True)
     # Stage on the same filesystem so os.replace() can publish atomically.
@@ -91,6 +108,17 @@ def build_pdf(source, output, lyx, export_format):
         ):
             env.setdefault("QT_QPA_PLATFORM", "offscreen")
         print("Building: {}".format(source), flush=True)
+        if allow_errors:
+            if export_format != "pdf2":
+                raise RuntimeError("--allow-errors currently supports only --format pdf2")
+            candidate = diagnose_pdflatex(source, output, lyx, env, allow_errors=True)
+            if candidate is None:
+                raise RuntimeError("LaTeX could not produce a PDF even with --allow-errors. "
+                                   "Previous PDF kept; see the saved logs.")
+            shutil.copyfile(candidate, staged)
+            os.replace(staged, output)
+            print("Updated (errors allowed): {}".format(output), flush=True)
+            return
         result = subprocess.run(command, cwd=source.parent, env=env)
         if result.returncode != 0:
             if export_format == "pdf2":
@@ -128,7 +156,12 @@ def main():
                         help="LyX export format; default pdf2 (pdfLaTeX)")
     parser.add_argument("--watch", action="store_true",
                         help="Build now, then rebuild after the main .lyx file changes")
+    parser.add_argument("--allow-errors", action="store_true",
+                        help="Keep pdfLaTeX output despite errors, like 'Show output anyway' "
+                             "(pdf2 only; saves logs)")
     args = parser.parse_args()
+    if args.allow_errors and args.export_format != "pdf2":
+        parser.error("--allow-errors currently supports only --format pdf2")
     source = args.source.expanduser().resolve()
     output = (args.output.expanduser().resolve() if args.output
               else source.with_suffix(".pdf"))
@@ -143,7 +176,7 @@ def main():
 
     if not args.watch:
         try:
-            build_pdf(source, output, lyx, args.export_format)
+            build_pdf(source, output, lyx, args.export_format, args.allow_errors)
         except (OSError, RuntimeError) as error:
             print("Error: {}".format(error), file=sys.stderr)
             return 1
@@ -162,7 +195,7 @@ def main():
                 if fingerprint(source) != current:
                     previous = None
                     continue
-                build_pdf(source, output, lyx, args.export_format)
+                build_pdf(source, output, lyx, args.export_format, args.allow_errors)
         except (OSError, RuntimeError) as error:
             print("Error: {}".format(error), file=sys.stderr)
             # Failed exports are retried after the next source change.
