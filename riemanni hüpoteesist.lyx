@@ -12017,8 +12017,10 @@ infty}(
 \backslash
 sum_{n=1}^{floor(e^{((floor(M)*sgn(x_2)-p_2-1/4)*2
 \backslash
-pi-atan2(1-x_1,x_2))/x_2+p_3*((1-x_1)^2+x_2^2)^{1/2}/x_2 *e^{-g(M,p_2,x_1,x_2)*(
-1-x_1)}})}( sin(x_2*ln(n)+p_2*(2
+pi-atan2(1-x_1,x_2))/x_2+p_3*((1-x_1)^2+x_2^2)^{1/2}/x_2 *e^{-(((floor(M)*sgn(x_
+2)-p_2-1/4)*2
+\backslash
+pi-atan2(1-x_1,x_2))/x_2)*(1-x_1)}})}( sin(x_2*ln(n)+p_2*(2
 \backslash
 pi))*n^{-x_1}) 
 \backslash

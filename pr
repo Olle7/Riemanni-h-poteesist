@@ -152,3 +152,12 @@ $\forall_{p_2}(\forall_{p_3}(\forall_{x_1}(\forall_{x_2}( p_2 \in R \land p_3 \i
 +p_3 \\
 )=0 \\
 ))))$
+
+
+
+$\forall_{p_2}(\forall_{p_3}(\forall_{x_1}(\forall_{x_2}( p_2 \in R \land p_3 \in R \land x_1 \in R \land 0<x_1<1 \land x_2 \in R \land x_2\ne0 \land \zeta(x_1+i*x_2)=0 \to \\
+\lim_{M \to \infty}( \\
+\sum_{n=1}^{floor(e^{((floor(M)*sgn(x_2)-p_2-1/4)*2\pi-atan2(1-x_1,x_2))/x_2+p_3*((1-x_1)^2+x_2^2)^{1/2}/x_2 *e^{-(((floor(M)*sgn(x_2)-p_2-1/4)*2\pi-atan2(1-x_1,x_2))/x_2)*(1-x_1)}})}( sin(x_2*ln(n)+p_2*(2\pi))*n^{-x_1}) \\
++p_3 \\
+)=0 \\
+))))$
