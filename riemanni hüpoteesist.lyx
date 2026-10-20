@@ -11706,7 +11706,7 @@ status open
 
 \begin_layout Plain Layout
 
-$q_1=p1*x_2/(2
+$q_1=p_1*x_2/(2
 \backslash
 pi)-floor(M)*sgn(x_2)$
 \end_layout
@@ -11786,7 +11786,7 @@ to
 
 
 \backslash
-lim_{M 
+lim_{p_1 
 \backslash
 to 
 \backslash
@@ -11812,7 +11812,7 @@ pi))*n^{-x_1})
 
 \begin_layout Plain Layout
 
-+e^{p1*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1/2}* sin(p1*x_2+atan2(1-x_1,x_2)+2
++e^{p_1*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1/2}* sin(p_1*x_2+atan2(1-x_1,x_2)+2
 \backslash
 pi/4+Q_1*(2
 \backslash
