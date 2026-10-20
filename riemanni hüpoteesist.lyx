@@ -11747,9 +11747,7 @@ status open
 
 $
 \backslash
-forall_{q_1}(
-\backslash
-forall_{Q_1}( 
+forall_{p_2}(
 \backslash
 forall_{x_1}( 
 \backslash
@@ -11767,7 +11765,7 @@ land x_2
 \backslash
 ne0 
 \backslash
-land Q_1 
+land p_2 
 \backslash
 in R 
 \backslash
@@ -11814,7 +11812,7 @@ pi))*n^{-x_1})
 
 +e^{p_1*(1-x_1)}*((1-x_1)^2+x_2^2)^{-1/2}* sin(p_1*x_2+atan2(1-x_1,x_2)+2
 \backslash
-pi/4+Q_1*(2
+pi/4+p_2*(2
 \backslash
 pi)) 
 \backslash
@@ -11834,7 +11832,7 @@ pi))
 
 \begin_layout Plain Layout
 
-))))$
+)))$
 \end_layout
 
 \end_inset
