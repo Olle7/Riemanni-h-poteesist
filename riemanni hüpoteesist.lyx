@@ -12157,7 +12157,7 @@ infty}(
 
 \backslash
 sum_{n=1}^{floor(p_1)}(sin(x_2*(ln(n)-ln(p_1))+arcsin(p_3*((1-x_1)^2+x_2^2)^{1/2
-}*e^{-ln(p_1)*(1-x_1)})-atan2(1-x_1,x_2)-2
+}*{p_1}^{x_1-1})-atan2(1-x_1,x_2)-2
 \backslash
 pi/4)*n^{-x_1})
 \backslash
@@ -12293,26 +12293,13 @@ pi))*n^{-x_1})
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 tagumine pool nulliks
 \end_layout
 
 \begin_layout Standard
-kuna valem valem zeta_0koht_1 kehtib iga q_1 väärtuse korral saan q_1 väärtuseks
- valida 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$q_1=-Q_1-1/4-atan2(1-x_1,x_2)/(2
-\backslash
-pi)$
-\end_layout
-
-\end_inset
-
-.
+kuna valem zeta_0koht_p2_p3 kehtib iga p_2 ja p3 väärtuse korral saan p_3
+ väärtuseks valida 0.
  Sel juhul 
 \begin_inset ERT
 status open
@@ -12341,15 +12328,19 @@ status open
 
 $
 \backslash
-forall_{Q_1}( 
+forall_{p_2}(
 \backslash
-forall_{x_1}( 
+forall_{x_1}(
 \backslash
-forall_{x_2}(x_1 
+forall_{x_2}(p_2 
 \backslash
 in R 
 \backslash
-land x_1>0 
+land x_1 
+\backslash
+in R 
+\backslash
+land 0<x_1<1 
 \backslash
 land x_2 
 \backslash
@@ -12358,10 +12349,6 @@ in R
 land x_2
 \backslash
 ne0 
-\backslash
-land Q_1 
-\backslash
-in R 
 \backslash
 land 
 \backslash
@@ -12384,9 +12371,9 @@ to
 \backslash
 infty}(
 \backslash
-sum_{n=1}^{floor(e^{((floor(M)*sgn(x_2)-Q_1-1/4)*2
+sum_{n=1}^{floor(e^{((floor(M)*sgn(x_2)-p_2-1/4)*2
 \backslash
-pi-atan2(1-x_1,x_2))/x_2})}(sin(x_2*ln(n)+Q_1*(2
+pi-atan2(1-x_1,x_2))/x_2})}( sin(x_2*ln(n)+p_2*(2
 \backslash
 pi))*n^{-x_1}))=0
 \backslash
