@@ -12439,7 +12439,7 @@ pi))*n^{-x_1}))=0
 \end_layout
 
 \begin_layout Paragraph
-p2=0
+p2=0 ja p2=1/4
 \end_layout
 
 \begin_layout Standard
@@ -12495,9 +12495,28 @@ sum_{n=1}^{floor(e^{((floor(M)*sgn(x_2)-1/4)*2
 \backslash
 pi-atan2(1-x_1,x_2))/x_2})}(sin(x_2*ln(n))*n^{-x_1}))=0
 \backslash
+land 
+\backslash
 
 \backslash
 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+sum_{n=1}^{floor(e^{((floor(M)*sgn(x_2)-1/2)*2
+\backslash
+pi-atan2(1-x_1,x_2))/x_2})}(sin(x_2*ln(n)+2
+\backslash
+pi/4)*n^{-x_1}))=0
 \end_layout
 
 \begin_layout Plain Layout
