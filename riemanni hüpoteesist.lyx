@@ -12242,7 +12242,7 @@ pi))-x_2*cos(x_2*ln(n+1)+p_2*(2
 \backslash
 pi))) - n^{1-x_1}* ((1-x_1)*sin(x_2*ln(n)+p_2*(2
 \backslash
-pi)) -x_2*cos(x_2*ln(n)+p_2*(2
+pi)) -sin(x_2*cos(x_2*ln(n)+p_2*(2
 \backslash
 pi))) )*((1-x_1)^2+x_2^2)^{-1}
 \backslash
@@ -12255,9 +12255,9 @@ pi))) )*((1-x_1)^2+x_2^2)^{-1}
 
 -(
 \backslash
-integral_{n}^{n+1}(dn_2*sin(x_2*ln(n_2)+p_2*(2
+int_{n}^{n+1}(dn_2*sin(x_2*ln(n_2)+p_2*(2
 \backslash
-pi))*n_2^{-x_1})-x_2*ln(n)+p_2*(2
+pi))*n_2^{-x_1})-sin(x_2*ln(n)+p_2*(2
 \backslash
 pi))*n^{-x_1})) 
 \backslash
