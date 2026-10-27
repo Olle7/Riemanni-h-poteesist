@@ -12106,9 +12106,9 @@ int_{n}^{n+1}(dn_2*sin(x_2*ln(n_2)+p_2*(2
 \backslash
 pi))*n_2^{-x_1})-(
 \backslash
-integral_{n}^{n+1}(dn_2*sin(x_2*ln(n_2)+p_2*(2
+int_{n}^{n+1}(dn_2*sin(x_2*ln(n_2)+p_2*(2
 \backslash
-pi))*n_2^{-x_1})-x_2*ln(n)+p_2*(2
+pi))*n_2^{-x_1})-sin(x_2*ln(n)+p_2*(2
 \backslash
 pi))*n^{-x_1})) 
 \backslash
