@@ -12158,7 +12158,7 @@ status open
 
 \begin_layout Plain Layout
 
-
+$
 \backslash
 int_{n-1}^{n}(dn_2*sin(x_2*ln(n_2)+p_2*(2
 \backslash
@@ -12179,7 +12179,7 @@ to (n-1)^+}(d^{1-x_1}*((1-x_1)*sin(x_2*ln(d)+p_2*(2
 \backslash
 pi))-x_2*cos(x_2*ln(d)+p_2*(2
 \backslash
-pi))) ) )*((1-x_1)^2+x_2^2)^{-1}
+pi))) ) )*((1-x_1)^2+x_2^2)^{-1}$
 \end_layout
 
 \end_inset
@@ -12257,11 +12257,15 @@ pi))*n_2^{-x_1})-((n^{1-x_1}*((1-x_1)*sin(x_2*ln(n)+p_2*(2
 \backslash
 pi))-x_2*cos(x_2*ln(n)+p_2*(2
 \backslash
-pi))) - (n-1)^{1-x_1}* ((1-x_1)*sin(x_2*ln(n-1)+p_2*(2
+pi))) - 
 \backslash
-pi)) -x_2*cos(x_2*ln(n-1)+p_2*(2
+lim_{d 
 \backslash
-pi))) )*((1-x_1)^2+x_2^2)^{-1}-sin(x_2*ln(n)+p_2*(2
+to (n-1)^+}( d^{1-x_1}* ((1-x_1)*sin(x_2*ln(d)+p_2*(2
+\backslash
+pi)) -x_2*cos(x_2*ln(d)+p_2*(2
+\backslash
+pi))) ) )*((1-x_1)^2+x_2^2)^{-1}-sin(x_2*ln(n)+p_2*(2
 \backslash
 pi))*n^{-x_1})) 
 \backslash
