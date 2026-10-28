@@ -12368,11 +12368,11 @@ status open
 
 $( 
 \backslash
-sum_{n=0}^{floor(p_1)}(sin(x_2*ln(n)+p_2*(2
+sum_{n=1}^{floor(p_1)}(sin(x_2*ln(n)+p_2*(2
 \backslash
 pi))*n^{-x_1}) - 
 \backslash
-int_1^{floor(p_1)+1}(dn_2*sin(x_2*ln(n_2)+p_2*(2
+int_0^{floor(p_1)}(dn_2*sin(x_2*ln(n_2)+p_2*(2
 \backslash
 pi))*n_2^{-x_1}) )$
 \end_layout
