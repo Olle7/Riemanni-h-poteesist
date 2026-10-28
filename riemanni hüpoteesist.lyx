@@ -12405,13 +12405,13 @@ infty}(
 
 \begin_layout Plain Layout
 
-
+-
 \backslash
 sum_{n=1}^{floor(p_1)}((n^{1-x_1}*((1-x_1)*sin(x_2*ln(n)+p_2*(2
 \backslash
 pi))-x_2*cos(x_2*ln(n)+p_2*(2
 \backslash
-pi))) - 
+pi)))-
 \backslash
 lim_{d 
 \backslash
