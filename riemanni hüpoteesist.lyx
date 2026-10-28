@@ -12289,15 +12289,15 @@ infty}(
 
 \begin_layout Plain Layout
 
--
+
 \backslash
-sum_{n=1}^{floor(p_1)}(
+sum_{n=1}^{floor(p_1)}(sin(x_2*ln(n)+p_2*(2
+\backslash
+pi))*n^{-x_1}-
 \backslash
 int_{n-1}^{n}(dn_2*sin(x_2*ln(n_2)+p_2*(2
 \backslash
-pi))*n_2^{-x_1})-sin(x_2*ln(n)+p_2*(2
-\backslash
-pi))*n^{-x_1}) 
+pi))*n_2^{-x_1})) 
 \backslash
 
 \backslash
