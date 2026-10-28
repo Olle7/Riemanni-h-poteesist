@@ -12158,9 +12158,9 @@ status open
 
 $
 \backslash
-int_n^{n+1}(dn*sin(x_2*ln(n)+p_2*(2
+int_n^{n+1}(dn_2*sin(x_2*ln(n_2)+p_2*(2
 \backslash
-pi))*n^{-x_1})=((n+1)^{1-x_1}*((1-x_1)*sin(x_2*ln(n+1)+p_2*(2
+pi))*n_2^{-x_1})=((n+1)^{1-x_1}*((1-x_1)*sin(x_2*ln(n+1)+p_2*(2
 \backslash
 pi))-x_2*cos(x_2*ln(n+1)+p_2*(2
 \backslash
@@ -12225,7 +12225,7 @@ lim_{p_1
 \backslash
 to 
 \backslash
-infty}( 
+infty}(
 \backslash
 
 \backslash
@@ -12236,11 +12236,11 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(p_1)}( ((n+1)^{1-x_1}*((1-x_1)*sin(x_2*ln(n+1)+p_2*(2
+sum_{n=1}^{floor(p_1)}(((n+1)^{1-x_1}*((1-x_1)*sin(x_2*ln(n+1)+p_2*(2
 \backslash
 pi))-x_2*cos(x_2*ln(n+1)+p_2*(2
 \backslash
-pi)))-n^{1-x_1}* ((1-x_1)*sin(x_2*ln(n)+p_2*(2
+pi)))-n^{1-x_1}*((1-x_1)*sin(x_2*ln(n)+p_2*(2
 \backslash
 pi))-x_2*cos(x_2*ln(n)+p_2*(2
 \backslash
