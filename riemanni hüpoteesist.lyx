@@ -12058,6 +12058,8 @@ in R
 \backslash
 land x_1>0 
 \backslash
+land x_1<1 
+\backslash
 land x_2 
 \backslash
 in R 
@@ -12194,6 +12196,8 @@ in R
 \backslash
 land x_1>0 
 \backslash
+land x_1<1 
+\backslash
 land x_2 
 \backslash
 in R 
@@ -12290,7 +12294,7 @@ pi))
 \end_layout
 
 \begin_layout Standard
-litsustan teades, et 
+lihtsustan teades, et 
 \begin_inset ERT
 status open
 
@@ -12298,23 +12302,29 @@ status open
 
 $
 \backslash
-sum_{n=1}^{floor(p_1)}(
+sum_{n=1}^{floor(p_1)}( 
 \backslash
 int_{n-1}^{n}(dn_2*sin(x_2*ln(n_2)+p_2*(2
 \backslash
 pi))*n_2^{-x_1}))=
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
-int_{n-1}^{n}(dn_2*sin(x_2*ln(n_2)+p_2*(2
+int_0^{floor(p_1)}(dn_2*sin(x_2*ln(n_2)+p_2*(2
 \backslash
-pi))*n_2^{-x_1})=(p_1^{1-x_1}*((1-x_1)*sin(x_2*ln(p_1)+p_2*(2
+pi))*n_2^{-x_1})=
+\end_layout
+
+\begin_layout Plain Layout
+
+floor(p_1)^{1-x_1}* ((1-x_1)*sin(x_2*ln(floor(p_1))+p_2*(2
 \backslash
-pi))-x_2*cos(x_2*ln(p_1)+p_2*(2
+pi))-x_2*cos(x_2*ln(floor(p_1))+p_2*(2
 \backslash
-pi)))-(n-1)^{1-x_1}* ((1-x_1)*sin(x_2*ln(n-1)+p_2*(2
-\backslash
-pi)) -x_2*cos(x_2*ln(n-1)+p_2*(2
-\backslash
-pi))) )*((1-x_1)^2+x_2^2)^{-1}$
+pi)))*((1-x_1)^2+x_2^2)^{-1}$
 \end_layout
 
 \end_inset
@@ -12345,7 +12355,7 @@ status open
 
 $( 
 \backslash
-sum_{n=1}^{floor(p_1)}(sin(x_2*ln(n)+p_2*(2
+sum_{n=0}^{floor(p_1)}(sin(x_2*ln(n)+p_2*(2
 \backslash
 pi))*n^{-x_1}) - 
 \backslash
