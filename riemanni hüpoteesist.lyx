@@ -12305,15 +12305,15 @@ status open
 
 \begin_layout Plain Layout
 
-$(
+$( 
 \backslash
 sum_{n=1}^{floor(p_1)}(sin(x_2*ln(n)+p_2*(2
 \backslash
-pi))*n^{-x_1})-
+pi))*n^{-x_1}) - 
 \backslash
-integral_{n=1}^{floor(p_1)}(dn*sin(x_2*ln(n)+p_2*(2
+int_1^{floor(p_1)+1}(dn_2*sin(x_2*ln(n_2)+p_2*(2
 \backslash
-pi))*n^{-x_1})))$
+pi))*n_2^{-x_1}) )$
 \end_layout
 
 \end_inset
