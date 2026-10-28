@@ -12102,11 +12102,11 @@ infty}(
 \backslash
 sum_{n=1}^{floor(p_1)}(
 \backslash
-int_{n}^{n+1}(dn_2*sin(x_2*ln(n_2)+p_2*(2
+int_{n-1}^{n}(dn_2*sin(x_2*ln(n_2)+p_2*(2
 \backslash
 pi))*n_2^{-x_1})-(
 \backslash
-int_{n}^{n+1}(dn_2*sin(x_2*ln(n_2)+p_2*(2
+int_{n-1}^{n}(dn_2*sin(x_2*ln(n_2)+p_2*(2
 \backslash
 pi))*n_2^{-x_1})-sin(x_2*ln(n)+p_2*(2
 \backslash
@@ -12158,15 +12158,15 @@ status open
 
 $
 \backslash
-int_n^{n+1}(dn_2*sin(x_2*ln(n_2)+p_2*(2
+int_{n-1}^{n}(dn_2*sin(x_2*ln(n_2)+p_2*(2
 \backslash
-pi))*n_2^{-x_1})=((n+1)^{1-x_1}*((1-x_1)*sin(x_2*ln(n+1)+p_2*(2
+pi))*n_2^{-x_1})=(n^{1-x_1}*((1-x_1)*sin(x_2*ln(n)+p_2*(2
 \backslash
-pi))-x_2*cos(x_2*ln(n+1)+p_2*(2
+pi))-x_2*cos(x_2*ln(n)+p_2*(2
 \backslash
-pi))) - n^{1-x_1}* ((1-x_1)*sin(x_2*ln(n)+p_2*(2
+pi))) - (n-1)^{1-x_1}* ((1-x_1)*sin(x_2*ln(n-1)+p_2*(2
 \backslash
-pi)) -x_2*cos(x_2*ln(n)+p_2*(2
+pi)) -x_2*cos(x_2*ln(n-1)+p_2*(2
 \backslash
 pi))) )*((1-x_1)^2+x_2^2)^{-1}$
 \end_layout
@@ -12225,7 +12225,7 @@ lim_{p_1
 \backslash
 to 
 \backslash
-infty}(
+infty}( 
 \backslash
 
 \backslash
@@ -12236,28 +12236,19 @@ infty}(
 
 
 \backslash
-sum_{n=1}^{floor(p_1)}(((n+1)^{1-x_1}*((1-x_1)*sin(x_2*ln(n+1)+p_2*(2
+sum_{n=1}^{floor(p_1)}(
 \backslash
-pi))-x_2*cos(x_2*ln(n+1)+p_2*(2
+int_{n-1}^{n}(dn_2*sin(x_2*ln(n_2)+p_2*(2
 \backslash
-pi)))-n^{1-x_1}*((1-x_1)*sin(x_2*ln(n)+p_2*(2
+pi))*n_2^{-x_1})-((n^{1-x_1}*((1-x_1)*sin(x_2*ln(n)+p_2*(2
 \backslash
 pi))-x_2*cos(x_2*ln(n)+p_2*(2
 \backslash
-pi))))*((1-x_1)^2+x_2^2)^{-1}
+pi))) - (n-1)^{1-x_1}* ((1-x_1)*sin(x_2*ln(n-1)+p_2*(2
 \backslash
-
+pi)) -x_2*cos(x_2*ln(n-1)+p_2*(2
 \backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
--(
-\backslash
-int_{n}^{n+1}(dn_2*sin(x_2*ln(n_2)+p_2*(2
-\backslash
-pi))*n_2^{-x_1})-sin(x_2*ln(n)+p_2*(2
+pi))) )*((1-x_1)^2+x_2^2)^{-1}-sin(x_2*ln(n)+p_2*(2
 \backslash
 pi))*n^{-x_1})) 
 \backslash
@@ -12291,6 +12282,53 @@ pi))
 \begin_layout Plain Layout
 
 )))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+litsustan teades, et 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+sum_{n=1}^{floor(p_1)}(
+\backslash
+int_{n-1}^{n}(dn_2*sin(x_2*ln(n_2)+p_2*(2
+\backslash
+pi))*n_2^{-x_1}))=
+\backslash
+int_{n-1}^{n}(dn_2*sin(x_2*ln(n_2)+p_2*(2
+\backslash
+pi))*n_2^{-x_1})=(p_1^{1-x_1}*((1-x_1)*sin(x_2*ln(p_1)+p_2*(2
+\backslash
+pi))-x_2*cos(x_2*ln(p_1)+p_2*(2
+\backslash
+pi)))-(n-1)^{1-x_1}* ((1-x_1)*sin(x_2*ln(n-1)+p_2*(2
+\backslash
+pi)) -x_2*cos(x_2*ln(n-1)+p_2*(2
+\backslash
+pi))) )*((1-x_1)^2+x_2^2)^{-1}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
 \end_layout
 
 \end_inset
