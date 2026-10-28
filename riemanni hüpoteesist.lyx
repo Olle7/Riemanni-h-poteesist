@@ -12036,7 +12036,7 @@ pi))
 \end_layout
 
 \begin_layout Standard
-lihtsustean:
+lihtsustan:
 \begin_inset Newline newline
 \end_inset
 
@@ -12240,11 +12240,11 @@ sum_{n=1}^{floor(p_1)}( ((n+1)^{1-x_1}*((1-x_1)*sin(x_2*ln(n+1)+p_2*(2
 \backslash
 pi))-x_2*cos(x_2*ln(n+1)+p_2*(2
 \backslash
-pi))) - n^{1-x_1}* ((1-x_1)*sin(x_2*ln(n)+p_2*(2
+pi)))-n^{1-x_1}* ((1-x_1)*sin(x_2*ln(n)+p_2*(2
 \backslash
-pi)) -sin(x_2*cos(x_2*ln(n)+p_2*(2
+pi))-x_2*cos(x_2*ln(n)+p_2*(2
 \backslash
-pi))) )*((1-x_1)^2+x_2^2)^{-1}
+pi))))*((1-x_1)^2+x_2^2)^{-1}
 \backslash
 
 \backslash
