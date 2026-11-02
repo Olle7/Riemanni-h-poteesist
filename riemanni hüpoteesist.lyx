@@ -12520,9 +12520,9 @@ to
 \backslash
 infty}(
 \backslash
-sum_{n=p_1}^{floor(M)}(sin(x_2*ln(n)+p_2*(2
+sum_{n=floor(p_1)+1}^{floor(M)}(sin(x_2*ln(n)+p_2*(2
 \backslash
-pi))*n^{-x_1})) 
+pi))*n^{-x_1}) 
 \backslash
 
 \backslash
@@ -12531,11 +12531,11 @@ pi))*n^{-x_1}))
 
 \begin_layout Plain Layout
 
-+{p_1}^{1-x_1}*((1-x_1)^2+x_2^2)^{-1/2}* sin(ln(p_1)*x_2+atan2(1-x_1,x_2)+2
++{M}^{1-x_1}*((1-x_1)^2+x_2^2)^{-1/2}* sin(ln(M)*x_2+atan2(1-x_1,x_2)+2
 \backslash
 pi/4+p_2*(2
 \backslash
-pi)) 
+pi))) 
 \backslash
 
 \backslash
@@ -12633,7 +12633,9 @@ to
 \backslash
 infty}(
 \backslash
-sum_{n=p_1}^{floor(M)}(n^{-x_1}))=?$
+sum_{n=p_1}^{floor(M)}(n^{-x_1}))=
+\backslash
+infty$
 \end_layout
 
 \end_inset
