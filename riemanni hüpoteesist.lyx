@@ -12482,6 +12482,12 @@ land x_2
 \backslash
 ne0 
 \backslash
+land p_1 
+\backslash
+in R 
+\backslash
+land p_1>=1 
+\backslash
 land p_2 
 \backslash
 in R 
@@ -12512,7 +12518,7 @@ pi))*n^{-x_1})
 
 \begin_layout Plain Layout
 
-
++
 \backslash
 lim_{M 
 \backslash
@@ -12535,7 +12541,7 @@ pi))*n^{-x_1})
 \backslash
 pi/4+p_2*(2
 \backslash
-pi))) 
+pi)))=0
 \backslash
 
 \backslash
@@ -12544,7 +12550,7 @@ pi)))
 
 \begin_layout Plain Layout
 
-)))$
+))))$
 \end_layout
 
 \end_inset
@@ -12561,15 +12567,19 @@ status open
 
 $
 \backslash
+sum_{n=1}^{floor(p_1)}(sin(x_2*ln(n)+p_2*(2
+\backslash
+pi))*n^{-x_1})+
+\backslash
 lim_{M 
 \backslash
 to 
 \backslash
 infty}(
 \backslash
-sum_{n=p_1}^{floor(M)}(sin(x_2*ln(n)+p_2*(2
+sum_{n=floor(p_1)+1}^{floor(M)}(sin(x_2*ln(n)+p_2*(2
 \backslash
-pi))*n^{-x_1}))<
+pi))*n^{-x_1}<
 \backslash
 lim_{M 
 \backslash
