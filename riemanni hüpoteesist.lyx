@@ -12428,6 +12428,105 @@ pi))*n_2^{-x_1}) ) )=0
 \end_layout
 
 \begin_layout Standard
+teen summa 2 osaks:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{p_1}(
+\backslash
+forall_{p_2}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}( x_1 
+\backslash
+in R 
+\backslash
+land 0<x_1<1 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_2
+\backslash
+ne0  
+\backslash
+land p_1 
+\backslash
+in R 
+\backslash
+land p_1>=1 
+\backslash
+land p_2 
+\backslash
+in R 
+\backslash
+land 
+\backslash
+zeta(x_1+i*x_2)=0 
+\backslash
+to 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(p_1)}( sin(x_2*ln(n)+p_2*(2
+\backslash
+pi))*n^{-x_1} - 
+\backslash
+int_{n-1}^{n}(dn_2*sin(x_2*ln(n_2)+p_2*(2
+\backslash
+pi))*n_2^{-x_1}) )
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+lim_{M 
+\backslash
+to 
+\backslash
+infty}(
+\backslash
+sum_{n=floor(p_1)+1}^{M}( sin(x_2*ln(n)+p_2*(2
+\backslash
+pi))*n^{-x_1} - 
+\backslash
+int_{n-1}^{n}(dn_2*sin(x_2*ln(n_2)+p_2*(2
+\backslash
+pi))*n_2^{-x_1}) ) )=0 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 teades, et 
 \begin_inset ERT
 status open
@@ -12617,7 +12716,7 @@ status open
 
 \begin_layout Plain Layout
 
-
+$
 \backslash
 lim_{M 
 \backslash
@@ -12654,7 +12753,7 @@ x_2)+2
 \backslash
 pi/4+p_2*(2
 \backslash
-pi))+(x_1^2+x_2^2)^{1/2}/(x_1*floor(p_1)^{x_1})
+pi))+(x_1^2+x_2^2)^{1/2}/(x_1*floor(p_1)^{x_1})$
 \end_layout
 
 \end_inset
@@ -12721,7 +12820,11 @@ to
 \backslash
 sum_{n=1}^{floor(p_1)}(sin(x_2*ln(n)+p_2*(2
 \backslash
-pi))*n^{-x_1})>
+pi))*n^{-x_1})<
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -12731,14 +12834,13 @@ pi))*n^{-x_1})>
 \backslash
 pi/4+p_2*(2
 \backslash
-pi))+(x_1^2+x_2^2)^{1/2}/(x_1*floor(p_1)^{x_1})
-\end_layout
-
-\begin_layout Plain Layout
-
+pi))+(x_1^2+x_2^2)^{1/2}/(x_1*floor(p_1)^{x_1}) 
+\backslash
+land 
+\backslash
 
 \backslash
-land
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -12748,6 +12850,10 @@ land
 sum_{n=1}^{floor(p_1)}(sin(x_2*ln(n)+p_2*(2
 \backslash
 pi))*n^{-x_1})>
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -12758,6 +12864,10 @@ pi))*n^{-x_1})>
 pi/4+p_2*(2
 \backslash
 pi))-(x_1^2+x_2^2)^{1/2}/(x_1*floor(p_1)^{x_1})
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
