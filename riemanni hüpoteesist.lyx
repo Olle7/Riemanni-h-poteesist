@@ -12569,6 +12569,8 @@ in R
 \backslash
 land x_1>0 
 \backslash
+land x_1>1 
+\backslash
 land x_2 
 \backslash
 in R 
@@ -12608,7 +12610,7 @@ pi))*n^{-x_1} -
 \backslash
 int_{n-1}^{n}(dn_2*sin(x_2*ln(n_2)+p_2*(2
 \backslash
-pi))*n_2^{-x_1})<
+pi))*n_2^{-x_1}))<
 \backslash
 
 \backslash
@@ -12636,7 +12638,7 @@ pi))*n^{-x_1} -
 \backslash
 int_{n-1}^{n}(dn_2*sin(x_2*ln(n_2)+p_2*(2
 \backslash
-pi))*n_2^{-x_1})>
+pi))*n_2^{-x_1}))>
 \backslash
 
 \backslash
@@ -12646,6 +12648,125 @@ pi))*n_2^{-x_1})>
 \begin_layout Plain Layout
 
 -(x_1^2+x_2^2)^{1/2}/(x_1*floor(p_1)^{x_1})
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+))))$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+SELETUS: Ülejäänud saba absoluutväärtus on ülimalt 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$(x_1^2+x_2^2)^{1/2}/(2*x_1*floor(p_1)^{x_1})$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Kui zeta-funktsiooni väärtus on 0, peab arvutatud osasumma olema ülejäänud
+ saba vastandarv.
+ Seetõttu peab arvutatud osasumma jääma järgmisse vahemikku:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+forall_{p_1}(
+\backslash
+forall_{p_2}(
+\backslash
+forall_{x_1}(
+\backslash
+forall_{x_2}( p_1 
+\backslash
+in R 
+\backslash
+land p_1>=1 
+\backslash
+land p_2 
+\backslash
+in R 
+\backslash
+land x_1 
+\backslash
+in R 
+\backslash
+land 0<x_1<1 
+\backslash
+land x_2 
+\backslash
+in R 
+\backslash
+land x_2
+\backslash
+ne0 
+\backslash
+land 
+\backslash
+zeta(x_1+i*x_2)=0 
+\backslash
+to 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+-
+\backslash
+frac{(x_1^2+x_2^2)^{1/2}}{2*x_1*floor(p_1)^{x_1}} <= 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sum_{n=1}^{floor(p_1)}( sin(x_2*ln(n)+p_2*(2
+\backslash
+pi))*n^{-x_1} - 
+\backslash
+int_{n-1}^{n}(dn_2*sin(x_2*ln(n_2)+p_2*(2
+\backslash
+pi))*n_2^{-x_1}) ) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+<= 
+\backslash
+frac{(x_1^2+x_2^2)^{1/2}}{2*x_1*floor(p_1)^{x_1}} 
 \backslash
 
 \backslash
